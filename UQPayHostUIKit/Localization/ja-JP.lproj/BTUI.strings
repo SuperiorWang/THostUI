@@ -1,0 +1,85 @@
+/* 
+  BTUI.strings
+  UQPayHostUIKit
+
+  Created by uqpay on 2019/6/17.
+  Copyright © 2019 优钱付. All rights reserved.
+*/
+"CARD_DETAILS_LABEL"                        = "カードの詳細";
+"ENTER_CARD_DETAILS_HELP_LABEL"             = "カードの詳細を、カード番号から入力します。";
+"VALID_CARD_ERROR_LABEL"                    = "正しいカード番号を入力してください。";
+"CARD_REQUIRED"                             = "カード番号が必要です";
+"CARD_INVALID"                              = "カード番号が無効です";
+"EXPIRATION_REQUIRED"                       = "有効期限が必要です";
+"EXPIRATION_INVALID"                        = "有効期限が無効です";
+"CVV_REQUIRED"                              = "%sが必要です";
+"CVV_INVALID"                               = "%sが無効です";
+"POSTAL_CODE_HELP_LABEL"                    = "正しい郵便番号を入力してください。";
+"POSTAL_CODE_REQUIRED"                      = "郵便番号が必要です";
+"POSTAL_CODE_INVALID"                       = "郵便番号が無効です";
+"COUNTRY_CODE_REQUIRED"                     = "国コードが必要です";
+"COUNTRY_CODE_INVALID"                      = "国コードが無効です";
+"MOBILE_NUMBER_REQUIRED"                    = "携帯電話番号が必要です";
+"MOBILE_NUMBER_INVALID"                     = "携帯電話番号が無効です";
+"ENROLLMENT_WITH_SMS_HELP_LABEL"            = "このカードに対して登録が必要な場合があります。SMSのコードが、必要に応じてこの番号に送信されます。";
+"SMS_CODE_REQUIRED"                         = "SMSのコードが必要です";
+"SMS_CODE_INVALID"                          = "SMSのコードが無効です";
+
+"CANCEL_ACTION"                             = "取消";
+"RETRY_ACTION"                              = "再実行";
+"CONTINUE_ACTION"                           = "続行";
+"ADD_CARD_ACTION"                           = "カードの追加";
+"DONE_ACTION"                               = "完了";
+"EDIT_ACTION"                               = "編集";
+"NEXT_ACTION"                               = "次へ";
+"TOP_LEVEL_ERROR_ALERT_VIEW_OK_BUTTON_TEXT" = "OK";
+"SCAN_CARD_IO_ACTION"                       = "カメラでスキャンする";
+
+"EDIT_PAYMENT_METHOD"                       = "支払方法の編集";
+"THERE_WAS_AN_ERROR"                        = "申し訳ありませんが、エラーが発生しました。";
+"REVIEW_AND_TRY_AGAIN"                      = "情報を確認して再度実行してください。";
+"INVALID_LABEL"                             = "無効な情報:";
+
+"YEAR_LABEL"                                = "年";
+"MONTH_LABEL"                               = "月";
+
+"OTHER_LABEL"                               = "その他";
+"CREDIT_OR_DEBIT_CARD_LABEL"                = "クレジットカードまたはデビットカード";
+"RECENT_LABEL"                              = "最近の情報";
+"SELECT_PAYMENT_LABEL"                      = "支払方法を選択する";
+
+"CONFIRM_ENROLLMENT_LABEL"                  = "登録を確認する";
+"CONFIRM_ACTION"                            = "確認";
+"ENTER_SMS_CODE_SENT_HELP_LABEL"            = "%Sにお送りしたSMSのコードを入力してください";
+"SMS_CODE_LABEL"                            = "SMSのコード";
+"CARD_TYPE_GENERIC_CARD"                    = "カード";
+"MOBILE_COUNTRY_CODE_LABEL"                 = "国コード";
+"SECURITY_CODE_LABEL"                       = "セキュリティコード";
+"CVV_FIELD_PLACEHOLDER"                     = "CVV";
+"CVC_FIELD_PLACEHOLDER"                     = "CVC";
+"CID_FIELD_PLACEHOLDER"                     = "CID";
+"CVN_FIELD_PLACEHOLDER"                     = "CVN";
+"POSTAL_CODE_PLACEHOLDER"                   = "郵便番号";
+"MOBILE_NUMBER_LABEL"                       = "携帯電話番号";
+"EXPIRATION_DATE_LABEL"                     = "有効期限";
+"CARD_NUMBER_PLACEHOLDER"                   = "カード番号";
+"EXPIRY_PLACEHOLDER_FOUR_DIGIT_YEAR"        = "MM/YYYY";
+"EXPIRY_PLACEHOLDER_TWO_DIGIT_YEAR"         = "MM/YY";
+"CARDHOLDER_NAME_LABEL"                     = "カード保有者の名前";
+
+"PAYPAL"                                    = "PayPal";
+"CARD_TYPE_AMERICAN_EXPRESS"                = "American Express";
+"CARD_TYPE_DISCOVER"                        = "Discover";
+"CARD_TYPE_DINERS_CLUB"                     = "Diners Club";
+"CARD_TYPE_MASTER_CARD"                     = "MasterCard";
+"CARD_TYPE_VISA"                            = "Visa";
+"CARD_TYPE_JCB"                             = "JCB";
+"CARD_TYPE_MAESTRO"                         = "Maestro";
+"CARD_TYPE_UNION_PAY"                       = "銀聯(UnionPay)";
+"BRANDING_COINBASE"                         = "Coinbase";
+"BRANDING_VENMO"                            = "Venmo";
+"BRANDING_APPLE_PAY"                        = "Apple Pay";
+"BRANDING_ANDROID_PAY"                      = "Android Pay‏";
+"USE_DIFFERENT_PHONE_NUMBER_ACTION"         = "別の電話番号を使用する";
+"CARD_NOT_ACCEPTED_ERROR_LABEL"             = "このカードは使用できません";
+

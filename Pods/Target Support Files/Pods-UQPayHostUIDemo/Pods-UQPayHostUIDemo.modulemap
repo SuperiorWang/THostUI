@@ -1,0 +1,6 @@
+framework module Pods_UQPayHostUIDemo {
+  umbrella header "Pods-UQPayHostUIDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}

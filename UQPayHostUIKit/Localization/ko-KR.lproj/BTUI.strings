@@ -1,0 +1,85 @@
+/* 
+  BTUI.strings
+  UQPayHostUIKit
+
+  Created by uqpay on 2019/6/17.
+  Copyright © 2019 优钱付. All rights reserved.
+*/
+"CARD_DETAILS_LABEL"                        = "카드 세부정보";
+"ENTER_CARD_DETAILS_HELP_LABEL"             = "카드 번호를 비롯한 카드 세부정보를 입력하세요.";
+"VALID_CARD_ERROR_LABEL"                    = "유효한 카드 번호를 제공해야 합니다.";
+"CARD_REQUIRED"                             = "카드 번호가 필요합니다.";
+"CARD_INVALID"                              = "카드 번호가 올바르지 않습니다.";
+"EXPIRATION_REQUIRED"                       = "만료일이 필요합니다.";
+"EXPIRATION_INVALID"                        = "만료일이 올바르지 않습니다.";
+"CVV_REQUIRED"                              = "%s이(가) 필요합니다.";
+"CVV_INVALID"                               = "%s이(가) 올바르지 않습니다.";
+"POSTAL_CODE_HELP_LABEL"                    = "유효한 우편번호를 제공해야 합니다.";
+"POSTAL_CODE_REQUIRED"                      = "우편번호가 필요합니다.";
+"POSTAL_CODE_INVALID"                       = "우편번호가 올바르지 않습니다.";
+"COUNTRY_CODE_REQUIRED"                     = "국가코드가 필요합니다.";
+"COUNTRY_CODE_INVALID"                      = "국가코드가 올바르지 않습니다.";
+"MOBILE_NUMBER_REQUIRED"                    = "휴대폰 번호가 필요합니다.";
+"MOBILE_NUMBER_INVALID"                     = "휴대폰 번호가 올바르지 않습니다.";
+"ENROLLMENT_WITH_SMS_HELP_LABEL"            = "이 카드는 등록이 필요할 수 있습니다. 필요할 경우 이 번호로 SMS 코드가 전송됩니다.";
+"SMS_CODE_REQUIRED"                         = "SMS 코드가 필요합니다.";
+"SMS_CODE_INVALID"                          = "SMS 코드가 올바르지 않습니다.";
+
+"CANCEL_ACTION"                             = "취소";
+"RETRY_ACTION"                              = "재시도";
+"CONTINUE_ACTION"                           = "계속";
+"ADD_CARD_ACTION"                           = "카드 추가";
+"DONE_ACTION"                               = "완료";
+"EDIT_ACTION"                               = "편집";
+"NEXT_ACTION"                               = "다음";
+"TOP_LEVEL_ERROR_ALERT_VIEW_OK_BUTTON_TEXT" = "OK";
+"SCAN_CARD_IO_ACTION"                       = "카메라로 스캔";
+
+"EDIT_PAYMENT_METHOD"                       = "결제수단 편집";
+"THERE_WAS_AN_ERROR"                        = "죄송하지만 오류가 있습니다.";
+"REVIEW_AND_TRY_AGAIN"                      = "정보를 검토하고 다시 시도해 주세요.";
+"INVALID_LABEL"                             = "유효하지 않음:";
+
+"YEAR_LABEL"                                = "연도";
+"MONTH_LABEL"                               = "월";
+
+"OTHER_LABEL"                               = "기타";
+"CREDIT_OR_DEBIT_CARD_LABEL"                = "신용카드 또는 직불카드";
+"RECENT_LABEL"                              = "최근";
+"SELECT_PAYMENT_LABEL"                      = "결제수단 선택";
+
+"CONFIRM_ENROLLMENT_LABEL"                  = "등록 확인";
+"CONFIRM_ACTION"                            = "확인";
+"ENTER_SMS_CODE_SENT_HELP_LABEL"            = "SMS 코드를 입력하고 %s에 보냅니다.";
+"SMS_CODE_LABEL"                            = "SMS 코드";
+"CARD_TYPE_GENERIC_CARD"                    = "카드";
+"MOBILE_COUNTRY_CODE_LABEL"                 = "국가번호";
+"SECURITY_CODE_LABEL"                       = "보안 코드";
+"CVV_FIELD_PLACEHOLDER"                     = "CVV";
+"CVC_FIELD_PLACEHOLDER"                     = "CVC";
+"CID_FIELD_PLACEHOLDER"                     = "CID";
+"CVN_FIELD_PLACEHOLDER"                     = "CVN";
+"POSTAL_CODE_PLACEHOLDER"                   = "우편번호";
+"MOBILE_NUMBER_LABEL"                       = "휴대폰 번호";
+"EXPIRATION_DATE_LABEL"                     = "만료일";
+"CARD_NUMBER_PLACEHOLDER"                   = "카드 번호";
+"EXPIRY_PLACEHOLDER_FOUR_DIGIT_YEAR"        = "MM/YYYY";
+"EXPIRY_PLACEHOLDER_TWO_DIGIT_YEAR"         = "MM/YY";
+"CARDHOLDER_NAME_LABEL"                     = "카드 소유자 이름";
+
+"PAYPAL"                                    = "PayPal";
+"CARD_TYPE_AMERICAN_EXPRESS"                = "American Express";
+"CARD_TYPE_DISCOVER"                        = "Discover";
+"CARD_TYPE_DINERS_CLUB"                     = "Diners Club";
+"CARD_TYPE_MASTER_CARD"                     = "MasterCard";
+"CARD_TYPE_VISA"                            = "Visa";
+"CARD_TYPE_JCB"                             = "JCB";
+"CARD_TYPE_MAESTRO"                         = "Maestro";
+"CARD_TYPE_UNION_PAY"                       = "UnionPay";
+"BRANDING_COINBASE"                         = "Coinbase";
+"BRANDING_VENMO"                            = "Venmo";
+"BRANDING_APPLE_PAY"                        = "Apple Pay";
+"BRANDING_ANDROID_PAY"                      = "Android Pay‏";
+"USE_DIFFERENT_PHONE_NUMBER_ACTION"         = "다른 전화번호 사용하기";
+"CARD_NOT_ACCEPTED_ERROR_LABEL"             = "카드 수락되지 않음";
+

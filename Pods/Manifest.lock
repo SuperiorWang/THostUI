@@ -1,0 +1,46 @@
+PODS:
+  - AFNetworking (3.2.1):
+    - AFNetworking/NSURLSession (= 3.2.1)
+    - AFNetworking/Reachability (= 3.2.1)
+    - AFNetworking/Security (= 3.2.1)
+    - AFNetworking/Serialization (= 3.2.1)
+    - AFNetworking/UIKit (= 3.2.1)
+  - AFNetworking/NSURLSession (3.2.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.2.1)
+  - AFNetworking/Security (3.2.1)
+  - AFNetworking/Serialization (3.2.1)
+  - AFNetworking/UIKit (3.2.1):
+    - AFNetworking/NSURLSession
+  - InAppSettingsKit (2.10)
+  - JSONModel (1.8.0)
+  - "NSURL+QueryDictionary (1.2.0)"
+  - WHToast (0.0.2)
+
+DEPENDENCIES:
+  - AFNetworking
+  - InAppSettingsKit
+  - JSONModel
+  - "NSURL+QueryDictionary (~> 1.0)"
+  - WHToast
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - AFNetworking
+    - InAppSettingsKit
+    - JSONModel
+    - "NSURL+QueryDictionary"
+    - WHToast
+
+SPEC CHECKSUMS:
+  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  InAppSettingsKit: d965e29be941eb19857271e4625de3fba6e23c9f
+  JSONModel: 02ab723958366a3fd27da57ea2af2113658762e9
+  "NSURL+QueryDictionary": bae616404e2adf6409d3d5c02a093cbf44c8a236
+  WHToast: b5b1c6c2a178b2e848e7416fd25ca6b25c7babf8
+
+PODFILE CHECKSUM: 1ba61a323e66f8ce12de2fd6bfe46a2c0128fef4
+
+COCOAPODS: 1.5.3
