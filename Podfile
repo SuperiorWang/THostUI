@@ -12,6 +12,7 @@ def commpod
     pod 'JSONModel'
     pod 'AFNetworking'
     pod 'WHToast'
+    pod 'CardIO'
 end
 
 target 'UQPayHostUIDemo' do

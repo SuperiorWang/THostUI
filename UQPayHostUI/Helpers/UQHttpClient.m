@@ -94,6 +94,24 @@ static UQHttpClient *httpClient;
     return manager;
 }
 
++ (void)getToken:(SuccessBlock)success fail:(FailureBlock)fail {
+    NSString *URLString = @"https://demo.uqpay.cn/api/guest/hostinit";
+    [[UQHttpClient manager]GET:URLString parameters:nil progress:^(NSProgress * _Nonnull downloadProgress) {
+        NSLog(@"请求返回的进度");
+    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        NSLog(@"responseObject-->%@",responseObject);
+        if (responseObject) {
+            NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:responseObject
+                                                                 options:NSJSONReadingMutableContainers
+                                                                   error:nil];
+            success(dict, YES);
+        }
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        NSLog(@"error-->%@",error);
+        fail(error);
+    }];
+}
+
 - (void)getCardList:(SuccessBlock)success fail:(FailureBlock)fail{
     NSString *URLString = [NSString  stringWithFormat:@"%@", self.cardListUri];
     NSDictionary *parameters=@{@"token":self.token};

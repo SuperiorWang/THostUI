@@ -42,6 +42,11 @@ static UQUIKAppearance *sharedTheme;
     sharedTheme.activityIndicatorViewStyle = UIActivityIndicatorViewStyleGray;
     sharedTheme.useBlurs = YES;
     sharedTheme.postalCodeFormFieldKeyboardType = UIKeyboardTypeNumberPad;
+    sharedTheme.cardTitleColor = [UIColor uquik_colorFromHex:@"333333" alpha:1.0];
+    sharedTheme.detailTitleColor = [UIColor uquik_colorFromHex:@"3F3F3F" alpha:1.0];
+    sharedTheme.defaultColor = [UIColor uquik_colorFromHex:@"4685f4" alpha:1.0];
+    sharedTheme.defaultTableSepColor = [UIColor uquik_colorFromHex:@"E5E5E5" alpha:1.0];
+    sharedTheme.navigationBarBackItemColor = [UIColor uquik_colorFromHex:@"666666" alpha:1.0];
 }
 
 + (void)darkTheme {
@@ -62,6 +67,11 @@ static UQUIKAppearance *sharedTheme;
     sharedTheme.activityIndicatorViewStyle = UIActivityIndicatorViewStyleWhite;
     sharedTheme.useBlurs = YES;
     sharedTheme.postalCodeFormFieldKeyboardType = UIKeyboardTypeNumberPad;
+    sharedTheme.cardTitleColor = [UIColor uquik_colorFromHex:@"333333" alpha:1.0];
+    sharedTheme.defaultColor = [UIColor uquik_colorFromHex:@"4685f4" alpha:1.0];
+    sharedTheme.detailTitleColor = [UIColor uquik_colorFromHex:@"3F3F3F" alpha:1.0];
+    sharedTheme.defaultTableSepColor = [UIColor uquik_colorFromHex:@"E5E5E5" alpha:1.0];
+    sharedTheme.navigationBarBackItemColor = [UIColor uquik_colorFromHex:@"666666" alpha:1.0];
 }
 
 - (UIColor *)highlightedTintColor {

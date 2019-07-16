@@ -23,6 +23,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)UQHostResult:(UQHostResult *)model;
 
+@optional
+- (void)UQHostError:(NSError *)error;
+
 @end
 
 NS_ASSUME_NONNULL_END

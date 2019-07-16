@@ -153,10 +153,15 @@
 		ABA9204122CF431300CCB034 /* UQCardListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABA9203F22CF431300CCB034 /* UQCardListViewController.m */; };
 		ABA9204422CF432E00CCB034 /* UQAddCardViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = ABA9204222CF432E00CCB034 /* UQAddCardViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		ABA9204522CF432E00CCB034 /* UQAddCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABA9204322CF432E00CCB034 /* UQAddCardViewController.m */; };
+		ABB2247D22DD7913006FD44A /* photograph@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ABB2247C22DD7913006FD44A /* photograph@2x.png */; };
+		ABB2247F22DD791B006FD44A /* photograph@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = ABB2247E22DD791B006FD44A /* photograph@3x.png */; };
+		ABB2248122DD7920006FD44A /* photograph.png in Resources */ = {isa = PBXBuildFile; fileRef = ABB2248022DD7920006FD44A /* photograph.png */; };
+		ABB2248222DD794F006FD44A /* photograph.png in Resources */ = {isa = PBXBuildFile; fileRef = ABB2248022DD7920006FD44A /* photograph.png */; };
+		ABB2248322DD7950006FD44A /* photograph@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = ABB2247E22DD791B006FD44A /* photograph@3x.png */; };
+		ABB2248422DD7951006FD44A /* photograph@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ABB2247C22DD7913006FD44A /* photograph@2x.png */; };
+		ABB2248822DDA755006FD44A /* UQHostUIResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = ABB2248722DDA754006FD44A /* UQHostUIResource.bundle */; };
 		ABEFA15822D2EC2E00768AE1 /* UQDropInUIUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = ABEFA15622D2EC2E00768AE1 /* UQDropInUIUtilities.h */; };
 		ABEFA15922D2EC2E00768AE1 /* UQDropInUIUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = ABEFA15722D2EC2E00768AE1 /* UQDropInUIUtilities.m */; };
-		ABEFA15C22D3493400768AE1 /* UQCardItemCell.h in Headers */ = {isa = PBXBuildFile; fileRef = ABEFA15A22D3493400768AE1 /* UQCardItemCell.h */; };
-		ABEFA15D22D3493400768AE1 /* UQCardItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ABEFA15B22D3493400768AE1 /* UQCardItemCell.m */; };
 		ABEFA16022D35F9300768AE1 /* UQHttpClient.h in Headers */ = {isa = PBXBuildFile; fileRef = ABEFA15E22D35F9300768AE1 /* UQHttpClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		ABEFA16122D35F9300768AE1 /* UQHttpClient.m in Sources */ = {isa = PBXBuildFile; fileRef = ABEFA15F22D35F9300768AE1 /* UQHttpClient.m */; };
 		ABEFA16E22D48F7F00768AE1 /* SMSModel.h in Headers */ = {isa = PBXBuildFile; fileRef = ABEFA16C22D48F7F00768AE1 /* SMSModel.h */; };
@@ -171,6 +176,38 @@
 		ABEFA17F22D5784600768AE1 /* CardListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = ABEFA17D22D5784600768AE1 /* CardListModel.m */; };
 		ABEFA18222D58C2800768AE1 /* UQHostResult.h in Headers */ = {isa = PBXBuildFile; fileRef = ABEFA18022D58C2800768AE1 /* UQHostResult.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		ABEFA18322D58C2800768AE1 /* UQHostResult.m in Sources */ = {isa = PBXBuildFile; fileRef = ABEFA18122D58C2800768AE1 /* UQHostResult.m */; };
+		ABEFA1A122D8730B00768AE1 /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = ABEFA19322D872C800768AE1 /* back.png */; };
+		ABEFA1A222D8730C00768AE1 /* back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ABEFA19222D872C700768AE1 /* back@2x.png */; };
+		ABEFA1A322D8730E00768AE1 /* back@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = ABEFA18E22D872C600768AE1 /* back@3x.png */; };
+		ABEFA1A722D8731400768AE1 /* xuanze.png in Resources */ = {isa = PBXBuildFile; fileRef = ABEFA18F22D872C600768AE1 /* xuanze.png */; };
+		ABEFA1A822D8731500768AE1 /* xuanze@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ABEFA19522D872C800768AE1 /* xuanze@2x.png */; };
+		ABEFA1A922D8731700768AE1 /* xuanze@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = ABEFA19622D872C900768AE1 /* xuanze@3x.png */; };
+		ABEFA1B022D873B200768AE1 /* UQImageUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = ABEFA1AE22D873B200768AE1 /* UQImageUtils.h */; };
+		ABEFA1B122D873B200768AE1 /* UQImageUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = ABEFA1AF22D873B200768AE1 /* UQImageUtils.m */; };
+		ABEFA1B522D87B7600768AE1 /* card@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = ABEFA1B222D87B7500768AE1 /* card@3x.png */; };
+		ABEFA1B622D87B7600768AE1 /* card.png in Resources */ = {isa = PBXBuildFile; fileRef = ABEFA1B322D87B7600768AE1 /* card.png */; };
+		ABEFA1B722D87B7600768AE1 /* card@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ABEFA1B422D87B7600768AE1 /* card@2x.png */; };
+		ABEFA1BF22D88D1B00768AE1 /* card@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ABEFA1B422D87B7600768AE1 /* card@2x.png */; };
+		ABEFA1C022D88D1C00768AE1 /* card.png in Resources */ = {isa = PBXBuildFile; fileRef = ABEFA1B322D87B7600768AE1 /* card.png */; };
+		ABEFA1C122D88D1E00768AE1 /* card@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = ABEFA1B222D87B7500768AE1 /* card@3x.png */; };
+		ABEFA1C822DC17C400768AE1 /* UQCardItemView.h in Headers */ = {isa = PBXBuildFile; fileRef = ABEFA1C622DC17C400768AE1 /* UQCardItemView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ABEFA1C922DC17C400768AE1 /* UQCardItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = ABEFA1C722DC17C400768AE1 /* UQCardItemView.m */; };
+		ABEFA1CC22DC606800768AE1 /* add-rectangle@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = ABEFA1CB22DC606800768AE1 /* add-rectangle@3x.png */; };
+		ABEFA1CE22DC607900768AE1 /* add-rectangle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ABEFA1CD22DC607800768AE1 /* add-rectangle@2x.png */; };
+		ABEFA1D022DC607E00768AE1 /* add-rectangle.png in Resources */ = {isa = PBXBuildFile; fileRef = ABEFA1CF22DC607E00768AE1 /* add-rectangle.png */; };
+		ABEFA1D122DC608700768AE1 /* add-rectangle@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = ABEFA1CB22DC606800768AE1 /* add-rectangle@3x.png */; };
+		ABEFA1D222DC608900768AE1 /* add-rectangle.png in Resources */ = {isa = PBXBuildFile; fileRef = ABEFA1CF22DC607E00768AE1 /* add-rectangle.png */; };
+		ABEFA1D322DC608A00768AE1 /* add-rectangle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ABEFA1CD22DC607800768AE1 /* add-rectangle@2x.png */; };
+		ABEFA1DC22DC6EF900768AE1 /* UQCardItemViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = ABEFA1DA22DC6EF900768AE1 /* UQCardItemViewCell.h */; };
+		ABEFA1DD22DC6EF900768AE1 /* UQCardItemViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ABEFA1DB22DC6EF900768AE1 /* UQCardItemViewCell.m */; };
+		ABEFA1E922DC799900768AE1 /* delete.png in Resources */ = {isa = PBXBuildFile; fileRef = ABEFA1E822DC799900768AE1 /* delete.png */; };
+		ABEFA1EB22DC799F00768AE1 /* delete@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ABEFA1EA22DC799F00768AE1 /* delete@2x.png */; };
+		ABEFA1ED22DC79A500768AE1 /* delete@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = ABEFA1EC22DC79A500768AE1 /* delete@3x.png */; };
+		ABEFA1FA22DC7C2C00768AE1 /* UQCardListTableView.h in Headers */ = {isa = PBXBuildFile; fileRef = ABEFA1F822DC7C2C00768AE1 /* UQCardListTableView.h */; };
+		ABEFA1FB22DC7C2C00768AE1 /* UQCardListTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = ABEFA1F922DC7C2C00768AE1 /* UQCardListTableView.m */; };
+		ABEFA1FC22DC80BD00768AE1 /* delete.png in Resources */ = {isa = PBXBuildFile; fileRef = ABEFA1E822DC799900768AE1 /* delete.png */; };
+		ABEFA1FD22DC80C100768AE1 /* delete@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = ABEFA1EC22DC79A500768AE1 /* delete@3x.png */; };
+		ABEFA1FE22DC80C200768AE1 /* delete@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ABEFA1EA22DC799F00768AE1 /* delete@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -358,10 +395,12 @@
 		ABA9203F22CF431300CCB034 /* UQCardListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UQCardListViewController.m; sourceTree = "<group>"; };
 		ABA9204222CF432E00CCB034 /* UQAddCardViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UQAddCardViewController.h; sourceTree = "<group>"; };
 		ABA9204322CF432E00CCB034 /* UQAddCardViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UQAddCardViewController.m; sourceTree = "<group>"; };
+		ABB2247C22DD7913006FD44A /* photograph@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "photograph@2x.png"; sourceTree = "<group>"; };
+		ABB2247E22DD791B006FD44A /* photograph@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "photograph@3x.png"; sourceTree = "<group>"; };
+		ABB2248022DD7920006FD44A /* photograph.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = photograph.png; sourceTree = "<group>"; };
+		ABB2248722DDA754006FD44A /* UQHostUIResource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = UQHostUIResource.bundle; sourceTree = "<group>"; };
 		ABEFA15622D2EC2E00768AE1 /* UQDropInUIUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UQDropInUIUtilities.h; sourceTree = "<group>"; };
 		ABEFA15722D2EC2E00768AE1 /* UQDropInUIUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UQDropInUIUtilities.m; sourceTree = "<group>"; };
-		ABEFA15A22D3493400768AE1 /* UQCardItemCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UQCardItemCell.h; sourceTree = "<group>"; };
-		ABEFA15B22D3493400768AE1 /* UQCardItemCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UQCardItemCell.m; sourceTree = "<group>"; };
 		ABEFA15E22D35F9300768AE1 /* UQHttpClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UQHttpClient.h; sourceTree = "<group>"; };
 		ABEFA15F22D35F9300768AE1 /* UQHttpClient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UQHttpClient.m; sourceTree = "<group>"; };
 		ABEFA16822D4384E00768AE1 /* AFNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AFNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -378,6 +417,31 @@
 		ABEFA17D22D5784600768AE1 /* CardListModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CardListModel.m; sourceTree = "<group>"; };
 		ABEFA18022D58C2800768AE1 /* UQHostResult.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UQHostResult.h; sourceTree = "<group>"; };
 		ABEFA18122D58C2800768AE1 /* UQHostResult.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UQHostResult.m; sourceTree = "<group>"; };
+		ABEFA18822D8716900768AE1 /* UQHostUIResource.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UQHostUIResource.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABEFA18A22D8716900768AE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ABEFA18E22D872C600768AE1 /* back@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back@3x.png"; sourceTree = "<group>"; };
+		ABEFA18F22D872C600768AE1 /* xuanze.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = xuanze.png; sourceTree = "<group>"; };
+		ABEFA19222D872C700768AE1 /* back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back@2x.png"; sourceTree = "<group>"; };
+		ABEFA19322D872C800768AE1 /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
+		ABEFA19522D872C800768AE1 /* xuanze@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "xuanze@2x.png"; sourceTree = "<group>"; };
+		ABEFA19622D872C900768AE1 /* xuanze@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "xuanze@3x.png"; sourceTree = "<group>"; };
+		ABEFA1AE22D873B200768AE1 /* UQImageUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UQImageUtils.h; sourceTree = "<group>"; };
+		ABEFA1AF22D873B200768AE1 /* UQImageUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UQImageUtils.m; sourceTree = "<group>"; };
+		ABEFA1B222D87B7500768AE1 /* card@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "card@3x.png"; path = "../../../../../Downloads/未命名文件夹(2)/card@3x.png"; sourceTree = "<group>"; };
+		ABEFA1B322D87B7600768AE1 /* card.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = card.png; path = "../../../../../Downloads/未命名文件夹(2)/card.png"; sourceTree = "<group>"; };
+		ABEFA1B422D87B7600768AE1 /* card@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "card@2x.png"; path = "../../../../../Downloads/未命名文件夹(2)/card@2x.png"; sourceTree = "<group>"; };
+		ABEFA1C622DC17C400768AE1 /* UQCardItemView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UQCardItemView.h; sourceTree = "<group>"; };
+		ABEFA1C722DC17C400768AE1 /* UQCardItemView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UQCardItemView.m; sourceTree = "<group>"; };
+		ABEFA1CB22DC606800768AE1 /* add-rectangle@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "add-rectangle@3x.png"; sourceTree = "<group>"; };
+		ABEFA1CD22DC607800768AE1 /* add-rectangle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "add-rectangle@2x.png"; sourceTree = "<group>"; };
+		ABEFA1CF22DC607E00768AE1 /* add-rectangle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "add-rectangle.png"; sourceTree = "<group>"; };
+		ABEFA1DA22DC6EF900768AE1 /* UQCardItemViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UQCardItemViewCell.h; sourceTree = "<group>"; };
+		ABEFA1DB22DC6EF900768AE1 /* UQCardItemViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UQCardItemViewCell.m; sourceTree = "<group>"; };
+		ABEFA1E822DC799900768AE1 /* delete.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = delete.png; sourceTree = "<group>"; };
+		ABEFA1EA22DC799F00768AE1 /* delete@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "delete@2x.png"; sourceTree = "<group>"; };
+		ABEFA1EC22DC79A500768AE1 /* delete@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "delete@3x.png"; sourceTree = "<group>"; };
+		ABEFA1F822DC7C2C00768AE1 /* UQCardListTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UQCardListTableView.h; sourceTree = "<group>"; };
+		ABEFA1F922DC7C2C00768AE1 /* UQCardListTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UQCardListTableView.m; sourceTree = "<group>"; };
 		B57BB5ECED3B3D5208D1601F /* Pods_UQPayHostUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UQPayHostUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E66BAE4AE6A65DD14E93CB7C /* Pods-UQPayHostUIDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UQPayHostUIDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UQPayHostUIDemo/Pods-UQPayHostUIDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -409,6 +473,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		ABEFA18522D8716900768AE1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -429,6 +500,7 @@
 				ABA91C1722CDF46400CCB034 /* UQPayHostUIDemo */,
 				ABA91DAF22CF190C00CCB034 /* UQPayHostUI */,
 				ABA91DC122CF192200CCB034 /* UQPayHostUIKit */,
+				ABEFA18922D8716900768AE1 /* UQHostUIResource */,
 				ABA91C1622CDF46400CCB034 /* Products */,
 				ACA1DEB31CFFBD8B95260FB7 /* Pods */,
 				015EB3F703DBA37842620F4C /* Frameworks */,
@@ -441,6 +513,7 @@
 				ABA91C1522CDF46400CCB034 /* UQPayHostUIDemo.app */,
 				ABA91DAE22CF190C00CCB034 /* UQPayHostUI.framework */,
 				ABA91DC022CF192200CCB034 /* UQPayHostUIKit.framework */,
+				ABEFA18822D8716900768AE1 /* UQHostUIResource.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -448,6 +521,7 @@
 		ABA91C1722CDF46400CCB034 /* UQPayHostUIDemo */ = {
 			isa = PBXGroup;
 			children = (
+				ABB2248722DDA754006FD44A /* UQHostUIResource.bundle */,
 				ABA91C1822CDF46400CCB034 /* AppDelegate.h */,
 				ABA91C1922CDF46400CCB034 /* AppDelegate.m */,
 				ABA91C1B22CDF46400CCB034 /* ViewController.h */,
@@ -464,6 +538,7 @@
 		ABA91DAF22CF190C00CCB034 /* UQPayHostUI */ = {
 			isa = PBXGroup;
 			children = (
+				ABEFA1A022D872F400768AE1 /* Images */,
 				ABA9203822CF352B00CCB034 /* Info.plist */,
 				ABA9202A22CF1D9700CCB034 /* Components */,
 				ABA9202422CF1D9700CCB034 /* Custom View */,
@@ -687,8 +762,12 @@
 		ABA9202422CF1D9700CCB034 /* Custom View */ = {
 			isa = PBXGroup;
 			children = (
-				ABEFA15A22D3493400768AE1 /* UQCardItemCell.h */,
-				ABEFA15B22D3493400768AE1 /* UQCardItemCell.m */,
+				ABEFA1F822DC7C2C00768AE1 /* UQCardListTableView.h */,
+				ABEFA1F922DC7C2C00768AE1 /* UQCardListTableView.m */,
+				ABEFA1C622DC17C400768AE1 /* UQCardItemView.h */,
+				ABEFA1C722DC17C400768AE1 /* UQCardItemView.m */,
+				ABEFA1DA22DC6EF900768AE1 /* UQCardItemViewCell.h */,
+				ABEFA1DB22DC6EF900768AE1 /* UQCardItemViewCell.m */,
 			);
 			path = "Custom View";
 			sourceTree = "<group>";
@@ -732,6 +811,41 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
+		ABEFA18922D8716900768AE1 /* UQHostUIResource */ = {
+			isa = PBXGroup;
+			children = (
+				ABEFA18A22D8716900768AE1 /* Info.plist */,
+			);
+			path = UQHostUIResource;
+			sourceTree = "<group>";
+		};
+		ABEFA1A022D872F400768AE1 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				ABB2248022DD7920006FD44A /* photograph.png */,
+				ABB2247E22DD791B006FD44A /* photograph@3x.png */,
+				ABB2247C22DD7913006FD44A /* photograph@2x.png */,
+				ABEFA19322D872C800768AE1 /* back.png */,
+				ABEFA19222D872C700768AE1 /* back@2x.png */,
+				ABEFA18E22D872C600768AE1 /* back@3x.png */,
+				ABEFA1B322D87B7600768AE1 /* card.png */,
+				ABEFA1E822DC799900768AE1 /* delete.png */,
+				ABEFA1B422D87B7600768AE1 /* card@2x.png */,
+				ABEFA1B222D87B7500768AE1 /* card@3x.png */,
+				ABEFA18F22D872C600768AE1 /* xuanze.png */,
+				ABEFA1CB22DC606800768AE1 /* add-rectangle@3x.png */,
+				ABEFA1EA22DC799F00768AE1 /* delete@2x.png */,
+				ABEFA1CF22DC607E00768AE1 /* add-rectangle.png */,
+				ABEFA1EC22DC79A500768AE1 /* delete@3x.png */,
+				ABEFA1CD22DC607800768AE1 /* add-rectangle@2x.png */,
+				ABEFA19522D872C800768AE1 /* xuanze@2x.png */,
+				ABEFA19622D872C900768AE1 /* xuanze@3x.png */,
+				ABEFA1AE22D873B200768AE1 /* UQImageUtils.h */,
+				ABEFA1AF22D873B200768AE1 /* UQImageUtils.m */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
 		ACA1DEB31CFFBD8B95260FB7 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -750,20 +864,23 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABEFA1FA22DC7C2C00768AE1 /* UQCardListTableView.h in Headers */,
 				ABA9203222CF1D9700CCB034 /* UQPayHostUI.h in Headers */,
 				ABEFA17222D4965800768AE1 /* AddCardModel.h in Headers */,
 				ABA9204022CF431300CCB034 /* UQCardListViewController.h in Headers */,
 				ABEFA18222D58C2800768AE1 /* UQHostResult.h in Headers */,
 				ABEFA17A22D4A55800768AE1 /* ResultModel.h in Headers */,
+				ABEFA1C822DC17C400768AE1 /* UQCardItemView.h in Headers */,
 				ABEFA16E22D48F7F00768AE1 /* SMSModel.h in Headers */,
 				ABEFA17622D4976F00768AE1 /* CardModel.h in Headers */,
+				ABEFA1DC22DC6EF900768AE1 /* UQCardItemViewCell.h in Headers */,
 				ABEFA16022D35F9300768AE1 /* UQHttpClient.h in Headers */,
 				ABA9204422CF432E00CCB034 /* UQAddCardViewController.h in Headers */,
 				ABEFA17E22D5784600768AE1 /* CardListModel.h in Headers */,
 				ABA9203022CF1D9700CCB034 /* UQHostUIViewController.h in Headers */,
 				ABA9203122CF1D9700CCB034 /* UQHostUIBaseViewController.h in Headers */,
-				ABEFA15C22D3493400768AE1 /* UQCardItemCell.h in Headers */,
 				ABA9202E22CF1D9700CCB034 /* SystemUtils.h in Headers */,
+				ABEFA1B022D873B200768AE1 /* UQImageUtils.h in Headers */,
 				ABEFA15822D2EC2E00768AE1 /* UQDropInUIUtilities.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -899,6 +1016,23 @@
 			productReference = ABA91DC022CF192200CCB034 /* UQPayHostUIKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		ABEFA18722D8716900768AE1 /* UQHostUIResource */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ABEFA18D22D8716900768AE1 /* Build configuration list for PBXNativeTarget "UQHostUIResource" */;
+			buildPhases = (
+				ABEFA18422D8716900768AE1 /* Sources */,
+				ABEFA18522D8716900768AE1 /* Frameworks */,
+				ABEFA18622D8716900768AE1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UQHostUIResource;
+			productName = UQHostUIResource;
+			productReference = ABEFA18822D8716900768AE1 /* UQHostUIResource.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -915,6 +1049,9 @@
 						CreatedOnToolsVersion = 10.2.1;
 					};
 					ABA91DBF22CF192200CCB034 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					ABEFA18722D8716900768AE1 = {
 						CreatedOnToolsVersion = 10.2.1;
 					};
 				};
@@ -936,6 +1073,7 @@
 				ABA91C1422CDF46400CCB034 /* UQPayHostUIDemo */,
 				ABA91DAD22CF190C00CCB034 /* UQPayHostUI */,
 				ABA91DBF22CF192200CCB034 /* UQPayHostUIKit */,
+				ABEFA18722D8716900768AE1 /* UQHostUIResource */,
 			);
 		};
 /* End PBXProject section */
@@ -946,6 +1084,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ABA91C2522CDF46500CCB034 /* LaunchScreen.storyboard in Resources */,
+				ABB2248822DDA755006FD44A /* UQHostUIResource.bundle in Resources */,
 				ABA91C2222CDF46500CCB034 /* Assets.xcassets in Resources */,
 				ABA91C2022CDF46400CCB034 /* Main.storyboard in Resources */,
 			);
@@ -955,6 +1094,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABEFA1CE22DC607900768AE1 /* add-rectangle@2x.png in Resources */,
+				ABEFA1ED22DC79A500768AE1 /* delete@3x.png in Resources */,
+				ABB2247D22DD7913006FD44A /* photograph@2x.png in Resources */,
+				ABB2247F22DD791B006FD44A /* photograph@3x.png in Resources */,
+				ABEFA1B522D87B7600768AE1 /* card@3x.png in Resources */,
+				ABB2248122DD7920006FD44A /* photograph.png in Resources */,
+				ABEFA1CC22DC606800768AE1 /* add-rectangle@3x.png in Resources */,
+				ABEFA1B622D87B7600768AE1 /* card.png in Resources */,
+				ABEFA1E922DC799900768AE1 /* delete.png in Resources */,
+				ABEFA1EB22DC799F00768AE1 /* delete@2x.png in Resources */,
+				ABEFA1B722D87B7600768AE1 /* card@2x.png in Resources */,
+				ABEFA1D022DC607E00768AE1 /* add-rectangle.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -963,6 +1114,31 @@
 			buildActionMask = 2147483647;
 			files = (
 				ABA9201922CF1ACB00CCB034 /* BTUI.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABEFA18622D8716900768AE1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABEFA1A122D8730B00768AE1 /* back.png in Resources */,
+				ABEFA1A222D8730C00768AE1 /* back@2x.png in Resources */,
+				ABEFA1A722D8731400768AE1 /* xuanze.png in Resources */,
+				ABB2248422DD7951006FD44A /* photograph@2x.png in Resources */,
+				ABB2248322DD7950006FD44A /* photograph@3x.png in Resources */,
+				ABEFA1A922D8731700768AE1 /* xuanze@3x.png in Resources */,
+				ABEFA1C022D88D1C00768AE1 /* card.png in Resources */,
+				ABEFA1FE22DC80C200768AE1 /* delete@2x.png in Resources */,
+				ABB2248222DD794F006FD44A /* photograph.png in Resources */,
+				ABEFA1FC22DC80BD00768AE1 /* delete.png in Resources */,
+				ABEFA1D122DC608700768AE1 /* add-rectangle@3x.png in Resources */,
+				ABEFA1D322DC608A00768AE1 /* add-rectangle@2x.png in Resources */,
+				ABEFA1FD22DC80C100768AE1 /* delete@3x.png in Resources */,
+				ABEFA1D222DC608900768AE1 /* add-rectangle.png in Resources */,
+				ABEFA1BF22D88D1B00768AE1 /* card@2x.png in Resources */,
+				ABEFA1C122D88D1E00768AE1 /* card@3x.png in Resources */,
+				ABEFA1A822D8731500768AE1 /* xuanze@2x.png in Resources */,
+				ABEFA1A322D8730E00768AE1 /* back@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1050,16 +1226,19 @@
 			files = (
 				ABEFA18322D58C2800768AE1 /* UQHostResult.m in Sources */,
 				ABEFA17B22D4A55800768AE1 /* ResultModel.m in Sources */,
+				ABEFA1FB22DC7C2C00768AE1 /* UQCardListTableView.m in Sources */,
 				ABA9204522CF432E00CCB034 /* UQAddCardViewController.m in Sources */,
 				ABA9204122CF431300CCB034 /* UQCardListViewController.m in Sources */,
 				ABEFA16122D35F9300768AE1 /* UQHttpClient.m in Sources */,
 				ABA9202C22CF1D9700CCB034 /* UQHostUIViewController.m in Sources */,
 				ABEFA17F22D5784600768AE1 /* CardListModel.m in Sources */,
+				ABEFA1DD22DC6EF900768AE1 /* UQCardItemViewCell.m in Sources */,
+				ABEFA1C922DC17C400768AE1 /* UQCardItemView.m in Sources */,
 				ABA9202D22CF1D9700CCB034 /* SystemUtils.m in Sources */,
+				ABEFA1B122D873B200768AE1 /* UQImageUtils.m in Sources */,
 				ABEFA15922D2EC2E00768AE1 /* UQDropInUIUtilities.m in Sources */,
 				ABA9202B22CF1D9700CCB034 /* UQHostUIBaseViewController.m in Sources */,
 				ABEFA16F22D48F7F00768AE1 /* SMSModel.m in Sources */,
-				ABEFA15D22D3493400768AE1 /* UQCardItemCell.m in Sources */,
 				ABEFA17722D4976F00768AE1 /* CardModel.m in Sources */,
 				ABEFA17322D4965800768AE1 /* AddCardModel.m in Sources */,
 			);
@@ -1128,6 +1307,13 @@
 				ABA91FEF22CF1ACB00CCB034 /* UQUIKInputAccessoryToolbar.m in Sources */,
 				ABA91FEA22CF1ACB00CCB034 /* UQUIKSecurityCodeFormField.m in Sources */,
 				ABA91FD122CF1ACB00CCB034 /* UQUIKVisaVectorArtView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABEFA18422D8716900768AE1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1305,15 +1491,17 @@
 					"$(PROJECT_DIR)/UQPayHostUIDemo",
 					"$(PROJECT_DIR)/Pods",
 				);
-				HEADER_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = UQPayHostUIDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				LIBRARY_SEARCH_PATHS = "";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
+					"-l\"c++\"",
 					"-ObjC",
 					"-framework",
 					"\"AFNetworking\"",
@@ -1321,6 +1509,18 @@
 					"\"InAppSettingsKit\"",
 					"-framework",
 					"\"NSURL_QueryDictionary\"",
+					"-framework",
+					"\"AVFoundation\"",
+					"-framework",
+					"\"AudioToolbox\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreMedia\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"Accelerate\"",
 					"-all_load",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.uqpay.UQPayHostUIDemo;
@@ -1345,15 +1545,17 @@
 					"$(PROJECT_DIR)/UQPayHostUIDemo",
 					"$(PROJECT_DIR)/Pods",
 				);
-				HEADER_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = UQPayHostUIDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				LIBRARY_SEARCH_PATHS = "";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
+					"-l\"c++\"",
 					"-ObjC",
 					"-framework",
 					"\"AFNetworking\"",
@@ -1361,6 +1563,18 @@
 					"\"InAppSettingsKit\"",
 					"-framework",
 					"\"NSURL_QueryDictionary\"",
+					"-framework",
+					"\"AVFoundation\"",
+					"-framework",
+					"\"AudioToolbox\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreMedia\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"Accelerate\"",
 					"-all_load",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.uqpay.UQPayHostUIDemo;
@@ -1382,13 +1596,19 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+				);
 				INFOPLIST_FILE = UQPayHostUI/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.uqpay.UQPayHostUI;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -1411,13 +1631,19 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+				);
 				INFOPLIST_FILE = UQPayHostUI/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.uqpay.UQPayHostUI;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -1441,6 +1667,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = UQPayHostUIKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1471,6 +1698,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = UQPayHostUIKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1484,6 +1712,48 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		ABEFA18B22D8716900768AE1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = NO;
+				DEVELOPMENT_TEAM = A49NAB2WWT;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = UQHostUIResource/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = com.uqpay.UQHostUIResource;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		ABEFA18C22D8716900768AE1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = NO;
+				DEVELOPMENT_TEAM = A49NAB2WWT;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = UQHostUIResource/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = com.uqpay.UQHostUIResource;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = bundle;
 			};
 			name = Release;
 		};
@@ -1522,6 +1792,15 @@
 			buildConfigurations = (
 				ABA91DCA22CF192200CCB034 /* Debug */,
 				ABA91DCB22CF192200CCB034 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ABEFA18D22D8716900768AE1 /* Build configuration list for PBXNativeTarget "UQHostUIResource" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABEFA18B22D8716900768AE1 /* Debug */,
+				ABEFA18C22D8716900768AE1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

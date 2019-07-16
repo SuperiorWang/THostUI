@@ -14,6 +14,7 @@
 #import "../Models/CardModel.h"
 #import "../Models/ResultModel.h"
 #import "../Public/UQHostResult.h"
+#import "../Images/UQImageUtils.h"
 
 #define DURATION_TIME 60
 
@@ -21,6 +22,9 @@
 
 @property (nonatomic, strong) UIScrollView*                    scrollView;
 @property (nonatomic, strong) UIView*                          scrollViewContentWrapper;
+@property (nonatomic, strong) UIButton*                        photoBtn;
+
+
 @property (nonatomic, strong) UQUIKCardNumberFormField*        cardNumberField;
 @property (nonatomic, strong) UQUIKCardholderNameFormField*    cardholderNameField;
 @property (nonatomic, strong) UQUIKExpiryFormField*            expirationDateField;
@@ -34,6 +38,7 @@
 @property (nonatomic, strong) NSArray <UQUIKFormField *>*      formFields;
 @property (nonatomic, strong) UIView*                          smsView;
 @property (nonatomic, strong) UIButton*                        sendSMSBtn;
+
 
 @property (nonatomic, strong) UIStackView *cardNumberErrorView;
 @property (nonatomic, strong) UIStackView *cardNumberHeader;
@@ -49,16 +54,27 @@
 
 @end
 
+@interface CardIOSurrogate : NSObject
++ (NSString*)cardIOLibraryVersion;
++ (id)initWithPaymentDelegate:id;
++ (BOOL)canReadCardWithCamera;
+@property (nonatomic, strong) NSString *cardNumber;
+@property (nonatomic, assign, readwrite) BOOL hideCardIOLogo;
+@property (nonatomic, retain, readwrite) UIColor *navigationBarTintColor;
+@property (nonatomic, assign, readwrite) BOOL collectExpiry;
+@property (nonatomic, assign, readwrite) BOOL collectCVV;
+@end
+
 @implementation UQAddCardViewController
 
 - (void)viewDidLoad{
     [super viewDidLoad];
     [self initUI];
     [self setupForms];
-    [self resetForm];
-    [self showLoadingScreen: YES];
-    [self loadConfiguration];
-    [self updateFormBorders];
+//    [self resetForm];
+//    [self showLoadingScreen: YES];
+//    [self loadConfiguration];
+//    [self updateFormBorders];
 //    [self test];
 }
 
@@ -69,12 +85,8 @@
     
     self.view.backgroundColor = [UQUIKAppearance sharedInstance].formBackgroundColor;
     
-    self.navigationItem.leftBarButtonItem = [[UQUIKBarButtonItem alloc]initWithTitle:UQUIKLocalizedString(CANCEL_ACTION) style:UIBarButtonItemStylePlain target:self action:@selector(cancelTapped)];
-    UQUIKBarButtonItem *addButton = [[UQUIKBarButtonItem alloc]initWithTitle:UQUIKLocalizedString(ADD_CARD_ACTION) style:UIBarButtonItemStylePlain target:self action:@selector(tokenizedCard)];
-    self.title = UQUIKLocalizedString(CARD_DETAILS_LABEL);
-    addButton.bold = YES;
-    self.navigationItem.rightBarButtonItem = addButton;
-    self.navigationItem.rightBarButtonItem.enabled = NO;
+    self.navigationItem.leftBarButtonItem = [[UQUIKBarButtonItem alloc]initWithImage:[UQImageUtils backIcon] style:UIBarButtonItemStylePlain target:self action:@selector(cancelTapped)];
+    self.title = UQUIKLocalizedString(UQ_ADD_BANK_CARD);
     
     self.scrollView = [[UIScrollView alloc]init];
     self.scrollView.translatesAutoresizingMaskIntoConstraints = NO;
@@ -132,73 +144,127 @@
                                              selector:@selector(keyboardWillShow:)
                                                  name:UIKeyboardWillShowNotification
                                                object:nil];
-    
 }
 
-- (void)setupForms {
-    self.nextButton = [[UIButton alloc] init];
-    [self.nextButton setTitle:UQUIKLocalizedString(NEXT_ACTION) forState:UIControlStateNormal];
-    self.nextButton.translatesAutoresizingMaskIntoConstraints = NO;
-    [self.nextButton setTitleColor:self.view.tintColor forState:UIControlStateNormal];
-    
+- (void)setupForms{
     self.cardNumberHeader = [UQDropInUIUtilities newStackView];
     self.cardNumberHeader.layoutMargins = UIEdgeInsetsMake(0, [UQUIKAppearance verticalFormSpace], 0, [UQUIKAppearance verticalFormSpace]);
     self.cardNumberHeader.layoutMarginsRelativeArrangement = true;
     
-    UILabel *cardNumberHeaderLabel = [[UILabel alloc] init];
-    cardNumberHeaderLabel.numberOfLines = 0;
-    cardNumberHeaderLabel.textAlignment = NSTextAlignmentCenter;
-    cardNumberHeaderLabel.text = UQUIKLocalizedString(ENTER_CARD_DETAILS_HELP_LABEL);
-    [UQUIKAppearance styleLargeLabelSecondary:cardNumberHeaderLabel];
-    [self.cardNumberHeader addArrangedSubview:cardNumberHeaderLabel];
-    [UQDropInUIUtilities addSpacerToStackView:self.cardNumberHeader beforeView:cardNumberHeaderLabel size: [UQUIKAppearance verticalFormSpace]];
+    [self.cardNumberHeader addArrangedSubview:self.photoBtn];
+    [UQDropInUIUtilities addSpacerToStackView:self.cardNumberHeader beforeView:self.photoBtn size:[UQUIKAppearance verticalFormSpace]];
     [self.stackView addArrangedSubview:self.cardNumberHeader];
     
-    [self.smsView addSubview:self.sendSMSBtn];
-    [self.smsView addSubview:self.postalCodeField];
-    
-    NSDictionary *viewBindings = @{ @"smsView":self.smsView,
-                                    @"postalCodeField":self.postalCodeField,
-                                    @"sendSMSBtn":self.sendSMSBtn,
-                                    };
-    NSArray *conH = [NSLayoutConstraint constraintsWithVisualFormat:@"H:|-[postalCodeField]-[sendSMSBtn(100)]-|"
-                                                            options:0
-                                                            metrics:[UQUIKAppearance metrics]
-                                                              views:viewBindings];
-    [self.smsView addConstraints:conH];
-    
-    [self.smsView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[postalCodeField]|"
-                                                                 options:0
-                                                                 metrics:[UQUIKAppearance metrics]
-                                                                   views:viewBindings]];
-    
-    [self.smsView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[sendSMSBtn]|"
-                                                                 options:0
-                                                                 metrics:[UQUIKAppearance metrics]                                                                     views:viewBindings]];
-    
-    self.formFields = @[self.cardNumberField,self.cardholderNameField, self.expirationDateField, self.securityCodeField, self.mobilePhoneField,self.smsView];
-    
-    for (NSInteger i = 0; i< self.formFields.count; i++) {
-        UQUIKFormField *formField = self.formFields[i];
-        [self.stackView addArrangedSubview:formField];
-        
-        NSLayoutConstraint* heightConstraint = [formField.heightAnchor constraintEqualToConstant:[UQUIKAppearance formCellHeight]];
-        heightConstraint.priority = UILayoutPriorityDefaultHigh;
-        heightConstraint.active = YES;
-        [formField updateConstraints];
-    }
-    [self.postalCodeField updateConstraints];
-    
-    self.cardNumberField.formLabel.text = @"";
+    [self.stackView addArrangedSubview:self.cardNumberField];
+    NSLayoutConstraint *heightConstraint = [self.cardNumberField.heightAnchor constraintEqualToConstant:[UQUIKAppearance formCellHeight]];
+    heightConstraint.priority = UILayoutPriorityDefaultHigh;
+    heightConstraint.active = true;
     [self.cardNumberField updateConstraints];
     
-    [UQDropInUIUtilities addSpacerToStackView:self.stackView beforeView:self.cardNumberField size: [UQUIKAppearance verticalFormSpace]];
-    [UQDropInUIUtilities addSpacerToStackView:self.stackView beforeView:self.cardholderNameField size: [UQUIKAppearance verticalFormSpace]];
-    [UQDropInUIUtilities addSpacerToStackView:self.stackView beforeView:self.expirationDateField size: [UQUIKAppearance verticalFormSpace]];
-    
-    self.collapsed = YES;
-
+    [UQDropInUIUtilities addSpacerToStackView:self.stackView beforeView:self.cardNumberField size:[UQUIKAppearance verticalFormSpace]];
 }
+
+- (BOOL)isCardIOAvailable {
+    Class kCardIOView = NSClassFromString(@"CardIOPaymentViewController");
+    Class kCardIOUtilities = NSClassFromString(@"CardIOUtilities");
+    if (kCardIOView != nil && kCardIOView != nil
+        && [kCardIOUtilities respondsToSelector:@selector(cardIOLibraryVersion)]
+        && [kCardIOUtilities respondsToSelector:@selector(canReadCardWithCamera)]) {
+        NSString *cardIOVersion = [kCardIOUtilities cardIOLibraryVersion];
+        NSString *majorVersion = [cardIOVersion length] >= 2 ? [cardIOVersion substringToIndex:2] : @"";
+        // Require 5.x.x strictly
+        return [majorVersion isEqualToString:@"5."] && [kCardIOUtilities canReadCardWithCamera];
+    }
+    return NO;
+}
+
+- (void)presentCardIO {
+    Class kCardIOPaymentViewController = NSClassFromString(@"CardIOPaymentViewController");
+    id scanViewController = [[kCardIOPaymentViewController alloc] initWithPaymentDelegate:self];
+    [scanViewController setNavigationBarTintColor:[[UINavigationBar appearance] barTintColor]];
+    [scanViewController setHideCardIOLogo:YES];
+    [scanViewController setCollectCVV:NO];
+    [scanViewController setCollectExpiry:NO];
+    [self presentViewController:scanViewController animated:YES completion:nil];
+}
+
+- (void)userDidCancelPaymentViewController:(UIViewController *)scanViewController {
+    [scanViewController dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (void)userDidProvideCreditCardInfo:(id)info inPaymentViewController:(UIViewController *)scanViewController {
+    NSString *cardNumber = [info cardNumber];
+    [scanViewController dismissViewControllerAnimated:YES completion:^{
+        [self.cardNumberField setNumber:cardNumber];
+        [self.cardNumberField textFieldDidEndEditing:self.cardNumberField.textField];
+        [self validateButtonPressed:self.cardNumberField];
+    }];
+}
+
+//- (void)setupForms {
+//    self.nextButton = [[UIButton alloc] init];
+//    [self.nextButton setTitle:UQUIKLocalizedString(NEXT_ACTION) forState:UIControlStateNormal];
+//    self.nextButton.translatesAutoresizingMaskIntoConstraints = NO;
+//    [self.nextButton setTitleColor:self.view.tintColor forState:UIControlStateNormal];
+//
+//    self.cardNumberHeader = [UQDropInUIUtilities newStackView];
+//    self.cardNumberHeader.layoutMargins = UIEdgeInsetsMake(0, [UQUIKAppearance verticalFormSpace], 0, [UQUIKAppearance verticalFormSpace]);
+//    self.cardNumberHeader.layoutMarginsRelativeArrangement = true;
+//
+//    UILabel *cardNumberHeaderLabel = [[UILabel alloc] init];
+//    cardNumberHeaderLabel.numberOfLines = 0;
+//    cardNumberHeaderLabel.textAlignment = NSTextAlignmentCenter;
+//    cardNumberHeaderLabel.text = UQUIKLocalizedString(ENTER_CARD_DETAILS_HELP_LABEL);
+//    [UQUIKAppearance styleLargeLabelSecondary:cardNumberHeaderLabel];
+//    [self.cardNumberHeader addArrangedSubview:cardNumberHeaderLabel];
+//    [UQDropInUIUtilities addSpacerToStackView:self.cardNumberHeader beforeView:cardNumberHeaderLabel size: [UQUIKAppearance verticalFormSpace]];
+//    [self.stackView addArrangedSubview:self.cardNumberHeader];
+//
+//    [self.smsView addSubview:self.sendSMSBtn];
+//    [self.smsView addSubview:self.postalCodeField];
+//
+//    NSDictionary *viewBindings = @{ @"smsView":self.smsView,
+//                                    @"postalCodeField":self.postalCodeField,
+//                                    @"sendSMSBtn":self.sendSMSBtn,
+//                                    };
+//    NSArray *conH = [NSLayoutConstraint constraintsWithVisualFormat:@"H:|-[postalCodeField]-[sendSMSBtn(100)]-|"
+//                                                            options:0
+//                                                            metrics:[UQUIKAppearance metrics]
+//                                                              views:viewBindings];
+//    [self.smsView addConstraints:conH];
+//
+//    [self.smsView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[postalCodeField]|"
+//                                                                 options:0
+//                                                                 metrics:[UQUIKAppearance metrics]
+//                                                                   views:viewBindings]];
+//
+//    [self.smsView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[sendSMSBtn]|"
+//                                                                 options:0
+//                                                                 metrics:[UQUIKAppearance metrics]                                                                     views:viewBindings]];
+//
+//    self.formFields = @[self.cardNumberField,self.cardholderNameField, self.expirationDateField, self.securityCodeField, self.mobilePhoneField,self.smsView];
+//
+//    for (NSInteger i = 0; i< self.formFields.count; i++) {
+//        UQUIKFormField *formField = self.formFields[i];
+//        [self.stackView addArrangedSubview:formField];
+//
+//        NSLayoutConstraint* heightConstraint = [formField.heightAnchor constraintEqualToConstant:[UQUIKAppearance formCellHeight]];
+//        heightConstraint.priority = UILayoutPriorityDefaultHigh;
+//        heightConstraint.active = YES;
+//        [formField updateConstraints];
+//    }
+//    [self.postalCodeField updateConstraints];
+//
+//    self.cardNumberField.formLabel.text = @"";
+//    [self.cardNumberField updateConstraints];
+//
+//    [UQDropInUIUtilities addSpacerToStackView:self.stackView beforeView:self.cardNumberField size: [UQUIKAppearance verticalFormSpace]];
+//    [UQDropInUIUtilities addSpacerToStackView:self.stackView beforeView:self.cardholderNameField size: [UQUIKAppearance verticalFormSpace]];
+//    [UQDropInUIUtilities addSpacerToStackView:self.stackView beforeView:self.expirationDateField size: [UQUIKAppearance verticalFormSpace]];
+//
+//    self.collapsed = YES;
+//
+//}
 
 - (void)updateUI {
 }
@@ -345,7 +411,16 @@
     return _sendSMSBtn;
 }
 
-
+- (UIButton *)photoBtn {
+    if (_photoBtn == nil) {
+        _photoBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+        _photoBtn.backgroundColor = [UIColor clearColor];
+        [_photoBtn setImage:[UQImageUtils photoIcon] forState:UIControlStateNormal];
+        _photoBtn.translatesAutoresizingMaskIntoConstraints = NO;
+        [_photoBtn addTarget:self action:@selector(presentCardIO) forControlEvents:UIControlEventTouchUpInside];
+    }
+    return _photoBtn;
+}
 
 - (UIStackView *)newStackView {
     UIStackView *stackView = [[UIStackView alloc]init];

@@ -1,8 +1,10 @@
 FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/AFNetworking" "${PODS_CONFIGURATION_BUILD_DIR}/InAppSettingsKit" "${PODS_CONFIGURATION_BUILD_DIR}/JSONModel" "${PODS_CONFIGURATION_BUILD_DIR}/NSURL+QueryDictionary" "${PODS_CONFIGURATION_BUILD_DIR}/WHToast"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/CardIO"
 LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
-OTHER_CFLAGS = $(inherited) -iquote "${PODS_CONFIGURATION_BUILD_DIR}/AFNetworking/AFNetworking.framework/Headers" -iquote "${PODS_CONFIGURATION_BUILD_DIR}/InAppSettingsKit/InAppSettingsKit.framework/Headers" -iquote "${PODS_CONFIGURATION_BUILD_DIR}/JSONModel/JSONModel.framework/Headers" -iquote "${PODS_CONFIGURATION_BUILD_DIR}/NSURL+QueryDictionary/NSURL_QueryDictionary.framework/Headers" -iquote "${PODS_CONFIGURATION_BUILD_DIR}/WHToast/WHToast.framework/Headers"
-OTHER_LDFLAGS = $(inherited) -framework "AFNetworking" -framework "InAppSettingsKit" -framework "JSONModel" -framework "NSURL_QueryDictionary" -framework "WHToast"
+LIBRARY_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/CardIO/CardIO"
+OTHER_CFLAGS = $(inherited) -iquote "${PODS_CONFIGURATION_BUILD_DIR}/AFNetworking/AFNetworking.framework/Headers" -iquote "${PODS_CONFIGURATION_BUILD_DIR}/InAppSettingsKit/InAppSettingsKit.framework/Headers" -iquote "${PODS_CONFIGURATION_BUILD_DIR}/JSONModel/JSONModel.framework/Headers" -iquote "${PODS_CONFIGURATION_BUILD_DIR}/NSURL+QueryDictionary/NSURL_QueryDictionary.framework/Headers" -iquote "${PODS_CONFIGURATION_BUILD_DIR}/WHToast/WHToast.framework/Headers" -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/CardIO"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"CardIO" -l"c++" -l"opencv_core" -l"opencv_imgproc" -framework "AFNetworking" -framework "AVFoundation" -framework "Accelerate" -framework "AudioToolbox" -framework "CoreMedia" -framework "CoreVideo" -framework "InAppSettingsKit" -framework "JSONModel" -framework "MobileCoreServices" -framework "NSURL_QueryDictionary" -framework "OpenGLES" -framework "QuartzCore" -framework "Security" -framework "UIKit" -framework "WHToast"
 PODS_BUILD_DIR = ${BUILD_DIR}
 PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
 PODS_PODFILE_DIR_PATH = ${SRCROOT}/.

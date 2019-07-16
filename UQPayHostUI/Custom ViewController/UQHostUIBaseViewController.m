@@ -46,6 +46,8 @@
     
     self.titleView = [UQUIKAppearance styledNavigationTitleLabel];
     self.titleView.text = self.title;
+    self.titleView.font = [UIFont systemFontOfSize:17];
+    self.titleView.textColor = [UQUIKAppearance sharedInstance].cardTitleColor;
     self.navigationItem.titleView = self.titleView;
 }
 

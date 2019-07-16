@@ -91,13 +91,17 @@
 + (NSString *)BRANDING_APPLE_PAY;
 + (NSString *)USE_DIFFERENT_PHONE_NUMBER_ACTION;
 + (NSString *)CARD_NOT_ACCEPTED_ERROR_LABEL;
-+ (NSString *)ADD_OR_SELECT_CARD;
++ (NSString *)SELECT_BANK_CARD;
 + (NSString *)UQ_CARD_LIST;
 + (NSString *)UQ_ADD_CARD;
 + (NSString *)UQ_SEND_CODE;
 + (NSString *)UQ_WARNING;
 + (NSString *)UQ_DELETE_CARD;
 + (NSString *)UQ_SELECT_CARD;
++ (NSString *)UQ_NO_CARD;
++ (NSString *)UQ_MORE;
++ (NSString *)UQ_ADD_BANK_CARD;
++ (NSString *)UQ_UNBIND_CARD_MESSAGE;
 
 #pragma mark Development Strings (usually not localized)
 

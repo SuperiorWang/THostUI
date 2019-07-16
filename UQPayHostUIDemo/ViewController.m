@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import <UQPayHostUI/UQPayHostUI.h>
+#import "WHToast.h"
 
 @interface ViewController ()<UQHostUIViewControllerDelegate>
 
@@ -20,7 +21,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    self.textField.text = @"b119e08119b54a69a99b1683df6d383c";
+    [UQHttpClient getToken:^(NSDictionary * _Nonnull dict, BOOL isSuccess) {
+        if (isSuccess) {
+            NSString* token = [dict objectForKey:@"data"];
+            self.textField.text = token;
+        }
+    } fail:^(NSError * _Nonnull error) {
+        
+    }];
 }
 
 - (IBAction)openUI:(id)sender {
@@ -36,6 +44,10 @@
     NSLog(@"uuid = %@",model.uuid);
     NSLog(@"ussuer = %@", model.issuer);
     [self.viewController dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (void)UQHostError:(NSError *)error {
+     [WHToast showMessage:[error localizedDescription] originY:([UIScreen mainScreen].bounds.size.height - 100) duration:2 finishHandler:nil];
 }
 
 @end

@@ -45,6 +45,8 @@
 @property (nonatomic, strong) UIColor *lineColor;
 /// Error foreground color
 @property (nonatomic, strong) UIColor *errorForegroundColor;
+
+@property (nonatomic, strong) UIColor *cardTitleColor;
 /// Blur style
 @property (nonatomic) UIBlurEffectStyle blurStyle;
 /// Activity indicator style
@@ -55,6 +57,11 @@
 @property (nonatomic) UIKeyboardType postalCodeFormFieldKeyboardType;
 /// The highlighted version of the `tintColor`
 @property (nonatomic, readonly, getter = highlightedTintColor) UIColor *highlightedTintColor;
+/// Default Theme Color
+@property (nonatomic) UIColor *defaultColor;
+@property (nonatomic) UIColor *detailTitleColor;
+@property (nonatomic) UIColor *defaultTableSepColor;
+@property (nonatomic) UIColor *navigationBarBackItemColor;
 
 /// Sets the color (primary or secondary) and font with family and size (large or small)
 /// These properties are on the [BTUIKAppearance sharedInstance]

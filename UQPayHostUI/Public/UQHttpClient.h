@@ -38,6 +38,8 @@ typedef void (^FailureBlock)(NSError * error);
 
 - (void)addCard:(AddCardModel*)model success:(SuccessBlock)success fail:(FailureBlock)fail;
 
++ (void)getToken:(SuccessBlock)success fail:(FailureBlock)fail;
+
 
 @end
 
