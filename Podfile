@@ -17,7 +17,7 @@ end
 target 'UQPayHostUIDemo' do
 
   project 'UQPayHostUIDemo'
-#  commpod
+  commpod
   pod 'NSURL+QueryDictionary', '~> 1.0'
   pod 'InAppSettingsKit'
 
