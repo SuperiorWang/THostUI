@@ -8,8 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		1226914F15763338BBDBB0F7 /* Pods_UQPayHostUIDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44F38E402B516815601AF192 /* Pods_UQPayHostUIDemo.framework */; };
+		5B1DAACEB694C12BF31E2B84 /* Pods_UQPayHostUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABB224B722DEB2E8006FD44A /* Pods_UQPayHostUIKit.framework */; };
 		7A4F34CDED184067077B0246 /* Pods_UQPayHostUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E44CCDE44A3D0A96364916C9 /* Pods_UQPayHostUIKit.framework */; };
 		8DBE7DD7D073A26F8362CF44 /* Pods_UQPayHostUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABB224A422DDD84A006FD44A /* Pods_UQPayHostUIKit.framework */; };
+		AB9641E722DF0023005C5924 /* UQPayHostUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABA91DC022CF192200CCB034 /* UQPayHostUIKit.framework */; };
 		ABA91C1A22CDF46400CCB034 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ABA91C1922CDF46400CCB034 /* AppDelegate.m */; };
 		ABA91C1D22CDF46400CCB034 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABA91C1C22CDF46400CCB034 /* ViewController.m */; };
 		ABA91C2022CDF46400CCB034 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABA91C1E22CDF46400CCB034 /* Main.storyboard */; };
@@ -149,7 +151,6 @@
 		ABA9204422CF432E00CCB034 /* UQAddCardViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = ABA9204222CF432E00CCB034 /* UQAddCardViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		ABA9204522CF432E00CCB034 /* UQAddCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABA9204322CF432E00CCB034 /* UQAddCardViewController.m */; };
 		ABB224AF22DDDD09006FD44A /* UQUIKPaymentOptionType.h in Headers */ = {isa = PBXBuildFile; fileRef = ABB224AE22DDDD09006FD44A /* UQUIKPaymentOptionType.h */; };
-		ABB224BA22DEB355006FD44A /* UQPayHostUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABA91DC022CF192200CCB034 /* UQPayHostUIKit.framework */; };
 		ABEFA15822D2EC2E00768AE1 /* UQDropInUIUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = ABEFA15622D2EC2E00768AE1 /* UQDropInUIUtilities.h */; };
 		ABEFA15922D2EC2E00768AE1 /* UQDropInUIUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = ABEFA15722D2EC2E00768AE1 /* UQDropInUIUtilities.m */; };
 		ABEFA15C22D3493400768AE1 /* UQCardItemCell.h in Headers */ = {isa = PBXBuildFile; fileRef = ABEFA15A22D3493400768AE1 /* UQCardItemCell.h */; };
@@ -168,18 +169,7 @@
 		ABEFA17F22D5784600768AE1 /* CardListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = ABEFA17D22D5784600768AE1 /* CardListModel.m */; };
 		ABEFA18222D58C2800768AE1 /* UQHostResult.h in Headers */ = {isa = PBXBuildFile; fileRef = ABEFA18022D58C2800768AE1 /* UQHostResult.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		ABEFA18322D58C2800768AE1 /* UQHostResult.m in Sources */ = {isa = PBXBuildFile; fileRef = ABEFA18122D58C2800768AE1 /* UQHostResult.m */; };
-		D0231EAF5EDB8FE5DD8DE42C /* (null) in Frameworks */ = {isa = PBXBuildFile; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		ABB2249022DDC5E6006FD44A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = ABA91C0D22CDF46400CCB034 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = ABA91DBF22CF192200CCB034;
-			remoteInfo = UQPayHostUIKit;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		ABA91DBA22CF190C00CCB034 /* Embed Frameworks */ = {
@@ -208,6 +198,7 @@
 		44F38E402B516815601AF192 /* Pods_UQPayHostUIDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UQPayHostUIDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F9166B12E73F15A224B796B /* Pods-UQPayHostUIDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UQPayHostUIDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-UQPayHostUIDemo/Pods-UQPayHostUIDemo.release.xcconfig"; sourceTree = "<group>"; };
 		7C1EB8537BD6409838B3F82D /* Pods-UQPayHostUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UQPayHostUI.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UQPayHostUI/Pods-UQPayHostUI.debug.xcconfig"; sourceTree = "<group>"; };
+		AB9641E322DEFFEE005C5924 /* Pods_UQPayHostUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_UQPayHostUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABA91C1522CDF46400CCB034 /* UQPayHostUIDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UQPayHostUIDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABA91C1822CDF46400CCB034 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		ABA91C1922CDF46400CCB034 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -398,8 +389,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ABB224BA22DEB355006FD44A /* UQPayHostUIKit.framework in Frameworks */,
-				D0231EAF5EDB8FE5DD8DE42C /* (null) in Frameworks */,
+				AB9641E722DF0023005C5924 /* UQPayHostUIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,6 +399,7 @@
 			files = (
 				8DBE7DD7D073A26F8362CF44 /* Pods_UQPayHostUIKit.framework in Frameworks */,
 				7A4F34CDED184067077B0246 /* Pods_UQPayHostUIKit.framework in Frameworks */,
+				5B1DAACEB694C12BF31E2B84 /* Pods_UQPayHostUIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,6 +409,7 @@
 		015EB3F703DBA37842620F4C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AB9641E322DEFFEE005C5924 /* Pods_UQPayHostUIKit.framework */,
 				ABB224B722DEB2E8006FD44A /* Pods_UQPayHostUIKit.framework */,
 				ABEFA16A22D4394200768AE1 /* AFNetworking.framework */,
 				ABEFA16822D4384E00768AE1 /* AFNetworking.framework */,
@@ -890,7 +882,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				ABB2249122DDC5E6006FD44A /* PBXTargetDependency */,
 			);
 			name = UQPayHostUI;
 			productName = UQPayHostUI;
@@ -1159,14 +1150,6 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		ABB2249122DDC5E6006FD44A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = ABA91DBF22CF192200CCB034 /* UQPayHostUIKit */;
-			targetProxy = ABB2249022DDC5E6006FD44A /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin PBXVariantGroup section */
 		ABA91C1E22CDF46400CCB034 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -1404,7 +1387,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7C1EB8537BD6409838B3F82D /* Pods-UQPayHostUI.debug.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					armv7s,
+				);
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -1462,7 +1448,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 21D3E5D423E2817D63FB04F3 /* Pods-UQPayHostUI.release.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					armv7s,
+				);
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -1520,7 +1509,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F7F7AEC5355B40E367A32A04 /* Pods-UQPayHostUIKit.debug.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					armv7s,
+				);
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -1558,7 +1550,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F8EF8A40046E2EDB332F4B1C /* Pods-UQPayHostUIKit.release.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					armv7s,
+				);
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
