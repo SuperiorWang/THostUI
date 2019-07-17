@@ -1,4 +1,7 @@
 /// Credit card types
+#ifndef SOMETHING_H
+#define SOMETHING_H
+
 typedef NS_ENUM(NSInteger, UQUIKPaymentOptionType) {
     UQUIKPaymentOptionTypeUnknown = 0,
     UQUIKPaymentOptionTypeAMEX,
@@ -18,3 +21,5 @@ typedef NS_ENUM(NSInteger, UQUIKPaymentOptionType) {
     UQUIKPaymentOptionTypeVenmo,
     UQUIKPaymentOptionTypeApplePay,
 };
+
+#endif

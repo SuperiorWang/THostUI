@@ -41,4 +41,4 @@ FOUNDATION_EXPORT const unsigned char UQPayHostUIKitVersionString[];
 #import "UQUIKVectorArtView.h"
 #import "UQUIKSelectCardView.h"
 #import "UQUIKBarButtonItem.h"
-#import "UQUIKPaymentOptionType.h"
+
