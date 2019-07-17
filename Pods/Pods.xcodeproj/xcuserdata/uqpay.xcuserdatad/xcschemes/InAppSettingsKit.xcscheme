@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0930"
+   LastUpgradeVersion = "1100"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "8CB67190F0A60F7A033A3E515965C86F"
+               BlueprintIdentifier = "5B4848122435F4C22D574A5DA6D2EFB3"
+               BuildableName = "InAppSettingsKit.framework"
                BlueprintName = "InAppSettingsKit"
-               ReferencedContainer = "container:Pods.xcodeproj"
-               BuildableName = "InAppSettingsKit.framework">
+               ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

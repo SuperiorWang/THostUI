@@ -6,7 +6,6 @@
 //  Copyright © 2019 优钱付. All rights reserved.
 //
 
-#import <UQPayHostUI/UQPayHostUI.h>
 #import "UQHostUIBaseViewController.h"
 #import "UQAddCardViewController.h"
 

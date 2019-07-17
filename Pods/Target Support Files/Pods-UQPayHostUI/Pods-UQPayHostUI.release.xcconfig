@@ -1,8 +1,9 @@
 FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/AFNetworking" "${PODS_CONFIGURATION_BUILD_DIR}/JSONModel" "${PODS_CONFIGURATION_BUILD_DIR}/WHToast"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/AFNetworking/AFNetworking.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/JSONModel/JSONModel.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/WHToast/WHToast.framework/Headers"
 LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks' '@executable_path/../../Frameworks'
-OTHER_CFLAGS = $(inherited) -iquote "${PODS_CONFIGURATION_BUILD_DIR}/AFNetworking/AFNetworking.framework/Headers" -iquote "${PODS_CONFIGURATION_BUILD_DIR}/JSONModel/JSONModel.framework/Headers" -iquote "${PODS_CONFIGURATION_BUILD_DIR}/WHToast/WHToast.framework/Headers"
-OTHER_LDFLAGS = $(inherited) -framework "AFNetworking" -framework "JSONModel" -framework "WHToast"
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_CONFIGURATION_BUILD_DIR}/AFNetworking/AFNetworking.framework/Headers" -isystem "${PODS_CONFIGURATION_BUILD_DIR}/JSONModel/JSONModel.framework/Headers" -isystem "${PODS_CONFIGURATION_BUILD_DIR}/WHToast/WHToast.framework/Headers" -iframework "${PODS_CONFIGURATION_BUILD_DIR}/AFNetworking" -iframework "${PODS_CONFIGURATION_BUILD_DIR}/JSONModel" -iframework "${PODS_CONFIGURATION_BUILD_DIR}/WHToast"
+OTHER_LDFLAGS = $(inherited) -framework "AFNetworking" -framework "CoreGraphics" -framework "JSONModel" -framework "MobileCoreServices" -framework "Security" -framework "SystemConfiguration" -framework "UIKit" -framework "WHToast"
 PODS_BUILD_DIR = ${BUILD_DIR}
 PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
 PODS_PODFILE_DIR_PATH = ${SRCROOT}/.

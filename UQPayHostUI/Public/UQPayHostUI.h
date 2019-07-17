@@ -16,8 +16,8 @@ FOUNDATION_EXPORT const unsigned char UQPayHostUIVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <UQPayHostUI/PublicHeader.h>
 
-#import <UQPayHostUI/UQHostUIViewController.h>
-#import <UQPayHostUI/UQCardListViewController.h>
-#import <UQPayHostUI/UQAddCardViewController.h>
-#import <UQPayHostUI/UQHostResult.h>
+#import "UQHostUIViewController.h"
+#import "UQCardListViewController.h"
+#import "UQAddCardViewController.h"
+#import "UQHostResult.h"
 

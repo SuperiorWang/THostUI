@@ -13,7 +13,7 @@
 static NSArray *customTranslations;
 
 + (NSBundle *)localizationBundle {
-    static NSString * bundleName = @"UQPayTree-UIKit-Localization";
+    static NSString * bundleName = @"ThostUI-UIKit";
     if ([[NSLocale preferredLanguages] count] > 0) {
         NSString *language = [[NSLocale preferredLanguages] firstObject];
         // Ignore region portion of local ID

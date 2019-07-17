@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0930"
+   LastUpgradeVersion = "1100"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "75AD9FFF16234368770FE87E34DA9B2A"
+               BlueprintIdentifier = "DCD0DEEDE9CB35945D67203F112697C6"
+               BuildableName = "WHToast.framework"
                BlueprintName = "WHToast"
-               ReferencedContainer = "container:Pods.xcodeproj"
-               BuildableName = "WHToast.framework">
+               ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

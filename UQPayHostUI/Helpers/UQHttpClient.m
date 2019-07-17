@@ -98,9 +98,9 @@ static UQHttpClient *httpClient;
     NSString *URLString = [NSString  stringWithFormat:@"%@", self.cardListUri];
     NSDictionary *parameters=@{@"token":self.token};
     [[UQHttpClient manager]GET:URLString parameters:parameters progress:^(NSProgress * _Nonnull downloadProgress) {
-        NSLog(@"请求返回的进度");
+        NSLog(@"请求返回的进度%@",downloadProgress.estimatedTimeRemaining);
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        NSLog(@"responseObject-->%@",responseObject);
+        NSLog(@"responseObject-->%@ %@",responseObject, task);
         if (responseObject) {
             NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:responseObject
                                                                  options:NSJSONReadingMutableContainers
@@ -108,7 +108,7 @@ static UQHttpClient *httpClient;
             success(dict, YES);
         }
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        NSLog(@"error-->%@",error);
+        NSLog(@"error-->%@ %@",task, error);
         fail(error);
     }];
 }
@@ -141,13 +141,13 @@ static UQHttpClient *httpClient;
 - (void)postWithURL:(NSString*)url parameters:(NSDictionary*)parameters Success:(SuccessBlock)success fail:(FailureBlock)fail {
     [[UQHttpClient manager]POST:url parameters:parameters progress:^(NSProgress * _Nonnull uploadProgress) {
         
-    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+    } success:^(NSURLSessionDataTask * _Nonnull _, id  _Nullable responseObject) {
         NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:responseObject
                                                              options:NSJSONReadingMutableContainers
                                                                error:nil];
         success(dict, YES);
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        NSLog(@"error-->%@",[error domain]);
+        NSLog(@"error-->%@ %@",task, [error domain]);
         [WHToast showMessage:[error localizedDescription] originY:([UIScreen mainScreen].bounds.size.height - 100) duration:2 finishHandler:nil];
         fail(error);
     }];

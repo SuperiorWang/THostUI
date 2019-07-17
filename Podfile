@@ -21,7 +21,7 @@ target 'UQPayHostUIDemo' do
   pod 'NSURL+QueryDictionary', '~> 1.0'
   pod 'InAppSettingsKit'
 
-#  pod "UQPayDropIn", :path => "./"
+#  pod "UQPayHostUI", :path => "./UQPayHostUI"
 end
 
 target 'UQPayHostUI' do
@@ -29,6 +29,6 @@ target 'UQPayHostUI' do
  commpod
 end
 
-#target 'UQPayHostUIKit' do
-#  project 'UQPayHostUIKit/UQPayHostUIKit' 
-#end
+target 'UQPayHostUIKit' do
+#  project 'UQPayHostUIKit/UQPayHostUIKit'
+end
