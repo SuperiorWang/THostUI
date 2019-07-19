@@ -47,7 +47,7 @@
         NSMutableArray *layoutConstraints = [NSMutableArray array];
         [layoutConstraints addObjectsFromArray:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[SepLine]|" options:0 metrics:metrics views:dic]];
         [layoutConstraints addObjectsFromArray:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[SendSMSBtn]|" options:0 metrics:metrics views:dic]];
-        [layoutConstraints addObjectsFromArray:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[SepLine(1)]-(PADDING)-[SendSMSBtn(100)]|" options:0 metrics:metrics views:dic]];
+        [layoutConstraints addObjectsFromArray:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[SepLine(1)]-[SendSMSBtn(120)]|" options:0 metrics:metrics views:dic]];
         
         [self.sendView addConstraints:[layoutConstraints copy]];
         self.accessoryView = self.sendView;

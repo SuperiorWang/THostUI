@@ -12,9 +12,9 @@
 		AB96EC9722E06490009395AF /* BTUI.strings in Resources */ = {isa = PBXBuildFile; fileRef = AB96EC9922E06490009395AF /* BTUI.strings */; };
 		AB96EC9E22E064E4009395AF /* UQUIKLocalizedString.m in Sources */ = {isa = PBXBuildFile; fileRef = AB96EC9D22E064E4009395AF /* UQUIKLocalizedString.m */; };
 		AB96ECB222E066A7009395AF /* BTUI.strings in Resources */ = {isa = PBXBuildFile; fileRef = AB96EC9922E06490009395AF /* BTUI.strings */; };
-		AB96ECB422E066C5009395AF /* UQHostUIResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = AB96ECB322E066C5009395AF /* UQHostUIResource.bundle */; };
 		AB96ECB722E16044009395AF /* UQUIKSMSFormField.h in Headers */ = {isa = PBXBuildFile; fileRef = AB96ECB522E16044009395AF /* UQUIKSMSFormField.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AB96ECB822E16044009395AF /* UQUIKSMSFormField.m in Sources */ = {isa = PBXBuildFile; fileRef = AB96ECB622E16044009395AF /* UQUIKSMSFormField.m */; };
+		AB96ECBA22E1AD51009395AF /* UQHostUIResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = AB96ECB922E1AD50009395AF /* UQHostUIResource.bundle */; };
 		ABA91C1A22CDF46400CCB034 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ABA91C1922CDF46400CCB034 /* AppDelegate.m */; };
 		ABA91C1D22CDF46400CCB034 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABA91C1C22CDF46400CCB034 /* ViewController.m */; };
 		ABA91C2022CDF46400CCB034 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABA91C1E22CDF46400CCB034 /* Main.storyboard */; };
@@ -259,9 +259,9 @@
 		AB96EC9B22E064AC009395AF /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		AB96EC9C22E064AC009395AF /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/BTUI.strings"; sourceTree = "<group>"; };
 		AB96EC9D22E064E4009395AF /* UQUIKLocalizedString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UQUIKLocalizedString.m; sourceTree = "<group>"; };
-		AB96ECB322E066C5009395AF /* UQHostUIResource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = UQHostUIResource.bundle; sourceTree = "<group>"; };
 		AB96ECB522E16044009395AF /* UQUIKSMSFormField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UQUIKSMSFormField.h; sourceTree = "<group>"; };
 		AB96ECB622E16044009395AF /* UQUIKSMSFormField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = UQUIKSMSFormField.m; path = ../Public/UQUIKSMSFormField.m; sourceTree = "<group>"; };
+		AB96ECB922E1AD50009395AF /* UQHostUIResource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = UQHostUIResource.bundle; sourceTree = "<group>"; };
 		ABA91C1522CDF46400CCB034 /* UQPayHostUIDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UQPayHostUIDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABA91C1822CDF46400CCB034 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		ABA91C1922CDF46400CCB034 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -676,7 +676,7 @@
 		ABA91C1722CDF46400CCB034 /* UQPayHostUIDemo */ = {
 			isa = PBXGroup;
 			children = (
-				AB96ECB322E066C5009395AF /* UQHostUIResource.bundle */,
+				AB96ECB922E1AD50009395AF /* UQHostUIResource.bundle */,
 				ABA91C1822CDF46400CCB034 /* AppDelegate.h */,
 				ABA91C1922CDF46400CCB034 /* AppDelegate.m */,
 				ABA91C1B22CDF46400CCB034 /* ViewController.h */,
@@ -1243,7 +1243,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ABA91C2522CDF46500CCB034 /* LaunchScreen.storyboard in Resources */,
-				AB96ECB422E066C5009395AF /* UQHostUIResource.bundle in Resources */,
+				AB96ECBA22E1AD51009395AF /* UQHostUIResource.bundle in Resources */,
 				ABA91C2222CDF46500CCB034 /* Assets.xcassets in Resources */,
 				ABA91C2022CDF46400CCB034 /* Main.storyboard in Resources */,
 			);
