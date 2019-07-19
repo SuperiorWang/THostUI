@@ -17,7 +17,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface UQAddCardViewController : UQHostUIBaseViewController<UITextFieldDelegate, UQUIKFormFieldDelegate, UQUIKCardNumberFormFieldDelegate>
+@interface UQAddCardViewController : UQHostUIBaseViewController<UITextFieldDelegate, UQUIKFormFieldDelegate, UQUIKCardNumberFormFieldDelegate, UQUIKSMSFormFieldDelegate>
 
 
 @end

@@ -9,7 +9,7 @@
     self = [super initWithFrame:frame];
     if (self) {
         self.textField.accessibilityLabel = UQUIKLocalizedString(MOBILE_COUNTRY_CODE_LABEL);
-        self.formLabel.text = UQUIKLocalizedString(MOBILE_COUNTRY_CODE_LABEL);
+        self.formLabel.text = [NSString stringWithFormat:@"%@:",UQUIKLocalizedString(MOBILE_COUNTRY_CODE_LABEL) ];
         self.textField.placeholder = @"+65";
         self.textField.keyboardType = UIKeyboardTypeNumberPad;
     }

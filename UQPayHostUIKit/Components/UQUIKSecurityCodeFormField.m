@@ -12,9 +12,8 @@
 - (instancetype)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     if (self) {
-        self.textField.accessibilityLabel = UQUIKLocalizedString(SECURITY_CODE_LABEL);
-        self.formLabel.text = UQUIKLocalizedString(SECURITY_CODE_LABEL);
-        self.textField.placeholder = UQUIKLocalizedString(CVV_FIELD_PLACEHOLDER);
+        self.textField.accessibilityLabel = UQUIKLocalizedString(CVV_FIELD_PLACEHOLDER);
+        self.formLabel.text = [NSString stringWithFormat:@"%@:",UQUIKLocalizedString(CVV_FIELD_PLACEHOLDER) ];
         self.textField.keyboardType = UIKeyboardTypeNumberPad;
     }
     return self;

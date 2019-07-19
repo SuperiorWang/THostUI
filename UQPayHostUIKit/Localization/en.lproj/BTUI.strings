@@ -1,10 +1,10 @@
-/* 
-  BTUI.strings
-  UQPayHostUIKit
-
-  Created by uqpay on 2019/6/17.
-  Copyright © 2019 优钱付. All rights reserved.
-*/
+/*
+ BTUI.strings
+ UQPayHostUIKit
+ 
+ Created by uqpay on 2019/6/17.
+ Copyright © 2019 优钱付. All rights reserved.
+ */
 "CARD_DETAILS_LABEL"                        = "Card Details";
 "ENTER_CARD_DETAILS_HELP_LABEL"             = "Enter your card details starting with the card number.";
 "VALID_CARD_ERROR_LABEL"                    = "You must provide a valid Card Number.";
@@ -94,3 +94,5 @@
 "UQ_DELETE"                                 = "DELETE";
 "UQ_UNBIND_CARD_MESSAGE"                    = "Revoke Card?";
 "UQ_ADD_BANK_CARD"                          = "Add UnionPay Card";
+"UQ_CARD_Security_Identification"           = "For Security Identification";
+"UQ_SEND_ANAGIN"                            = "Resend %lds";

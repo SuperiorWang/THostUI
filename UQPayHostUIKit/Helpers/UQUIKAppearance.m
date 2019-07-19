@@ -45,8 +45,12 @@ static UQUIKAppearance *sharedTheme;
     sharedTheme.cardTitleColor = [UIColor uquik_colorFromHex:@"333333" alpha:1.0];
     sharedTheme.detailTitleColor = [UIColor uquik_colorFromHex:@"3F3F3F" alpha:1.0];
     sharedTheme.defaultColor = [UIColor uquik_colorFromHex:@"4685f4" alpha:1.0];
+    sharedTheme.smsDisabledColor = [UIColor uquik_colorFromHex:@"4685f4" alpha:0.5];
     sharedTheme.defaultTableSepColor = [UIColor uquik_colorFromHex:@"E5E5E5" alpha:1.0];
     sharedTheme.navigationBarBackItemColor = [UIColor uquik_colorFromHex:@"666666" alpha:1.0];
+    sharedTheme.cardTitleFont = [UIFont systemFontOfSize:15.0];
+    sharedTheme.cardPlaceholderTextColor = [UIColor uquik_colorFromHex:@"999999" alpha:1.0];
+    sharedTheme.sepLineColor = [UIColor uquik_colorFromHex:@"E5E5E5" alpha:1.0];
 }
 
 + (void)darkTheme {
@@ -69,9 +73,13 @@ static UQUIKAppearance *sharedTheme;
     sharedTheme.postalCodeFormFieldKeyboardType = UIKeyboardTypeNumberPad;
     sharedTheme.cardTitleColor = [UIColor uquik_colorFromHex:@"333333" alpha:1.0];
     sharedTheme.defaultColor = [UIColor uquik_colorFromHex:@"4685f4" alpha:1.0];
+    sharedTheme.smsDisabledColor = [UIColor uquik_colorFromHex:@"4685f4" alpha:0.5];
     sharedTheme.detailTitleColor = [UIColor uquik_colorFromHex:@"3F3F3F" alpha:1.0];
     sharedTheme.defaultTableSepColor = [UIColor uquik_colorFromHex:@"E5E5E5" alpha:1.0];
     sharedTheme.navigationBarBackItemColor = [UIColor uquik_colorFromHex:@"666666" alpha:1.0];
+    sharedTheme.cardTitleFont = [UIFont systemFontOfSize:15.0];
+    sharedTheme.cardPlaceholderTextColor = [UIColor uquik_colorFromHex:@"999999" alpha:1.0];
+    sharedTheme.sepLineColor = [UIColor uquik_colorFromHex:@"E5E5E5" alpha:1.0];
 }
 
 - (UIColor *)highlightedTintColor {
@@ -130,6 +138,10 @@ static UQUIKAppearance *sharedTheme;
 
 + (float)formCellHeight {
     return 44.0f;
+}
+
++ (float)spaceLineOfHeight {
+    return 1.0f;
 }
 
 + (float)verticalFormSpace {

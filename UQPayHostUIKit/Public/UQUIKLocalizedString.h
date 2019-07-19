@@ -102,6 +102,9 @@
 + (NSString *)UQ_MORE;
 + (NSString *)UQ_ADD_BANK_CARD;
 + (NSString *)UQ_UNBIND_CARD_MESSAGE;
++ (NSString *)UQ_CARD_Security_Identification;
++ (NSString *)UQ_SEND_ANAGIN;
++ (NSString *)UQ_DELETE;
 
 #pragma mark Development Strings (usually not localized)
 

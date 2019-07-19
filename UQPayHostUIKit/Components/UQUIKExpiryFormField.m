@@ -22,7 +22,7 @@
     self = [super initWithFrame:frame];
     if (self) {
         self.textField.accessibilityLabel = UQUIKLocalizedString(EXPIRATION_DATE_LABEL);
-        self.formLabel.text = UQUIKLocalizedString(EXPIRATION_DATE_LABEL);
+        self.formLabel.text = [NSString stringWithFormat:@"%@:", UQUIKLocalizedString(EXPIRATION_DATE_LABEL)];
         [self updatePlaceholder];
         self.expiryInputView = [UQUIKExpiryInputView new];
         self.expiryInputView.delegate = self;

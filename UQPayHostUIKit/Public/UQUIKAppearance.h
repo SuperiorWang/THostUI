@@ -47,6 +47,12 @@
 @property (nonatomic, strong) UIColor *errorForegroundColor;
 
 @property (nonatomic, strong) UIColor *cardTitleColor;
+
+@property (nonatomic, strong) UIColor *cardPlaceholderTextColor;
+
+@property (nonatomic, strong) UIColor *sepLineColor;
+
+@property (nonatomic, strong) UIFont *cardTitleFont;
 /// Blur style
 @property (nonatomic) UIBlurEffectStyle blurStyle;
 /// Activity indicator style
@@ -59,6 +65,7 @@
 @property (nonatomic, readonly, getter = highlightedTintColor) UIColor *highlightedTintColor;
 /// Default Theme Color
 @property (nonatomic) UIColor *defaultColor;
+@property (nonatomic) UIColor *smsDisabledColor;
 @property (nonatomic) UIColor *detailTitleColor;
 @property (nonatomic) UIColor *defaultTableSepColor;
 @property (nonatomic) UIColor *navigationBarBackItemColor;
@@ -77,6 +84,7 @@
 + (float) horizontalFormContentPadding;
 + (float) formCellHeight;
 + (float) verticalFormSpace;
++ (float) spaceLineOfHeight;
 + (float) verticalFormSpaceTight;
 + (float) verticalSectionSpace;
 + (float) smallIconWidth;

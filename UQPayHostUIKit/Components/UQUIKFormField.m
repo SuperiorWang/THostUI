@@ -48,6 +48,11 @@
         [self setContentHuggingPriority:UILayoutPriorityRequired forAxis:UILayoutConstraintAxisVertical];
         self.opaque = NO;
         
+        self.textField.font = [UQUIKAppearance sharedInstance].cardTitleFont;
+        self.textField.textColor = [UQUIKAppearance sharedInstance].cardPlaceholderTextColor;
+        self.formLabel.textColor = [UQUIKAppearance sharedInstance].cardTitleColor;
+        self.formLabel.font = [UQUIKAppearance sharedInstance].cardTitleFont;
+        
         [self updateConstraints];
     }
     return self;
@@ -79,7 +84,7 @@
                                                                  metrics:metrics
                                                                    views:viewBindings]];
     if (hasFormLabel) {
-        [self.layoutConstraints addObjectsFromArray:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-(PADDING)-[formLabel(<=0@1)]-[textField]"
+        [self.layoutConstraints addObjectsFromArray:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-(PADDING)-[formLabel(<=0@1)]-(33)-[textField]"
                                                                                             options:0
                                                                                             metrics:metrics
                                                                                               views:viewBindings]];
@@ -99,8 +104,6 @@
                                                                                 multiplier:1.0f
                                                                                   constant:0.0f]]];
         
-      ;
-        
         [self.layoutConstraints addObjectsFromArray:[NSLayoutConstraint constraintsWithVisualFormat:@"H:[textField]-[accessoryView]-(PADDING)-|"
                                                                                             options:0
                                                                                             metrics:metrics
@@ -116,10 +119,10 @@
 
     [self addConstraints:contraintsToAdd];
     
-    NSTextAlignment newAlignment = hasFormLabel ? [UQUIKViewUtil naturalTextAlignmentInverse] : [UQUIKViewUtil naturalTextAlignment];
-    if (newAlignment != self.textField.textAlignment) {
-        self.textField.textAlignment = newAlignment;
-    }
+//    NSTextAlignment newAlignment = hasFormLabel ? [UQUIKViewUtil naturalTextAlignmentInverse] : [UQUIKViewUtil naturalTextAlignment];
+//    if (newAlignment != self.textField.textAlignment) {
+//        self.textField.textAlignment = newAlignment;
+//    }
 
     [super updateConstraints];
 }

@@ -9,8 +9,7 @@
     self = [super initWithFrame:frame];
     if (self) {
         self.textField.accessibilityLabel = UQUIKLocalizedString(MOBILE_NUMBER_LABEL);
-        self.formLabel.text = UQUIKLocalizedString(MOBILE_NUMBER_LABEL);
-        self.textField.placeholder = @"00 0000 0000";
+        self.formLabel.text = [NSString stringWithFormat:@"%@:",UQUIKLocalizedString(MOBILE_NUMBER_LABEL) ];
         self.textField.keyboardType = UIKeyboardTypeNumberPad;
     }
     return self;

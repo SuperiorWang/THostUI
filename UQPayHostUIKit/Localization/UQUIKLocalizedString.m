@@ -13,7 +13,7 @@
 static NSArray *customTranslations;
 
 + (NSBundle *)localizationBundle {
-    static NSString * bundleName = @"UQPayTree-UIKit-Localization";
+    static NSString * bundleName = @"UQHostUIResource";
     if ([[NSLocale preferredLanguages] count] > 0) {
         NSString *language = [[NSLocale preferredLanguages] firstObject];
         // Ignore region portion of local ID
@@ -320,20 +320,8 @@ static NSArray *customTranslations;
     return NSLocalizedStringWithDefaultValue(@"UQ_SEND_CODE", [self localizationTable], [self localizationBundle], @"Send Code", @"UQ_SEND_CODE");
 }
 
-+ (NSString *)UQ_DELETE_CARD {
-    return NSLocalizedStringWithDefaultValue(@"UQ_DELETE_CARD", [self localizationTable], [self localizationBundle], @"Do you want to unbind current card number?", @"UQ_DELETE_CARD");
-}
-
 + (NSString *)UQ_WARNING {
     return NSLocalizedStringWithDefaultValue(@"UQ_WARNING", [self localizationTable], [self localizationBundle], @"Warning", @"UQ_WARNING");
-}
-
-+ (NSString *)UQ_MORE {
-    return NSLocalizedStringWithDefaultValue(@"UQ_MORE", [self localizationTable], [self localizationBundle], @"More", @"UQ_MORE");
-}
-
-+ (NSString *)UQ_ADD_BANK_CARD {
-    return NSLocalizedStringWithDefaultValue(@"UQ_ADD_BANK_CARD", [self localizationTable], [self localizationBundle], @"Add UnionPay Card", @"UQ_ADD_BANK_CARD");
 }
 
 #pragma mark Development Strings (usually not localized)
@@ -346,28 +334,56 @@ static NSArray *customTranslations;
     return NSLocalizedStringWithDefaultValue(@"DEV_SAMPLE_SMS_CODE_INFO", [self localizationTable], [self localizationBundle], @"Any code passes, example: 12345 \n\nIncorrect code is: 999999", @"DEV_SAMPLE_SMS_CODE_INFO");
 }
 
-+ (NSString *)SELECT_BANK_CARD {
-    return NSLocalizedStringWithDefaultValue(@"SELECT_BANK_CARD", [self localizationTable], [self localizationBundle], @"Select Bank Card", @"SELECT_BANK_CARD");
++ (NSString *)ADD_OR_SELECT_CARD {
+    return NSLocalizedStringWithDefaultValue(@"ADD_OR_SELECT_CARD", [self localizationTable], [self localizationBundle], @"Add/Select Card", @"ADD_OR_SELECT_CARD");
 }
 
 
 + (NSString *)UQ_SELECT_CARD {
-    return NSLocalizedStringWithDefaultValue(@"UQ_SELECT_CARD", [self localizationTable], [self localizationBundle], @"SELECT CARD", @"UQ_SELECT_CARD");
+    return NSLocalizedStringWithDefaultValue(@"UQ_SELECT_CARD", [self localizationTable], [self localizationBundle], @"UQ SELECT CARD", @"UQ_SELECT_CARD");
 }
 
-+ (NSString *)UQ_ADD_CARD {
++ (NSString *) UQ_ADD_CARD {
     return NSLocalizedStringWithDefaultValue(@"UQ_ADD_CARD", [self localizationTable], [self localizationBundle], @"+ Add Card", @"UQ_ADD_CARD");
 }
-
-+ (NSString *)UQ_NO_CARD {
-    return NSLocalizedStringWithDefaultValue(@"UQ_NO_CARD", [self localizationTable], [self localizationBundle], @"No Bank Card Available", @"UQ_NO_CARD");
++ (NSString *)SELECT_BANK_CARD {
+    return NSLocalizedStringWithDefaultValue(@"SELECT_BANK_CARD", [self localizationTable], [self localizationBundle], @"Select Bank Card", @"SELECT_BANK_CARD");
 }
 
 + (NSString *)UQ_CARD_LIST {
     return NSLocalizedStringWithDefaultValue(@"UQ_CARD_LIST", [self localizationTable], [self localizationBundle], @"Card List", @"UQ_CARD_LIST");
 }
 
-+ (NSString *)UQ_UNBIND_CARD_MESSAGE {
++ (NSString *)UQ_DELETE_CARD {
+    return NSLocalizedStringWithDefaultValue(@"UQ_DELETE_CARD", [self localizationTable], [self localizationBundle], @"Do you want to unbind current card number?", @"UQ_DELETE_CARD");
+}
+
++ (NSString *)UQ_MORE {
+    return NSLocalizedStringWithDefaultValue(@"UQ_MORE", [self localizationTable], [self localizationBundle], @"More", @"UQ_MORE");
+}
+
++ (NSString *)UQ_NO_CARD {
+    return NSLocalizedStringWithDefaultValue(@"UQ_NO_CARD", [self localizationTable], [self localizationBundle], @"No Bank Card Available", @"UQ_NO_CARD");
+}
+
++ (NSString *)UQ_DELETE {
+    return NSLocalizedStringWithDefaultValue(@"UQ_DELETE", [self localizationTable], [self localizationBundle], @"DELETE", @"UQ_DELETE");
+}
+
++ (NSString *)UQ_UNBIND_CARD_MESSAGE{
     return NSLocalizedStringWithDefaultValue(@"UQ_UNBIND_CARD_MESSAGE", [self localizationTable], [self localizationBundle], @"Revoke Card?", @"UQ_UNBIND_CARD_MESSAGE");
 }
+
++ (NSString *)UQ_ADD_BANK_CARD {
+    return NSLocalizedStringWithDefaultValue(@"UQ_ADD_BANK_CARD", [self localizationTable], [self localizationBundle], @"Add UnionPay Card", @"UQ_ADD_BANK_CARD");
+}
+
++ (NSString *)UQ_CARD_Security_Identification {
+    return NSLocalizedStringWithDefaultValue(@"UQ_CARD_Security_Identification", [self localizationTable], [self localizationBundle], @"For Security Identification", @"UQ_CARD_Security_Identification");
+}
+
++ (NSString *)UQ_SEND_ANAGIN {
+    return NSLocalizedStringWithDefaultValue(@"UQ_SEND_ANAGIN", [self localizationTable], [self localizationBundle], @"Resend %lds", @"UQ_SEND_ANAGIN");
+}
 @end
+

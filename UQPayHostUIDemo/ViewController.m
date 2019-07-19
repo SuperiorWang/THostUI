@@ -13,7 +13,7 @@
 @interface ViewController ()<UQHostUIViewControllerDelegate>
 
 @property (weak, nonatomic) IBOutlet UITextField *textField;
-@property (nonatomic, strong )UQHostUIViewController *viewController;
+@property (nonatomic, strong )UQHostUIViewController *hostViewController;
 @end
 
 @implementation ViewController
@@ -33,17 +33,17 @@
 
 - (IBAction)openUI:(id)sender {
     
-    self.viewController = [[UQHostUIViewController alloc]initWithModel:LOCALTYPE];
-    self.viewController.token = self.textField.text;
-    self.viewController.delegate = self;
-    [self presentViewController:self.viewController animated:true completion:NULL];
+    self.hostViewController = [[UQHostUIViewController alloc]initWithModel:LOCALTYPE];
+    self.hostViewController.token = self.textField.text;
+    self.hostViewController.delegate = self;
+    [self presentViewController:self.hostViewController animated:true completion:NULL];
 }
 
 - (void)UQHostResult:(UQHostResult *)model {
     NSLog(@"panTail = %@", model.panTail);
     NSLog(@"uuid = %@",model.uuid);
     NSLog(@"ussuer = %@", model.issuer);
-    [self.viewController dismissViewControllerAnimated:YES completion:nil];
+    [self.hostViewController dismissViewControllerAnimated:YES completion:nil];
 }
 
 - (void)UQHostError:(NSError *)error {

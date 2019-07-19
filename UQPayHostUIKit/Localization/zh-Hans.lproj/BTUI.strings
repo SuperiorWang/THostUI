@@ -1,10 +1,10 @@
-/* 
-  BTUI.strings
-  UQPayHostUIKit
-
-  Created by uqpay on 2019/6/17.
-  Copyright © 2019 优钱付. All rights reserved.
-*/
+/*
+ BTUI.strings
+ UQPayHostUIKit
+ 
+ Created by uqpay on 2019/6/17.
+ Copyright © 2019 优钱付. All rights reserved.
+ */
 "CARD_DETAILS_LABEL"                        = "卡详细信息";
 "ENTER_CARD_DETAILS_HELP_LABEL"             = "从卡号开始输入您的卡详细信息。";
 "VALID_CARD_ERROR_LABEL"                    = "您必须提供有效的卡号。";
@@ -60,8 +60,8 @@
 "CID_FIELD_PLACEHOLDER"                     = "CID";
 "CVN_FIELD_PLACEHOLDER"                     = "CVN";
 "POSTAL_CODE_PLACEHOLDER"                   = "邮政编码";
-"MOBILE_NUMBER_LABEL"                       = "手机号码";
-"EXPIRATION_DATE_LABEL"                     = "有效期限";
+"MOBILE_NUMBER_LABEL"                       = "预留手机号";
+"EXPIRATION_DATE_LABEL"                     = "有效期";
 "CARD_NUMBER_PLACEHOLDER"                   = "卡号";
 "EXPIRY_PLACEHOLDER_FOUR_DIGIT_YEAR"        = "MM/YYYY";
 "EXPIRY_PLACEHOLDER_TWO_DIGIT_YEAR"         = "MM/YY";
@@ -94,3 +94,5 @@
 "UQ_DELETE"                                 = "删除";
 "UQ_UNBIND_CARD_MESSAGE"                    = "解除绑定?";
 "UQ_ADD_BANK_CARD"                          = "添加银联卡";
+"UQ_CARD_Security_Identification"           = "输入银行卡号进行安全识别";
+"UQ_SEND_ANAGIN"                            = "%ld秒后可再发送";

@@ -16,7 +16,7 @@
 #import "../Public/UQHostResult.h"
 #import "../Images/UQImageUtils.h"
 
-#define DURATION_TIME 60
+
 
 @interface UQAddCardViewController()
 
@@ -26,31 +26,29 @@
 
 
 @property (nonatomic, strong) UQUIKCardNumberFormField*        cardNumberField;
-@property (nonatomic, strong) UQUIKCardholderNameFormField*    cardholderNameField;
 @property (nonatomic, strong) UQUIKExpiryFormField*            expirationDateField;
 @property (nonatomic, strong) UQUIKSecurityCodeFormField*      securityCodeField;
 @property (nonatomic, strong) UQUIKPostalCodeFormField*        postalCodeField;
-@property (nonatomic, strong) UQUIKMobileCountryCodeFormField* mobileCountryCodeField;
 @property (nonatomic, strong) UQUIKMobileNumberFormField*      mobilePhoneField;
+@property (nonatomic, strong) UQUIKSMSFormField*               smsFormField;
 @property (nonatomic, strong) UIButton*                        nextButton;
 @property (nonatomic, strong) UIStackView*                     stackView;
-@property (nonatomic, strong) UIStackView*                     paymentOptionsLabelContainerStackView;
 @property (nonatomic, strong) NSArray <UQUIKFormField *>*      formFields;
-@property (nonatomic, strong) UIView*                          smsView;
-@property (nonatomic, strong) UIButton*                        sendSMSBtn;
 
 
 @property (nonatomic, strong) UIStackView *cardNumberErrorView;
 @property (nonatomic, strong) UIStackView *cardNumberHeader;
+@property (nonatomic, strong) UIStackView *cardNumberFooter;
 @property (nonatomic, strong) UIStackView *enrollmentFooter;
 
 @property (nonatomic,weak) NSTimer* countDownTimer;
-@property (nonatomic, assign) NSInteger durationTime;
 
 @property (nonatomic, strong) NSString*                        cardNumber;
 @property (nonatomic, getter=isCollapsed) BOOL collapsed;
 
 @property (nonatomic, copy) NSString* uqOrderId;
+
+@property (nonatomic) BOOL  needPostCardInfo;
 
 @end
 
@@ -81,7 +79,7 @@
 - (void)initUI{
 
     _collapsed = NO;
-    _durationTime = DURATION_TIME;
+    _needPostCardInfo = NO;
     
     self.view.backgroundColor = [UQUIKAppearance sharedInstance].formBackgroundColor;
     
@@ -148,7 +146,8 @@
 
 - (void)setupForms{
     self.cardNumberHeader = [UQDropInUIUtilities newStackView];
-    self.cardNumberHeader.layoutMargins = UIEdgeInsetsMake(0, [UQUIKAppearance verticalFormSpace], 0, [UQUIKAppearance verticalFormSpace]);
+    self.cardNumberHeader.alignment = UIStackViewAlignmentCenter;
+    self.cardNumberHeader.layoutMargins = UIEdgeInsetsMake(0, CGRectGetWidth(self.photoBtn.bounds), 0, CGRectGetHeight(self.photoBtn.bounds));
     self.cardNumberHeader.layoutMarginsRelativeArrangement = true;
     
     [self.cardNumberHeader addArrangedSubview:self.photoBtn];
@@ -160,8 +159,28 @@
     heightConstraint.priority = UILayoutPriorityDefaultHigh;
     heightConstraint.active = true;
     [self.cardNumberField updateConstraints];
-    
     [UQDropInUIUtilities addSpacerToStackView:self.stackView beforeView:self.cardNumberField size:[UQUIKAppearance verticalFormSpace]];
+    
+    self.formFields = @[self.expirationDateField, self.securityCodeField, self.mobilePhoneField, self.smsFormField];
+    for (UQUIKFormField *formField in self.formFields) {
+        [self.stackView addArrangedSubview:formField];
+        NSLayoutConstraint *heightConstraint = [formField.heightAnchor constraintEqualToConstant:[UQUIKAppearance formCellHeight]];
+        heightConstraint.priority = UILayoutPriorityDefaultHigh;
+        heightConstraint.active = YES;
+        [formField updateConstraints];
+    }
+    
+    self.cardNumberFooter = [UQDropInUIUtilities newStackView];
+    self.cardNumberFooter.layoutMargins = UIEdgeInsetsMake(0, 12, 0, 8);
+    self.cardNumberFooter.layoutMarginsRelativeArrangement = true;
+    [self.cardNumberFooter addArrangedSubview:self.nextButton];
+    heightConstraint = [self.nextButton.heightAnchor constraintEqualToConstant:[UQUIKAppearance formCellHeight]];
+    heightConstraint.priority = UILayoutPriorityDefaultHigh;
+    heightConstraint.active = true;
+    [UQDropInUIUtilities addSpacerToStackView:self.cardNumberFooter beforeView:self.nextButton size:[UQUIKAppearance verticalFormSpace]];
+    [self.stackView addArrangedSubview:self.cardNumberFooter];
+    
+    [self setCollapsed:true];
 }
 
 - (BOOL)isCardIOAvailable {
@@ -201,71 +220,6 @@
     }];
 }
 
-//- (void)setupForms {
-//    self.nextButton = [[UIButton alloc] init];
-//    [self.nextButton setTitle:UQUIKLocalizedString(NEXT_ACTION) forState:UIControlStateNormal];
-//    self.nextButton.translatesAutoresizingMaskIntoConstraints = NO;
-//    [self.nextButton setTitleColor:self.view.tintColor forState:UIControlStateNormal];
-//
-//    self.cardNumberHeader = [UQDropInUIUtilities newStackView];
-//    self.cardNumberHeader.layoutMargins = UIEdgeInsetsMake(0, [UQUIKAppearance verticalFormSpace], 0, [UQUIKAppearance verticalFormSpace]);
-//    self.cardNumberHeader.layoutMarginsRelativeArrangement = true;
-//
-//    UILabel *cardNumberHeaderLabel = [[UILabel alloc] init];
-//    cardNumberHeaderLabel.numberOfLines = 0;
-//    cardNumberHeaderLabel.textAlignment = NSTextAlignmentCenter;
-//    cardNumberHeaderLabel.text = UQUIKLocalizedString(ENTER_CARD_DETAILS_HELP_LABEL);
-//    [UQUIKAppearance styleLargeLabelSecondary:cardNumberHeaderLabel];
-//    [self.cardNumberHeader addArrangedSubview:cardNumberHeaderLabel];
-//    [UQDropInUIUtilities addSpacerToStackView:self.cardNumberHeader beforeView:cardNumberHeaderLabel size: [UQUIKAppearance verticalFormSpace]];
-//    [self.stackView addArrangedSubview:self.cardNumberHeader];
-//
-//    [self.smsView addSubview:self.sendSMSBtn];
-//    [self.smsView addSubview:self.postalCodeField];
-//
-//    NSDictionary *viewBindings = @{ @"smsView":self.smsView,
-//                                    @"postalCodeField":self.postalCodeField,
-//                                    @"sendSMSBtn":self.sendSMSBtn,
-//                                    };
-//    NSArray *conH = [NSLayoutConstraint constraintsWithVisualFormat:@"H:|-[postalCodeField]-[sendSMSBtn(100)]-|"
-//                                                            options:0
-//                                                            metrics:[UQUIKAppearance metrics]
-//                                                              views:viewBindings];
-//    [self.smsView addConstraints:conH];
-//
-//    [self.smsView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[postalCodeField]|"
-//                                                                 options:0
-//                                                                 metrics:[UQUIKAppearance metrics]
-//                                                                   views:viewBindings]];
-//
-//    [self.smsView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[sendSMSBtn]|"
-//                                                                 options:0
-//                                                                 metrics:[UQUIKAppearance metrics]                                                                     views:viewBindings]];
-//
-//    self.formFields = @[self.cardNumberField,self.cardholderNameField, self.expirationDateField, self.securityCodeField, self.mobilePhoneField,self.smsView];
-//
-//    for (NSInteger i = 0; i< self.formFields.count; i++) {
-//        UQUIKFormField *formField = self.formFields[i];
-//        [self.stackView addArrangedSubview:formField];
-//
-//        NSLayoutConstraint* heightConstraint = [formField.heightAnchor constraintEqualToConstant:[UQUIKAppearance formCellHeight]];
-//        heightConstraint.priority = UILayoutPriorityDefaultHigh;
-//        heightConstraint.active = YES;
-//        [formField updateConstraints];
-//    }
-//    [self.postalCodeField updateConstraints];
-//
-//    self.cardNumberField.formLabel.text = @"";
-//    [self.cardNumberField updateConstraints];
-//
-//    [UQDropInUIUtilities addSpacerToStackView:self.stackView beforeView:self.cardNumberField size: [UQUIKAppearance verticalFormSpace]];
-//    [UQDropInUIUtilities addSpacerToStackView:self.stackView beforeView:self.cardholderNameField size: [UQUIKAppearance verticalFormSpace]];
-//    [UQDropInUIUtilities addSpacerToStackView:self.stackView beforeView:self.expirationDateField size: [UQUIKAppearance verticalFormSpace]];
-//
-//    self.collapsed = YES;
-//
-//}
-
 - (void)updateUI {
 }
 
@@ -289,16 +243,15 @@
 
 - (void)tokenizedCard {
     [self.view endEditing:YES];
-
     if ([self validateAddCard]){
         UIActivityIndicatorView *spinner = [UIActivityIndicatorView new];
         spinner.activityIndicatorViewStyle = [UQUIKAppearance sharedInstance].activityIndicatorViewStyle;
         [spinner startAnimating];
-        
+
         UIBarButtonItem *addCardButton = self.navigationItem.rightBarButtonItem;
         self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:spinner];
         self.view.userInteractionEnabled = NO;
-        
+
         NSString* date = self.expirationDateField.text;
         CardModel *cardModel = [CardModel new];
         cardModel.cardNum = self.cardNumber;
@@ -306,18 +259,19 @@
         cardModel.expireMonth = [date componentsSeparatedByString:@"/"].firstObject;
         cardModel.expireYear =  [[date componentsSeparatedByString:@"/"].lastObject substringFromIndex:2];
         cardModel.phone = self.mobilePhoneField.text;
-        
+
         AddCardModel *addCardModel = [AddCardModel new];
         addCardModel.card = cardModel;
         addCardModel.uqOrderId = self.uqOrderId;
-        addCardModel.verifyCode = self.postalCodeField.text;
-        
+        addCardModel.verifyCode = self.smsFormField.text;
+
         [[UQHttpClient sharedInstance]addCard:addCardModel success:^(NSDictionary * _Nonnull dict, BOOL isSuccess) {
             if (isSuccess && dict) {
-                UQHostResult *resultModel = [[UQHostResult alloc]initWithDictionary:dict error:nil];
+                NSDictionary* date = [dict objectForKey:@"data"];
+                UQHostResult *resultModel = [[UQHostResult alloc]initWithDictionary:date error:nil];
 
                 [self dismissViewControllerAnimated:YES completion:^{
-                    if (self.delegate != nil) {
+                    if (self.delegate && [self.delegate respondsToSelector:@selector(UQHostResult:)]) {
                         [self.delegate UQHostResult:resultModel];
                     }
                 }];
@@ -340,15 +294,6 @@
         _cardNumberField.cardNumberDelegate = self;
     }
     return _cardNumberField;
-}
-
-- (UQUIKCardholderNameFormField *)cardholderNameField {
-    if (_cardholderNameField == nil) {
-        _cardholderNameField = [[UQUIKCardholderNameFormField alloc]init];
-        _cardholderNameField.delegate = self;
-        _cardholderNameField.textField.keyboardType = UIKeyboardTypeNumberPad;
-    }
-    return _cardholderNameField;
 }
 
 - (UQUIKExpiryFormField *)expirationDateField {
@@ -374,13 +319,6 @@
     return _postalCodeField;
 }
 
-- (UQUIKMobileCountryCodeFormField *)mobileCountryCodeField {
-    if (_mobileCountryCodeField == nil) {
-        _mobileCountryCodeField = [[UQUIKMobileCountryCodeFormField alloc]init];
-    }
-    return _mobileCountryCodeField;
-}
-
 - (UQUIKMobileNumberFormField *)mobilePhoneField {
     if (_mobilePhoneField == nil) {
         _mobilePhoneField = [[UQUIKMobileNumberFormField alloc]init];
@@ -389,26 +327,12 @@
     return _mobilePhoneField;
 }
 
-- (UIView *)smsView {
-    if (_smsView == nil) {
-        _smsView = [UIView new];
-        _smsView.backgroundColor = [UIColor whiteColor];
-        _smsView.translatesAutoresizingMaskIntoConstraints = NO;
+- (UQUIKSMSFormField *)smsFormField {
+    if (_smsFormField == nil) {
+        _smsFormField = [[UQUIKSMSFormField alloc]init];
+        _smsFormField.smsDelegate = self;
     }
-    return _smsView;
-}
-
-- (UIButton *)sendSMSBtn {
-    if (_sendSMSBtn == nil) {
-        _sendSMSBtn = [UIButton new];
-        _sendSMSBtn.backgroundColor = self.view.tintColor;
-        _sendSMSBtn.translatesAutoresizingMaskIntoConstraints = NO;
-        [_sendSMSBtn setTitle:UQUIKLocalizedString(UQ_SEND_CODE) forState:UIControlStateNormal];
-        [_sendSMSBtn addTarget:self action:@selector(sendSms) forControlEvents:UIControlEventTouchUpInside];
-         _sendSMSBtn.enabled = false;
-        [_sendSMSBtn setBackgroundColor:[UIColor grayColor]];
-    }
-    return _sendSMSBtn;
+    return _smsFormField;
 }
 
 - (UIButton *)photoBtn {
@@ -420,6 +344,18 @@
         [_photoBtn addTarget:self action:@selector(presentCardIO) forControlEvents:UIControlEventTouchUpInside];
     }
     return _photoBtn;
+}
+
+- (UIButton *)nextButton {
+    if (_nextButton == nil) {
+        _nextButton = [UIButton buttonWithType:UIButtonTypeCustom];
+        _nextButton.backgroundColor = [[UQUIKAppearance sharedInstance].defaultColor colorWithAlphaComponent:0.5];
+        _nextButton.layer.cornerRadius = 4.0;
+        _nextButton.titleLabel.font = [UQUIKAppearance sharedInstance].cardTitleFont;
+        [_nextButton setTitle:UQUIKLocalizedString(NEXT_ACTION) forState:UIControlStateNormal];
+        [_nextButton addTarget:self action:@selector(nextButtonAction) forControlEvents:UIControlEventTouchUpInside];
+    }
+    return _nextButton;
 }
 
 - (UIStackView *)newStackView {
@@ -456,12 +392,9 @@
 - (void)updateFormBorders {
     self.cardNumberField.bottomBorder = YES;
     self.cardNumberField.topBorder = YES;
-    
-    self.mobileCountryCodeField.topBorder = YES;
-    self.mobileCountryCodeField.interFieldBorder = YES;
     self.mobilePhoneField.bottomBorder = YES;
     
-    NSArray *groupedFormFields = @[self.cardholderNameField, self.expirationDateField, self.securityCodeField, self.mobilePhoneField, self.postalCodeField];
+    NSArray *groupedFormFields = @[self.expirationDateField, self.securityCodeField, self.mobilePhoneField, self.postalCodeField];
     BOOL topBorderAdded = NO;
     UQUIKFormField* lastVisibleFormField;
     for (NSUInteger i = 0; i < groupedFormFields.count; i++) {
@@ -497,21 +430,17 @@
                             options:UIViewAnimationOptionAllowAnimatedContent|UIViewAnimationOptionBeginFromCurrentState
                          animations:^{
             self.cardNumberHeader.hidden = !collapsed;
-            self.cardholderNameField.hidden = collapsed;
             self.expirationDateField.hidden = collapsed;
             self.securityCodeField.hidden = collapsed;
-            self.smsView.hidden = collapsed;
             self.mobilePhoneField.hidden = collapsed;
+            self.smsFormField.hidden = collapsed;
             [self updateFormBorders];
         } completion:^(__unused BOOL finished) {
             self.cardNumberHeader.hidden = !collapsed;
-            self.cardholderNameField.hidden = collapsed;
             self.expirationDateField.hidden = collapsed;
             self.securityCodeField.hidden = collapsed;
-            self.smsView.hidden =collapsed;
-            self.mobileCountryCodeField.hidden = collapsed;
             self.mobilePhoneField.hidden =  collapsed;
-            
+            self.smsFormField.hidden = collapsed;
             [self updateFormBorders];
         }];
     });
@@ -521,78 +450,66 @@
 #pragma mark FormField Delegate Methods
 - (void)validateButtonPressed:(__unused UQUIKFormField *)formField {
     self.collapsed = NO;
-    self.cardholderNameField.text= self.cardNumber;
     self.navigationItem.rightBarButtonItem.enabled = true;
 }
 
 - (void)formFieldDidChange:(UQUIKFormField *)formField {
     if (formField.class == self.mobilePhoneField.class) {
-        if (self.durationTime == DURATION_TIME) {
-            [self validatePhoneNumber];
-        }
     }else if ([formField isKindOfClass:UQUIKCardNumberFormField.class]) {
         self.cardNumber = formField.text;
-    }else if ([formField isKindOfClass:UQUIKCardholderNameFormField.class]) {
-        self.cardNumber = formField.text;
-        if (self.cardNumber.length < 12) {
-            self.collapsed = YES;
-            self.navigationItem.rightBarButtonItem.enabled = false;
+        if (self.cardNumber.length > 12) {
+            self.nextButton.backgroundColor = [UQUIKAppearance sharedInstance].defaultColor ;
+        }else {
+            self.nextButton.backgroundColor = [[UQUIKAppearance sharedInstance].defaultColor colorWithAlphaComponent:0.5];
         }
     }
 }
 
-- (NSTimer *)countDownTimer {
-    if (_countDownTimer == nil) {
-        _countDownTimer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(countDown:) userInfo:nil repeats:YES];
+- (void)sendSMS:(UIButton *)btn success:(SendSuccess)smsSuccess{
+    if (self.cardNumber && self.cardNumber.length >0 && self.mobilePhoneField.text && self.mobilePhoneField.text.length > 0) {
+        [[UQHttpClient sharedInstance]getSms:@{@"cardNum":self.cardNumber, @"phone":self.mobilePhoneField.text} success:^(NSDictionary * _Nonnull dict, BOOL isSuccess) {
+            if (isSuccess) {
+                if (dict != nil) {
+                    NSDictionary *data = [dict objectForKey:@"data"];
+                    NSError *error;
+                    SMSModel *model = [[SMSModel alloc]initWithDictionary:data error:&error];
+                    self.uqOrderId = model.uqOrderId;
+                    smsSuccess(true);
+                }
+            }
+        } fail:^(NSError * _Nonnull error) {
+            NSLog(@"error %@",error);
+        }];
     }
-    return _countDownTimer;
+}
+
+
+- (void)nextButtonAction {
+    
+    if (![self validateCardNumber]){
+        return ;
+    }
+    if (_needPostCardInfo) {
+        if (![self validateAddCard]) {
+            return ;
+        }else {
+            [self tokenizedCard];
+        }
+    }else {
+        _needPostCardInfo = true;
+        [self setCollapsed:NO];
+         [UQDropInUIUtilities addSpacerToStackView:self.stackView beforeView:self.expirationDateField size: [UQUIKAppearance verticalSectionSpace]];
+    }
 }
 
 #pragma mark
-- (void)sendSms {
-   self.sendSMSBtn.enabled = false;
-   self.sendSMSBtn.backgroundColor =  [UIColor grayColor];
-   [[NSRunLoop currentRunLoop]addTimer:self.countDownTimer forMode:NSRunLoopCommonModes];
- 
-    [[UQHttpClient sharedInstance]getSms:@{@"cardNum":self.cardNumber, @"phone":self.mobilePhoneField.text} success:^(NSDictionary * _Nonnull dict, BOOL isSuccess) {
-        if (isSuccess) {
-            if (dict != nil) {
-                NSDictionary *data = [dict objectForKey:@"data"];
-                NSError *error;
-                SMSModel *model = [[SMSModel alloc]initWithDictionary:data error:&error];
-                self.uqOrderId = model.uqOrderId;
-            }
-        }
-    } fail:^(NSError * _Nonnull error) {
-        NSLog(@"error %@",error);
-    }];
-}
 
-- (void)countDown:(NSTimer*)timer {
-    self.durationTime--;
-    [self.sendSMSBtn setTitle:[NSString stringWithFormat:@"%ld's", (long)self.durationTime] forState:UIControlStateDisabled];
-    if (self.durationTime == 0) {
-        [self.countDownTimer invalidate];
-        self.durationTime = DURATION_TIME;
-        self.sendSMSBtn.enabled = true;
-        [self validatePhoneNumber];
-        [self.sendSMSBtn setTitle:UQUIKLocalizedString(UQ_SEND_CODE) forState:UIControlStateNormal];
-    }
-}
-
-#pragma mark -- validate
-- (void)validatePhoneNumber {
-    if (self.mobilePhoneField.text.length != 0) {
-        self.sendSMSBtn.enabled = true;
-        self.sendSMSBtn.backgroundColor = self.view.tintColor;
-    }else{
-        self.sendSMSBtn.enabled = false;
-        self.sendSMSBtn.backgroundColor =  [UIColor grayColor];
-    }
+- (BOOL)validateCardNumber {
+    return self.cardNumber && self.cardNumber.length > 12;
 }
 
 - (BOOL)validateAddCard {
-    NSArray * array = @[self.cardholderNameField, self.expirationDateField, self.mobilePhoneField, self.postalCodeField];
+    NSArray * array = @[self.expirationDateField, self.mobilePhoneField, self.smsFormField];
     
     for (int i=0; i < array.count; i++) {
         UQUIKFormField *formField = array[i];
@@ -604,16 +521,10 @@
 }
 
 #pragma mark ---
--(void)dealloc {
-    if (self.countDownTimer != nil) {
-        [self.countDownTimer invalidate];
-    }
-}
 
 -(void)test {
     self.cardNumber = @"6223164991230014";
     self.cardNumberField.text = self.cardNumber;
-    self.cardholderNameField.text = self.cardNumber;
     self.mobilePhoneField.text = @"13012345678";
     self.postalCodeField.text = @"111111";
     self.securityCodeField.text = @"123";
