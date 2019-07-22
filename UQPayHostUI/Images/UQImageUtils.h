@@ -18,8 +18,19 @@ NS_ASSUME_NONNULL_BEGIN
 + (UIImage *)rectangleImg;
 + (UIImage *)deleteIcon;
 + (UIImage *)photoIcon;
++ (UIImage *)amexIcon;
++ (UIImage *)clubIcon;
++ (UIImage *)discoverIcon;
++ (UIImage *)hiperIcon;
++ (UIImage *)hipercardIcon;
++ (UIImage *)jcbIcon;
++ (UIImage *)maestroIcon;
++ (UIImage *)maestercardIcon;
++ (UIImage *)unionPayIcon;
++ (UIImage *)visaIcon;
 + (instancetype) shareInstance;
 
+@property (nonatomic, copy) NSDictionary *icons;
 @end
 
 NS_ASSUME_NONNULL_END

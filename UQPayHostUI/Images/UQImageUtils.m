@@ -17,6 +17,11 @@ static UQImageUtils* imageUtils;
         static dispatch_once_t onceToken;
         dispatch_once(&onceToken, ^{
             imageUtils = [UQImageUtils new];
+            imageUtils.icons = @{@"UnionPay":UQImageUtils.unionPayIcon,
+                                 @"Visa":    UQImageUtils.visaIcon,
+                                 @"Master":  UQImageUtils.maestercardIcon,
+                                 @"Jcb":     UQImageUtils.jcbIcon,
+                                 @"Hiper":   UQImageUtils.hiperIcon};
         });
     }
     return imageUtils;
@@ -47,9 +52,49 @@ static UQImageUtils* imageUtils;
     return [self resourceImage:@"photograph"];
 }
 
++ (UIImage *)amexIcon {
+    return [self resourceImage:@"bt_ic_amex"];
+}
+
++ (UIImage *)clubIcon {
+    return [self resourceImage:@"bt_ic_diners_club"];
+}
+
++ (UIImage *)discoverIcon {
+    return [self resourceImage:@"bt_ic_discover"];
+}
+
++ (UIImage *)hiperIcon {
+    return [self resourceImage:@"bt_ic_hiper"];
+}
+
++ (UIImage *)hipercardIcon {
+    return [self resourceImage:@"bt_ic_hipercard"];
+}
+
++ (UIImage *)jcbIcon {
+    return [self resourceImage:@"bt_ic_jcb"];
+}
+
++ (UIImage *)maestroIcon {
+    return [self resourceImage:@"bt_ic_maestro"];
+}
+
++ (UIImage *)maestercardIcon {
+    return [self resourceImage:@"bt_ic_mastercard"];
+}
+
++ (UIImage *)unionPayIcon {
+    return [self resourceImage:@"bt_ic_unionpay"];
+}
+
++ (UIImage *)visaIcon {
+    return [self resourceImage:@"bt_ic_visa"];
+}
+
 + (NSBundle*)resourceBundle {
 
-    return [NSBundle bundleWithURL:[[NSBundle mainBundle]URLForResource:@"UQHostUIResource" withExtension:@"bundle"]];
+    return [NSBundle bundleWithURL:[[NSBundle mainBundle]URLForResource:@"Frameworks/UQPayHostUI.framework/UQHostUIResource" withExtension:@"bundle"]];
 }
 
 + (UIImage *)resourceImage:(NSString *)imgName {

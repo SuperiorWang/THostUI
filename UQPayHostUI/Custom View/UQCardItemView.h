@@ -15,6 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, setter=setCardId:) NSString* cardId;
 
+- (void)setCardImageName:(NSString *)imageName;
 - (void)addTarget:(id)target action:(SEL)action;
 
 @end

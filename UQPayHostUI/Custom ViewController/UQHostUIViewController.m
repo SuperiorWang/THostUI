@@ -299,8 +299,9 @@
     [self.cardItemView removeFromSuperview];
     [self.moreBtn removeFromSuperview];
     if (self.resultModel != NULL) {
-        self.cardItemView.cardId = [NSString stringWithFormat:@"**** %@ %@", self.resultModel.panTail, self.resultModel.issuer];
+        self.cardItemView.cardId = self.resultModel.panTail;
         self.cardItemView.frame = CGRectMake(0, 38 + 55 , CGRectGetWidth(self.view.bounds), 24);
+        [self.cardItemView setCardImageName:self.resultModel.issuer];
         [self.contentView addSubview:self.cardItemView];
         
         [self.contentView addSubview:self.moreBtn];

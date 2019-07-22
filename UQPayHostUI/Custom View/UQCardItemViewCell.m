@@ -14,6 +14,7 @@
 @interface UQCardItemViewCell()
 
 @property (nonatomic) UIView *sepView;
+@property (nonatomic, strong) UIImageView *iconView;
 
 @end
 
@@ -53,7 +54,7 @@
 - (void)initUI {
     [self.contentView addSubview:self.titleLabel];
     [self.contentView addSubview:self.detailLabel];
-    [self.contentView addSubview:self.selectView];
+    [self.contentView addSubview:self.iconView];
     [self.contentView addSubview:self.sepView];
 }
 
@@ -77,12 +78,19 @@
 }
 
 - (UIImageView *)selectView {
-    if (_selectView) {
+    if (_selectView == nil) {
         _selectView = [[UIImageView alloc]init];
         _selectView.image = [UQImageUtils selectIcon];
         _selectView.frame = CGRectMake(0, 0, 20, 20);
     }
     return _selectView;
+}
+
+- (UIImageView *)iconView {
+    if (_iconView == nil) {
+        _iconView = [[UIImageView alloc]init];
+    }
+    return _iconView;
 }
 
 - (UIView *)sepView {
@@ -91,6 +99,14 @@
         _sepView.backgroundColor = [UQUIKAppearance sharedInstance].defaultTableSepColor;
     }
     return _sepView;
+}
+
+- (void)setIconImage:(NSString *)imageName {
+    UIImage *image = [[UQImageUtils shareInstance].icons objectForKey:imageName];
+    if (image != nil) {
+        [self.iconView setImage:image];
+        [self.iconView sizeToFit];
+    }
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
@@ -102,7 +118,10 @@
     [self.titleLabel sizeToFit];
     [self.detailLabel sizeToFit];
     
-    self.titleLabel.frame = CGRectMake(9, 0, CGRectGetWidth(self.titleLabel.bounds), CGRectGetHeight(self.titleLabel.bounds));
+    self.iconView.frame = CGRectMake(12, 0, CGRectGetWidth(self.iconView.bounds), CGRectGetHeight(self.iconView.bounds));
+    self.iconView.center = CGPointMake(self.iconView.center.x, CGRectGetHeight(self.contentView.bounds) / 2) ;
+    
+    self.titleLabel.frame = CGRectMake(CGRectGetMaxX(self.iconView.frame) + 12, 0, CGRectGetWidth(self.titleLabel.bounds), CGRectGetHeight(self.titleLabel.bounds));
     self.titleLabel.center = CGPointMake(self.titleLabel.center.x, CGRectGetHeight(self.bounds) /2);
     
     self.detailLabel.frame = CGRectMake(CGRectGetMaxX(self.titleLabel.frame) , 0, CGRectGetWidth(self.detailLabel.bounds), CGRectGetHeight(self.detailLabel.bounds));

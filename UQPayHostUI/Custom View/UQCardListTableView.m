@@ -47,7 +47,7 @@
     }
     
     cell.titleLabel.text = [NSString stringWithFormat:@"**** %@ ",[self.data[indexPath.row] objectForKey:@"panTail"]];
-    cell.detailLabel.text = [self.data[indexPath.row] objectForKey:@"issuer"];
+    [cell setIconImage:[self.data[indexPath.row] objectForKey:@"issuer"]];
     return cell;
 }
 

@@ -7,7 +7,7 @@
 //
 
 #import "UQCardItemView.h"
-
+#import "../Images/UQImageUtils.h"
 #import <UQPayHostUIKit/UQPayHostUIKit.h>
 
 @interface UQCardItemView()
@@ -15,6 +15,7 @@
 @property (nonatomic) NSString* title;
 @property (nonatomic, strong) UILabel * titleLabel;
 @property (nonatomic, strong) UILabel *cardLabel;
+@property (nonatomic, strong) UIImageView *cardImg;
 @property (nonatomic, weak) id target;
 @property (nonatomic, assign) SEL action;
 @property (nonatomic, retain) UITapGestureRecognizer *tapGestureRecognizer;
@@ -70,15 +71,26 @@
     return _cardLabel;
 }
 
+- (UIImageView *)cardImg {
+    if (_cardImg == nil) {
+        _cardImg = [[UIImageView alloc]init];
+    }
+    return _cardImg;
+}
+
 - (void)initUI {
     [self addSubview:self.titleLabel];
+    [self addSubview:self.cardImg];
     [self addSubview:self.cardLabel];
+    
 }
 
 - (void)layoutSubviews {
     [super layoutSubviews];
     
     self.titleLabel.center = CGPointMake(16 + CGRectGetWidth(self.titleLabel.bounds) /2 , CGRectGetHeight(self.bounds)/2);
+    
+    self.cardImg.center = CGPointMake(CGRectGetWidth(self.bounds) /2 , CGRectGetHeight(self.bounds)/2);
     
     [self.cardLabel sizeToFit];
     self.cardLabel.center = CGPointMake(CGRectGetWidth(self.bounds) - 16 - CGRectGetWidth(self.cardLabel.bounds) / 2, CGRectGetHeight(self.bounds)/2);
@@ -98,8 +110,14 @@
         self.tapGestureRecognizer = [[UITapGestureRecognizer alloc]initWithTarget:self.target action:action];
         [self addGestureRecognizer:self.tapGestureRecognizer];
     }
-    
 }
 
+- (void)setCardImageName:(NSString *)imageName {
+    UIImage *image = [[UQImageUtils shareInstance].icons objectForKey:imageName];
+    if (image != nil) {
+        [self.cardImg setImage:image];
+        [self.cardImg sizeToFit];
+    }
+}
 
 @end
