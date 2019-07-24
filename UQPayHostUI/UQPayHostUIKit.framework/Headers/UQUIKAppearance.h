@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 @interface UQUIKAppearance : NSObject
 
 /// Shared instance used by Form elements
@@ -92,7 +94,6 @@
 + (float) largeIconWidth;
 + (float) largeIconHeight;
 + (NSDictionary*)metrics;
-
-
-
 @end
+
+NS_ASSUME_NONNULL_END

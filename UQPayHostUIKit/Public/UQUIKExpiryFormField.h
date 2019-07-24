@@ -1,6 +1,7 @@
 #import "UQUIKFormField.h"
 #import "UQUIKExpiryInputView.h"
 
+NS_ASSUME_NONNULL_BEGIN
 /// @class Form field to collect an expiration date.
 @interface UQUIKExpiryFormField : UQUIKFormField <UQUIKExpiryInputViewDelegate>
 
@@ -14,3 +15,5 @@
 @property (nonatomic, copy, nullable) NSString *expirationDate;
 
 @end
+
+NS_ASSUME_NONNULL_END

@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 #define UQUIKLocalizedString(KEY) [UQUIKLocalizedString KEY]
 
 @interface UQUIKLocalizedString : NSObject
@@ -113,3 +115,4 @@
 
 @end
 
+NS_ASSUME_NONNULL_END

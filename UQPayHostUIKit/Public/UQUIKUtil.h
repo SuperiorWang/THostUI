@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 @interface UQUIKUtil : NSObject
 
 /// Checks if a card number is Luhn valid
@@ -34,3 +36,5 @@
 + (NSString *)stripNonExpiry:(NSString *)input;
 
 @end
+
+NS_ASSUME_NONNULL_END

@@ -1,5 +1,6 @@
 #import <UIKit/UIKit.h>
 
+NS_ASSUME_NONNULL_BEGIN
 /// @class Creates a toolbar with that can be used as an input accessory view.
 @interface UQUIKInputAccessoryToolbar : UIToolbar
 
@@ -7,3 +8,4 @@
 - (instancetype)initWithDoneButtonForInput:(id <UITextInput>)input;
 
 @end
+NS_ASSUME_NONNULL_END

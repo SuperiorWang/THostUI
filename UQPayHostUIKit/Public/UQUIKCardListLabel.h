@@ -1,6 +1,8 @@
 #import <UIKit/UIKit.h>
 #import "UQUIKPaymentOptionType.h"
 
+NS_ASSUME_NONNULL_BEGIN
+
 /// @class A UILabel that contains images representing multiple UQUIKPaymentOptionType's
 @interface UQUIKCardListLabel : UILabel
 
@@ -11,3 +13,5 @@
 - (void)emphasizePaymentOption:(UQUIKPaymentOptionType)paymentOption;
 
 @end
+
+NS_ASSUME_NONNULL_END

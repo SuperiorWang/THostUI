@@ -1,5 +1,7 @@
 #import <UIKit/UIKit.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 @protocol UQUIKTextFieldEditDelegate;
 
 /// @class A specialized text field that provides more granular callbacks than a standard
@@ -44,3 +46,5 @@
 /// @param text      The text that was inserted
 - (void)textField:(UQUIKTextField *)textField didInsertText:(NSString *)text;
 @end
+
+NS_ASSUME_NONNULL_END

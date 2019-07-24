@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 @interface UQUIKVectorArtView : UIView
 
 /// Subclass and implement this method to draw within a context pre-scaled to the
@@ -27,3 +29,4 @@
 
 @end
 
+NS_ASSUME_NONNULL_END

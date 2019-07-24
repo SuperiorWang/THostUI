@@ -8,6 +8,8 @@
 #import <UIKit/UIKit.h>
 #import "UQUIKLocalizedString.h"
 
+NS_ASSUME_NONNULL_BEGIN
+
 @interface UQUIKCardType : NSObject
 
 /// Obtain the `BTCardType` for the given brand, or nil if none is found
@@ -66,3 +68,5 @@
 @property (nonatomic, assign, readonly) NSString *securityCodeName;
 
 @end
+
+NS_ASSUME_NONNULL_END

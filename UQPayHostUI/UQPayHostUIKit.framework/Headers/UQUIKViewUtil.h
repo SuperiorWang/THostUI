@@ -11,6 +11,8 @@
 #import "UQUIKPaymentOptionType.h"
 #import "UQUIKVisualAssetType.h"
 
+NS_ASSUME_NONNULL_BEGIN
+
 @class UQUIKVectorArtView;
 
 /// Size for vector art
@@ -95,3 +97,4 @@ typedef NS_ENUM(NSInteger, UQUIKVectorArtSize) {
 @end
 
 
+NS_ASSUME_NONNULL_END

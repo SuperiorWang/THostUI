@@ -1,6 +1,8 @@
 #import <UIKit/UIKit.h>
 #import "UQUIKTextField.h"
 
+NS_ASSUME_NONNULL_BEGIN
+
 @protocol UQUIKFormFieldDelegate;
 
 /// @class A UIView containing a UQUIKTextField and other elements to be displayed as a form field. This class is meant to be extended but can be used as is for other generic form fields.
@@ -62,3 +64,5 @@
 - (void)formFieldDidEndEditing:(UQUIKFormField *)formField;
 
 @end
+
+NS_ASSUME_NONNULL_END

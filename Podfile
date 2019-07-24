@@ -1,9 +1,6 @@
 source 'https://github.com/CocoaPods/Specs.git'
-
 platform :ios, '9.0'
 inhibit_all_warnings!
-
-#use_frameworks!
 
 workspace 'UQPayHostUIDemo.xcworkspace'
 
@@ -11,6 +8,9 @@ abstract_target 'abstract_pod' do
   target 'UQPayHostUIDemo' do
     project 'UQPayHostUIDemo'
     pod 'WHToast', '~>0.0.2'
+    pod 'AFNetworking', '~>3.2'
+#    pod 'CardIO', '~>5.4'
+#    pod 'WHToast', '~>0.0.2'
     pod "UPHostUI", :path => "./"
   end
 

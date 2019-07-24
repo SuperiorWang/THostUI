@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 #define kBTUIKCardExpirationValidatorFarFutureYears 20
 
 @interface UQUIKCardExpirationValidator : NSObject
@@ -16,3 +18,4 @@
 
 @end
 
+NS_ASSUME_NONNULL_END

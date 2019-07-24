@@ -1,5 +1,7 @@
 #import <UIKit/UIKit.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 @protocol UQUIKExpiryInputViewDelegate;
 
 /// @class A UIView designed to be used as an `inputView` on a text field.
@@ -21,3 +23,5 @@
 - (void)expiryInputViewDidChange:(UQUIKExpiryInputView *)expiryInputView;
 
 @end
+
+NS_ASSUME_NONNULL_END

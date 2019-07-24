@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 @interface UQUIKCardExpiryFormat : NSObject
 
 @property (nonatomic, copy) NSString *value;
@@ -18,3 +20,4 @@
 
 @end
 
+NS_ASSUME_NONNULL_END

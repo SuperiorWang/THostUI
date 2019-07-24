@@ -1,6 +1,8 @@
 #import "UQUIKFormField.h"
 #import "UQUIKCardType.h"
 
+NS_ASSUME_NONNULL_BEGIN
+
 @protocol UQUIKCardNumberFormFieldDelegate;
 
 /// @class Form field to collect a card number.
@@ -37,3 +39,5 @@ typedef NS_ENUM(NSInteger, UQUIKCardNumberFormFieldState) {
 - (void)validateButtonPressed:(UQUIKFormField *)formField;
 
 @end
+
+NS_ASSUME_NONNULL_END

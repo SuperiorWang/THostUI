@@ -2,6 +2,8 @@
 #import "UQUIKPaymentOptionType.h"
 #import "UQUIKViewUtil.h"
 /// @class A UIView containing the UQUIKVectorArtView for a UQUIKPaymentOptionType within a light border.
+NS_ASSUME_NONNULL_BEGIN
+
 @interface UQUIKPaymentOptionCardView : UIView
 
 /// The UQUIKPaymentOptionType to display
@@ -30,3 +32,5 @@
 - (CGSize)getArtDimensions;
 
 @end
+
+NS_ASSUME_NONNULL_END
