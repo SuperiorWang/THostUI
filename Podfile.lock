@@ -28,11 +28,11 @@ PODS:
   - WHToast (0.0.2)
 
 DEPENDENCIES:
-  - AFNetworking
-  - CardIO
-  - JSONModel
+  - AFNetworking (~> 3.2)
+  - CardIO (~> 5.4)
+  - JSONModel (~> 1.8)
   - UPHostUI (from `./`)
-  - WHToast
+  - WHToast (~> 0.0.2)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -52,6 +52,6 @@ SPEC CHECKSUMS:
   UPHostUI: 3cacc37b595491246fd1db57da7e269b6f38175b
   WHToast: b5b1c6c2a178b2e848e7416fd25ca6b25c7babf8
 
-PODFILE CHECKSUM: b7fc631958df1ade81e39e518dfd5dd94f0db576
+PODFILE CHECKSUM: 25b80fdc81128ad8bbe65c310b6bb0561a66d82b
 
 COCOAPODS: 1.7.5

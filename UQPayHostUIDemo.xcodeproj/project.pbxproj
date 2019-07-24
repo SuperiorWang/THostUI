@@ -7,108 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AB4EDD4A22E59A25001CBB5C /* delete@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB4EDD1B22E59A1F001CBB5C /* delete@3x.png */; };
-		AB4EDD4B22E59A25001CBB5C /* xuanze@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB4EDD1C22E59A1F001CBB5C /* xuanze@2x.png */; };
-		AB4EDD4C22E59A25001CBB5C /* back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB4EDD1D22E59A1F001CBB5C /* back@2x.png */; };
-		AB4EDD4D22E59A25001CBB5C /* bt_ic_mastercard@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB4EDD1E22E59A1F001CBB5C /* bt_ic_mastercard@3x.png */; };
-		AB4EDD4E22E59A25001CBB5C /* bt_ic_mastercard@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB4EDD1F22E59A1F001CBB5C /* bt_ic_mastercard@2x.png */; };
-		AB4EDD4F22E59A25001CBB5C /* delete.png in Resources */ = {isa = PBXBuildFile; fileRef = AB4EDD2022E59A1F001CBB5C /* delete.png */; };
-		AB4EDD5022E59A25001CBB5C /* bt_ic_discover.png in Resources */ = {isa = PBXBuildFile; fileRef = AB4EDD2122E59A1F001CBB5C /* bt_ic_discover.png */; };
-		AB4EDD5122E59A25001CBB5C /* bt_ic_hiper.png in Resources */ = {isa = PBXBuildFile; fileRef = AB4EDD2222E59A1F001CBB5C /* bt_ic_hiper.png */; };
-		AB4EDD5322E59A25001CBB5C /* bt_ic_maestro@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB4EDD2422E59A20001CBB5C /* bt_ic_maestro@3x.png */; };
-		AB4EDD5422E59A25001CBB5C /* bt_ic_amex@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB4EDD2522E59A20001CBB5C /* bt_ic_amex@2x.png */; };
-		AB4EDD5522E59A25001CBB5C /* bt_ic_hiper@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB4EDD2622E59A20001CBB5C /* bt_ic_hiper@3x.png */; };
-		AB4EDD5622E59A25001CBB5C /* bt_ic_unionpay@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB4EDD2722E59A20001CBB5C /* bt_ic_unionpay@3x.png */; };
-		AB4EDD5822E59A25001CBB5C /* back@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB4EDD2922E59A20001CBB5C /* back@3x.png */; };
-		AB4EDD5922E59A25001CBB5C /* bt_ic_jcb@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB4EDD2A22E59A20001CBB5C /* bt_ic_jcb@3x.png */; };
-		AB4EDD5A22E59A25001CBB5C /* photograph@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB4EDD2B22E59A20001CBB5C /* photograph@3x.png */; };
-		AB4EDD5B22E59A25001CBB5C /* photograph.png in Resources */ = {isa = PBXBuildFile; fileRef = AB4EDD2C22E59A21001CBB5C /* photograph.png */; };
-		AB4EDD5C22E59A25001CBB5C /* bt_ic_visa.png in Resources */ = {isa = PBXBuildFile; fileRef = AB4EDD2D22E59A21001CBB5C /* bt_ic_visa.png */; };
-		AB4EDD5D22E59A25001CBB5C /* add-rectangle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB4EDD2E22E59A21001CBB5C /* add-rectangle@2x.png */; };
-		AB4EDD5E22E59A25001CBB5C /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = AB4EDD2F22E59A21001CBB5C /* back.png */; };
-		AB4EDD5F22E59A25001CBB5C /* bt_ic_jcb@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB4EDD3022E59A21001CBB5C /* bt_ic_jcb@2x.png */; };
-		AB4EDD6022E59A25001CBB5C /* xuanze@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB4EDD3122E59A21001CBB5C /* xuanze@3x.png */; };
-		AB4EDD6122E59A25001CBB5C /* bt_ic_unionpay.png in Resources */ = {isa = PBXBuildFile; fileRef = AB4EDD3222E59A21001CBB5C /* bt_ic_unionpay.png */; };
-		AB4EDD6222E59A25001CBB5C /* bt_ic_mastercard.png in Resources */ = {isa = PBXBuildFile; fileRef = AB4EDD3322E59A21001CBB5C /* bt_ic_mastercard.png */; };
-		AB4EDD6322E59A25001CBB5C /* bt_ic_maestro@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB4EDD3422E59A22001CBB5C /* bt_ic_maestro@2x.png */; };
-		AB4EDD6422E59A25001CBB5C /* bt_ic_visa@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB4EDD3522E59A22001CBB5C /* bt_ic_visa@2x.png */; };
-		AB4EDD6522E59A25001CBB5C /* bt_ic_jcb.png in Resources */ = {isa = PBXBuildFile; fileRef = AB4EDD3622E59A22001CBB5C /* bt_ic_jcb.png */; };
-		AB4EDD6622E59A25001CBB5C /* add-rectangle@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB4EDD3722E59A22001CBB5C /* add-rectangle@3x.png */; };
-		AB4EDD6722E59A25001CBB5C /* bt_ic_hipercard@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB4EDD3822E59A22001CBB5C /* bt_ic_hipercard@2x.png */; };
-		AB4EDD6822E59A25001CBB5C /* bt_ic_unionpay@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB4EDD3922E59A22001CBB5C /* bt_ic_unionpay@2x.png */; };
-		AB4EDD6922E59A25001CBB5C /* add-rectangle.png in Resources */ = {isa = PBXBuildFile; fileRef = AB4EDD3A22E59A22001CBB5C /* add-rectangle.png */; };
-		AB4EDD6A22E59A25001CBB5C /* bt_ic_amex@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB4EDD3B22E59A23001CBB5C /* bt_ic_amex@3x.png */; };
-		AB4EDD6B22E59A25001CBB5C /* bt_ic_discover@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB4EDD3C22E59A23001CBB5C /* bt_ic_discover@2x.png */; };
-		AB4EDD6C22E59A25001CBB5C /* bt_ic_amex.png in Resources */ = {isa = PBXBuildFile; fileRef = AB4EDD3D22E59A23001CBB5C /* bt_ic_amex.png */; };
-		AB4EDD6D22E59A25001CBB5C /* photograph@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB4EDD3E22E59A23001CBB5C /* photograph@2x.png */; };
-		AB4EDD6E22E59A25001CBB5C /* bt_ic_discover@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB4EDD3F22E59A23001CBB5C /* bt_ic_discover@3x.png */; };
-		AB4EDD6F22E59A25001CBB5C /* bt_ic_hipercard.png in Resources */ = {isa = PBXBuildFile; fileRef = AB4EDD4022E59A24001CBB5C /* bt_ic_hipercard.png */; };
-		AB4EDD7022E59A25001CBB5C /* delete@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB4EDD4122E59A24001CBB5C /* delete@2x.png */; };
-		AB4EDD7122E59A25001CBB5C /* bt_ic_hipercard@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB4EDD4222E59A24001CBB5C /* bt_ic_hipercard@3x.png */; };
-		AB4EDD7222E59A25001CBB5C /* xuanze.png in Resources */ = {isa = PBXBuildFile; fileRef = AB4EDD4322E59A24001CBB5C /* xuanze.png */; };
-		AB4EDD7322E59A25001CBB5C /* bt_ic_diners_club@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB4EDD4422E59A24001CBB5C /* bt_ic_diners_club@3x.png */; };
-		AB4EDD7422E59A25001CBB5C /* bt_ic_maestro.png in Resources */ = {isa = PBXBuildFile; fileRef = AB4EDD4522E59A24001CBB5C /* bt_ic_maestro.png */; };
-		AB4EDD7522E59A25001CBB5C /* bt_ic_hiper@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB4EDD4622E59A25001CBB5C /* bt_ic_hiper@2x.png */; };
-		AB4EDD7622E59A25001CBB5C /* bt_ic_visa@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB4EDD4722E59A25001CBB5C /* bt_ic_visa@3x.png */; };
-		AB4EDD7722E59A25001CBB5C /* bt_ic_diners_club@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB4EDD4822E59A25001CBB5C /* bt_ic_diners_club@2x.png */; };
-		AB4EDD7822E59A25001CBB5C /* bt_ic_diners_club.png in Resources */ = {isa = PBXBuildFile; fileRef = AB4EDD4922E59A25001CBB5C /* bt_ic_diners_club.png */; };
-		AB4EDD7922E59A4C001CBB5C /* add-rectangle.png in Resources */ = {isa = PBXBuildFile; fileRef = AB4EDD3A22E59A22001CBB5C /* add-rectangle.png */; };
-		AB4EDD7A22E59A4D001CBB5C /* add-rectangle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB4EDD2E22E59A21001CBB5C /* add-rectangle@2x.png */; };
-		AB4EDD7B22E59A4E001CBB5C /* add-rectangle@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB4EDD3722E59A22001CBB5C /* add-rectangle@3x.png */; };
-		AB4EDD7C22E59A4F001CBB5C /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = AB4EDD2F22E59A21001CBB5C /* back.png */; };
-		AB4EDD7D22E59A51001CBB5C /* back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB4EDD1D22E59A1F001CBB5C /* back@2x.png */; };
-		AB4EDD7E22E59A52001CBB5C /* back@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB4EDD2922E59A20001CBB5C /* back@3x.png */; };
-		AB4EDD7F22E59A55001CBB5C /* bt_ic_amex.png in Resources */ = {isa = PBXBuildFile; fileRef = AB4EDD3D22E59A23001CBB5C /* bt_ic_amex.png */; };
-		AB4EDD8022E59A57001CBB5C /* bt_ic_amex@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB4EDD2522E59A20001CBB5C /* bt_ic_amex@2x.png */; };
-		AB4EDD8122E59A58001CBB5C /* bt_ic_amex@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB4EDD3B22E59A23001CBB5C /* bt_ic_amex@3x.png */; };
-		AB4EDD8222E59A59001CBB5C /* bt_ic_diners_club.png in Resources */ = {isa = PBXBuildFile; fileRef = AB4EDD4922E59A25001CBB5C /* bt_ic_diners_club.png */; };
-		AB4EDD8322E59A5B001CBB5C /* bt_ic_diners_club@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB4EDD4822E59A25001CBB5C /* bt_ic_diners_club@2x.png */; };
-		AB4EDD8422E59A5C001CBB5C /* bt_ic_diners_club@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB4EDD4422E59A24001CBB5C /* bt_ic_diners_club@3x.png */; };
-		AB4EDD8522E59A5D001CBB5C /* bt_ic_discover.png in Resources */ = {isa = PBXBuildFile; fileRef = AB4EDD2122E59A1F001CBB5C /* bt_ic_discover.png */; };
-		AB4EDD8622E59A5F001CBB5C /* bt_ic_discover@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB4EDD3C22E59A23001CBB5C /* bt_ic_discover@2x.png */; };
-		AB4EDD8722E59A60001CBB5C /* bt_ic_discover@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB4EDD3F22E59A23001CBB5C /* bt_ic_discover@3x.png */; };
-		AB4EDD8822E59A63001CBB5C /* bt_ic_hiper.png in Resources */ = {isa = PBXBuildFile; fileRef = AB4EDD2222E59A1F001CBB5C /* bt_ic_hiper.png */; };
-		AB4EDD8922E59A64001CBB5C /* bt_ic_hiper@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB4EDD4622E59A25001CBB5C /* bt_ic_hiper@2x.png */; };
-		AB4EDD8A22E59A65001CBB5C /* bt_ic_hiper@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB4EDD2622E59A20001CBB5C /* bt_ic_hiper@3x.png */; };
-		AB4EDD8B22E59A67001CBB5C /* bt_ic_hipercard.png in Resources */ = {isa = PBXBuildFile; fileRef = AB4EDD4022E59A24001CBB5C /* bt_ic_hipercard.png */; };
-		AB4EDD8C22E59A69001CBB5C /* bt_ic_hipercard@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB4EDD3822E59A22001CBB5C /* bt_ic_hipercard@2x.png */; };
-		AB4EDD8D22E59A6A001CBB5C /* bt_ic_hipercard@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB4EDD4222E59A24001CBB5C /* bt_ic_hipercard@3x.png */; };
-		AB4EDD8E22E59A6C001CBB5C /* bt_ic_jcb.png in Resources */ = {isa = PBXBuildFile; fileRef = AB4EDD3622E59A22001CBB5C /* bt_ic_jcb.png */; };
-		AB4EDD8F22E59A6D001CBB5C /* bt_ic_jcb@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB4EDD3022E59A21001CBB5C /* bt_ic_jcb@2x.png */; };
-		AB4EDD9022E59A6E001CBB5C /* bt_ic_jcb@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB4EDD2A22E59A20001CBB5C /* bt_ic_jcb@3x.png */; };
-		AB4EDD9122E59A6F001CBB5C /* bt_ic_maestro.png in Resources */ = {isa = PBXBuildFile; fileRef = AB4EDD4522E59A24001CBB5C /* bt_ic_maestro.png */; };
-		AB4EDD9222E59A71001CBB5C /* bt_ic_maestro@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB4EDD3422E59A22001CBB5C /* bt_ic_maestro@2x.png */; };
-		AB4EDD9322E59A73001CBB5C /* bt_ic_maestro@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB4EDD2422E59A20001CBB5C /* bt_ic_maestro@3x.png */; };
-		AB4EDD9422E59A75001CBB5C /* bt_ic_mastercard.png in Resources */ = {isa = PBXBuildFile; fileRef = AB4EDD3322E59A21001CBB5C /* bt_ic_mastercard.png */; };
-		AB4EDD9522E59A76001CBB5C /* bt_ic_mastercard@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB4EDD1F22E59A1F001CBB5C /* bt_ic_mastercard@2x.png */; };
-		AB4EDD9622E59A77001CBB5C /* bt_ic_mastercard@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB4EDD1E22E59A1F001CBB5C /* bt_ic_mastercard@3x.png */; };
-		AB4EDD9722E59A78001CBB5C /* bt_ic_unionpay.png in Resources */ = {isa = PBXBuildFile; fileRef = AB4EDD3222E59A21001CBB5C /* bt_ic_unionpay.png */; };
-		AB4EDD9822E59A7A001CBB5C /* bt_ic_unionpay@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB4EDD3922E59A22001CBB5C /* bt_ic_unionpay@2x.png */; };
-		AB4EDD9922E59A7B001CBB5C /* bt_ic_unionpay@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB4EDD2722E59A20001CBB5C /* bt_ic_unionpay@3x.png */; };
-		AB4EDD9A22E59A7C001CBB5C /* bt_ic_visa.png in Resources */ = {isa = PBXBuildFile; fileRef = AB4EDD2D22E59A21001CBB5C /* bt_ic_visa.png */; };
-		AB4EDD9B22E59A7E001CBB5C /* bt_ic_visa@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB4EDD3522E59A22001CBB5C /* bt_ic_visa@2x.png */; };
-		AB4EDD9C22E59A7F001CBB5C /* bt_ic_visa@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB4EDD4722E59A25001CBB5C /* bt_ic_visa@3x.png */; };
-		AB4EDD9D22E59A81001CBB5C /* delete.png in Resources */ = {isa = PBXBuildFile; fileRef = AB4EDD2022E59A1F001CBB5C /* delete.png */; };
-		AB4EDD9E22E59A82001CBB5C /* delete@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB4EDD1B22E59A1F001CBB5C /* delete@3x.png */; };
-		AB4EDD9F22E59A83001CBB5C /* photograph.png in Resources */ = {isa = PBXBuildFile; fileRef = AB4EDD2C22E59A21001CBB5C /* photograph.png */; };
-		AB4EDDA022E59A84001CBB5C /* photograph@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB4EDD3E22E59A23001CBB5C /* photograph@2x.png */; };
-		AB4EDDA122E59A86001CBB5C /* photograph@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB4EDD2B22E59A20001CBB5C /* photograph@3x.png */; };
-		AB4EDDA422E59A8A001CBB5C /* xuanze.png in Resources */ = {isa = PBXBuildFile; fileRef = AB4EDD4322E59A24001CBB5C /* xuanze.png */; };
-		AB4EDDA522E59A8B001CBB5C /* xuanze@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB4EDD1C22E59A1F001CBB5C /* xuanze@2x.png */; };
-		AB4EDDA622E59A8C001CBB5C /* xuanze@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB4EDD3122E59A21001CBB5C /* xuanze@3x.png */; };
-		AB4EDDA722E59ADE001CBB5C /* delete@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB4EDD4122E59A24001CBB5C /* delete@2x.png */; };
-		AB4EDDC322E59C00001CBB5C /* card@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB4EDDC022E59C00001CBB5C /* card@3x.png */; };
-		AB4EDDC422E59C00001CBB5C /* card.png in Resources */ = {isa = PBXBuildFile; fileRef = AB4EDDC122E59C00001CBB5C /* card.png */; };
-		AB4EDDC522E59C00001CBB5C /* card@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB4EDDC222E59C00001CBB5C /* card@2x.png */; };
-		AB4EDDC622E59C08001CBB5C /* card.png in Resources */ = {isa = PBXBuildFile; fileRef = AB4EDDC122E59C00001CBB5C /* card.png */; };
-		AB4EDDC722E59C0A001CBB5C /* card@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB4EDDC222E59C00001CBB5C /* card@2x.png */; };
-		AB4EDDC822E59C0B001CBB5C /* card@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB4EDDC022E59C00001CBB5C /* card@3x.png */; };
-		AB4EDDCA22E59C2C001CBB5C /* UQHostUIResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = AB4EDDC922E59C2C001CBB5C /* UQHostUIResource.bundle */; };
 		AB96EC9722E06490009395AF /* BTUI.strings in Resources */ = {isa = PBXBuildFile; fileRef = AB96EC9922E06490009395AF /* BTUI.strings */; };
 		AB96EC9E22E064E4009395AF /* UQUIKLocalizedString.m in Sources */ = {isa = PBXBuildFile; fileRef = AB96EC9D22E064E4009395AF /* UQUIKLocalizedString.m */; };
-		AB96ECB222E066A7009395AF /* BTUI.strings in Resources */ = {isa = PBXBuildFile; fileRef = AB96EC9922E06490009395AF /* BTUI.strings */; };
 		AB96ECB722E16044009395AF /* UQUIKSMSFormField.h in Headers */ = {isa = PBXBuildFile; fileRef = AB96ECB522E16044009395AF /* UQUIKSMSFormField.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AB96ECB822E16044009395AF /* UQUIKSMSFormField.m in Sources */ = {isa = PBXBuildFile; fileRef = AB96ECB622E16044009395AF /* UQUIKSMSFormField.m */; };
+		AB9A665F22E8035200A09A32 /* UQPayHostUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB9A665E22E8035200A09A32 /* UQPayHostUIKit.framework */; };
+		AB9A666022E803D000A09A32 /* UQPayHostUIKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = AB9A665E22E8035200A09A32 /* UQPayHostUIKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		ABA91C1A22CDF46400CCB034 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ABA91C1922CDF46400CCB034 /* AppDelegate.m */; };
 		ABA91C1D22CDF46400CCB034 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABA91C1C22CDF46400CCB034 /* ViewController.m */; };
 		ABA91C2022CDF46400CCB034 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABA91C1E22CDF46400CCB034 /* Main.storyboard */; };
@@ -294,9 +198,7 @@
 		ABC4E11B22E6F9B500C99D18 /* bt_ic_visa.png in Resources */ = {isa = PBXBuildFile; fileRef = AB4EDD2D22E59A21001CBB5C /* bt_ic_visa.png */; };
 		ABC4E11C22E6F9B500C99D18 /* bt_ic_visa@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB4EDD3522E59A22001CBB5C /* bt_ic_visa@2x.png */; };
 		ABC4E11D22E6F9B500C99D18 /* bt_ic_visa@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB4EDD4722E59A25001CBB5C /* bt_ic_visa@3x.png */; };
-		ABC4E11E22E6F9CA00C99D18 /* UQHostUIResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = AB4EDDC922E59C2C001CBB5C /* UQHostUIResource.bundle */; };
 		ABC4E11F22E6FA6E00C99D18 /* UQImageUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = ABEFA1AE22D873B200768AE1 /* UQImageUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		ABC4E12022E6FF8600C99D18 /* UQPayHostUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABA91DC022CF192200CCB034 /* UQPayHostUIKit.framework */; };
 		ABEFA15822D2EC2E00768AE1 /* UQDropInUIUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = ABEFA15622D2EC2E00768AE1 /* UQDropInUIUtilities.h */; };
 		ABEFA15922D2EC2E00768AE1 /* UQDropInUIUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = ABEFA15722D2EC2E00768AE1 /* UQDropInUIUtilities.m */; };
 		ABEFA16022D35F9300768AE1 /* UQHttpClient.h in Headers */ = {isa = PBXBuildFile; fileRef = ABEFA15E22D35F9300768AE1 /* UQHttpClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -323,6 +225,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		AB9A665B22E7F5B100A09A32 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				AB9A666022E803D000A09A32 /* UQPayHostUIKit.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		ABA91DBA22CF190C00CCB034 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -336,8 +248,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		587A053817468479C352731F /* libPods-UQPayHostUIDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-UQPayHostUIDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		06AA65C2BDBF1387FA22F2AF /* libPods-abstract_pod-UQPayHostUIDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-abstract_pod-UQPayHostUIDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3142A64F7E566E1AE3A31B1E /* Pods-UQPayHostUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UQPayHostUI.release.xcconfig"; path = "Pods/Target Support Files/Pods-UQPayHostUI/Pods-UQPayHostUI.release.xcconfig"; sourceTree = "<group>"; };
+		3C9CA50599F15D71E2252CB0 /* Pods-UQPayHostUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UQPayHostUI.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UQPayHostUI/Pods-UQPayHostUI.debug.xcconfig"; sourceTree = "<group>"; };
+		3F0320BA01C683C43023A310 /* Pods-abstract_pod-UQPayHostUIDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-abstract_pod-UQPayHostUIDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-abstract_pod-UQPayHostUIDemo/Pods-abstract_pod-UQPayHostUIDemo.release.xcconfig"; sourceTree = "<group>"; };
 		5F9166B12E73F15A224B796B /* Pods-UQPayHostUIDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UQPayHostUIDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-UQPayHostUIDemo/Pods-UQPayHostUIDemo.release.xcconfig"; sourceTree = "<group>"; };
+		8DA0658AC5862C2F1B75785F /* Pods-abstract_pod-UQPayHostUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-abstract_pod-UQPayHostUI.release.xcconfig"; path = "Pods/Target Support Files/Pods-abstract_pod-UQPayHostUI/Pods-abstract_pod-UQPayHostUI.release.xcconfig"; sourceTree = "<group>"; };
+		92602DA64537FDB19C742195 /* Pods_abstract_pod_UQPayHostUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_abstract_pod_UQPayHostUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB4EDD1B22E59A1F001CBB5C /* delete@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "delete@3x.png"; sourceTree = "<group>"; };
 		AB4EDD1C22E59A1F001CBB5C /* xuanze@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "xuanze@2x.png"; sourceTree = "<group>"; };
 		AB4EDD1D22E59A1F001CBB5C /* back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back@2x.png"; sourceTree = "<group>"; };
@@ -386,7 +303,6 @@
 		AB4EDDC022E59C00001CBB5C /* card@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "card@3x.png"; sourceTree = "<group>"; };
 		AB4EDDC122E59C00001CBB5C /* card.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = card.png; sourceTree = "<group>"; };
 		AB4EDDC222E59C00001CBB5C /* card@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "card@2x.png"; sourceTree = "<group>"; };
-		AB4EDDC922E59C2C001CBB5C /* UQHostUIResource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = UQHostUIResource.bundle; sourceTree = "<group>"; };
 		AB96EC9322E0645A009395AF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		AB96EC9422E0645A009395AF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		AB96EC9522E06460009395AF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
@@ -395,6 +311,8 @@
 		AB96EC9D22E064E4009395AF /* UQUIKLocalizedString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UQUIKLocalizedString.m; sourceTree = "<group>"; };
 		AB96ECB522E16044009395AF /* UQUIKSMSFormField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UQUIKSMSFormField.h; sourceTree = "<group>"; };
 		AB96ECB622E16044009395AF /* UQUIKSMSFormField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = UQUIKSMSFormField.m; path = ../Public/UQUIKSMSFormField.m; sourceTree = "<group>"; };
+		AB9A665E22E8035200A09A32 /* UQPayHostUIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UQPayHostUIKit.framework; sourceTree = "<group>"; };
+		AB9A666122E8045000A09A32 /* UQPayHostUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UQPayHostUI.framework; sourceTree = "<group>"; };
 		ABA91C1522CDF46400CCB034 /* UQPayHostUIDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UQPayHostUIDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABA91C1822CDF46400CCB034 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		ABA91C1922CDF46400CCB034 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -561,7 +479,6 @@
 		ABEFA17D22D5784600768AE1 /* CardListModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CardListModel.m; sourceTree = "<group>"; };
 		ABEFA18022D58C2800768AE1 /* UQHostResult.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UQHostResult.h; sourceTree = "<group>"; };
 		ABEFA18122D58C2800768AE1 /* UQHostResult.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UQHostResult.m; sourceTree = "<group>"; };
-		ABEFA18822D8716900768AE1 /* UQHostUIResource.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UQHostUIResource.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABEFA18A22D8716900768AE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ABEFA1AE22D873B200768AE1 /* UQImageUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UQImageUtils.h; sourceTree = "<group>"; };
 		ABEFA1AF22D873B200768AE1 /* UQImageUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UQImageUtils.m; sourceTree = "<group>"; };
@@ -571,6 +488,8 @@
 		ABEFA1DB22DC6EF900768AE1 /* UQCardItemViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UQCardItemViewCell.m; sourceTree = "<group>"; };
 		ABEFA1F822DC7C2C00768AE1 /* UQCardListTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UQCardListTableView.h; sourceTree = "<group>"; };
 		ABEFA1F922DC7C2C00768AE1 /* UQCardListTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UQCardListTableView.m; sourceTree = "<group>"; };
+		AE5CC7F8EBA540BD008F8136 /* Pods-abstract_pod-UQPayHostUIDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-abstract_pod-UQPayHostUIDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-abstract_pod-UQPayHostUIDemo/Pods-abstract_pod-UQPayHostUIDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		DC90ABB2173C702510C1DA5E /* Pods-abstract_pod-UQPayHostUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-abstract_pod-UQPayHostUI.debug.xcconfig"; path = "Pods/Target Support Files/Pods-abstract_pod-UQPayHostUI/Pods-abstract_pod-UQPayHostUI.debug.xcconfig"; sourceTree = "<group>"; };
 		E66BAE4AE6A65DD14E93CB7C /* Pods-UQPayHostUIDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UQPayHostUIDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UQPayHostUIDemo/Pods-UQPayHostUIDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -586,18 +505,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ABC4E12022E6FF8600C99D18 /* UQPayHostUIKit.framework in Frameworks */,
+				AB9A665F22E8035200A09A32 /* UQPayHostUIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		ABA91DBD22CF192200CCB034 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		ABEFA18522D8716900768AE1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -628,7 +540,8 @@
 				AB96EC0922E05F4A009395AF /* zh-HK.lproj */,
 				ABEFA16A22D4394200768AE1 /* AFNetworking.framework */,
 				ABEFA16822D4384E00768AE1 /* AFNetworking.framework */,
-				587A053817468479C352731F /* libPods-UQPayHostUIDemo.a */,
+				06AA65C2BDBF1387FA22F2AF /* libPods-abstract_pod-UQPayHostUIDemo.a */,
+				92602DA64537FDB19C742195 /* Pods_abstract_pod_UQPayHostUI.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -764,7 +677,7 @@
 		ABA91C0C22CDF46400CCB034 = {
 			isa = PBXGroup;
 			children = (
-				AB4EDDC922E59C2C001CBB5C /* UQHostUIResource.bundle */,
+				AB9A666122E8045000A09A32 /* UQPayHostUI.framework */,
 				ABA91C1722CDF46400CCB034 /* UQPayHostUIDemo */,
 				ABA91DAF22CF190C00CCB034 /* UQPayHostUI */,
 				ABA91DC122CF192200CCB034 /* UQPayHostUIKit */,
@@ -781,7 +694,6 @@
 				ABA91C1522CDF46400CCB034 /* UQPayHostUIDemo.app */,
 				ABA91DAE22CF190C00CCB034 /* UQPayHostUI.framework */,
 				ABA91DC022CF192200CCB034 /* UQPayHostUIKit.framework */,
-				ABEFA18822D8716900768AE1 /* UQHostUIResource.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -805,6 +717,7 @@
 		ABA91DAF22CF190C00CCB034 /* UQPayHostUI */ = {
 			isa = PBXGroup;
 			children = (
+				AB9A665E22E8035200A09A32 /* UQPayHostUIKit.framework */,
 				ABA9203822CF352B00CCB034 /* Info.plist */,
 				ABA9202A22CF1D9700CCB034 /* Components */,
 				ABA9202422CF1D9700CCB034 /* Custom View */,
@@ -1150,6 +1063,12 @@
 			children = (
 				E66BAE4AE6A65DD14E93CB7C /* Pods-UQPayHostUIDemo.debug.xcconfig */,
 				5F9166B12E73F15A224B796B /* Pods-UQPayHostUIDemo.release.xcconfig */,
+				3C9CA50599F15D71E2252CB0 /* Pods-UQPayHostUI.debug.xcconfig */,
+				3142A64F7E566E1AE3A31B1E /* Pods-UQPayHostUI.release.xcconfig */,
+				DC90ABB2173C702510C1DA5E /* Pods-abstract_pod-UQPayHostUI.debug.xcconfig */,
+				8DA0658AC5862C2F1B75785F /* Pods-abstract_pod-UQPayHostUI.release.xcconfig */,
+				AE5CC7F8EBA540BD008F8136 /* Pods-abstract_pod-UQPayHostUIDemo.debug.xcconfig */,
+				3F0320BA01C683C43023A310 /* Pods-abstract_pod-UQPayHostUIDemo.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -1279,10 +1198,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ABA91DB722CF190C00CCB034 /* Build configuration list for PBXNativeTarget "UQPayHostUI" */;
 			buildPhases = (
+				F1FFAD20E8492745509D1138 /* [CP] Check Pods Manifest.lock */,
 				ABA91DA922CF190C00CCB034 /* Headers */,
 				ABA91DAA22CF190C00CCB034 /* Sources */,
 				ABA91DAB22CF190C00CCB034 /* Frameworks */,
 				ABA91DAC22CF190C00CCB034 /* Resources */,
+				AB9A665B22E7F5B100A09A32 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -1311,23 +1232,6 @@
 			productReference = ABA91DC022CF192200CCB034 /* UQPayHostUIKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		ABEFA18722D8716900768AE1 /* UQHostUIResource */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = ABEFA18D22D8716900768AE1 /* Build configuration list for PBXNativeTarget "UQHostUIResource" */;
-			buildPhases = (
-				ABEFA18422D8716900768AE1 /* Sources */,
-				ABEFA18522D8716900768AE1 /* Frameworks */,
-				ABEFA18622D8716900768AE1 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = UQHostUIResource;
-			productName = UQHostUIResource;
-			productReference = ABEFA18822D8716900768AE1 /* UQHostUIResource.bundle */;
-			productType = "com.apple.product-type.bundle";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -1344,9 +1248,6 @@
 						CreatedOnToolsVersion = 10.2.1;
 					};
 					ABA91DBF22CF192200CCB034 = {
-						CreatedOnToolsVersion = 10.2.1;
-					};
-					ABEFA18722D8716900768AE1 = {
 						CreatedOnToolsVersion = 10.2.1;
 					};
 				};
@@ -1368,7 +1269,6 @@
 				ABA91C1422CDF46400CCB034 /* UQPayHostUIDemo */,
 				ABA91DAD22CF190C00CCB034 /* UQPayHostUI */,
 				ABA91DBF22CF192200CCB034 /* UQPayHostUIKit */,
-				ABEFA18722D8716900768AE1 /* UQHostUIResource */,
 			);
 		};
 /* End PBXProject section */
@@ -1388,55 +1288,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB4EDD5522E59A25001CBB5C /* bt_ic_hiper@3x.png in Resources */,
-				AB4EDD4E22E59A25001CBB5C /* bt_ic_mastercard@2x.png in Resources */,
-				AB4EDD6F22E59A25001CBB5C /* bt_ic_hipercard.png in Resources */,
-				AB4EDD6E22E59A25001CBB5C /* bt_ic_discover@3x.png in Resources */,
-				AB4EDD4A22E59A25001CBB5C /* delete@3x.png in Resources */,
-				AB4EDDC422E59C00001CBB5C /* card.png in Resources */,
-				AB4EDD6522E59A25001CBB5C /* bt_ic_jcb.png in Resources */,
-				AB4EDD6922E59A25001CBB5C /* add-rectangle.png in Resources */,
-				AB4EDD6722E59A25001CBB5C /* bt_ic_hipercard@2x.png in Resources */,
-				AB4EDD4C22E59A25001CBB5C /* back@2x.png in Resources */,
-				AB4EDD7022E59A25001CBB5C /* delete@2x.png in Resources */,
-				AB4EDD6622E59A25001CBB5C /* add-rectangle@3x.png in Resources */,
-				AB4EDD7522E59A25001CBB5C /* bt_ic_hiper@2x.png in Resources */,
-				AB4EDD5D22E59A25001CBB5C /* add-rectangle@2x.png in Resources */,
-				AB4EDD5822E59A25001CBB5C /* back@3x.png in Resources */,
-				AB4EDD5422E59A25001CBB5C /* bt_ic_amex@2x.png in Resources */,
-				AB4EDD5922E59A25001CBB5C /* bt_ic_jcb@3x.png in Resources */,
-				AB4EDD7222E59A25001CBB5C /* xuanze.png in Resources */,
-				AB4EDD5F22E59A25001CBB5C /* bt_ic_jcb@2x.png in Resources */,
-				AB4EDD6022E59A25001CBB5C /* xuanze@3x.png in Resources */,
-				AB4EDD5022E59A25001CBB5C /* bt_ic_discover.png in Resources */,
-				AB4EDD6C22E59A25001CBB5C /* bt_ic_amex.png in Resources */,
-				AB4EDDC522E59C00001CBB5C /* card@2x.png in Resources */,
-				AB4EDD7422E59A25001CBB5C /* bt_ic_maestro.png in Resources */,
-				AB4EDD6D22E59A25001CBB5C /* photograph@2x.png in Resources */,
-				AB4EDD6122E59A25001CBB5C /* bt_ic_unionpay.png in Resources */,
-				AB4EDD6B22E59A25001CBB5C /* bt_ic_discover@2x.png in Resources */,
-				AB4EDD6222E59A25001CBB5C /* bt_ic_mastercard.png in Resources */,
-				AB4EDD5622E59A25001CBB5C /* bt_ic_unionpay@3x.png in Resources */,
-				AB4EDD4F22E59A25001CBB5C /* delete.png in Resources */,
-				AB4EDD5A22E59A25001CBB5C /* photograph@3x.png in Resources */,
-				AB4EDD7322E59A25001CBB5C /* bt_ic_diners_club@3x.png in Resources */,
-				AB4EDD7122E59A25001CBB5C /* bt_ic_hipercard@3x.png in Resources */,
-				AB4EDD7822E59A25001CBB5C /* bt_ic_diners_club.png in Resources */,
-				AB4EDDC322E59C00001CBB5C /* card@3x.png in Resources */,
-				AB4EDD6322E59A25001CBB5C /* bt_ic_maestro@2x.png in Resources */,
-				AB4EDD5B22E59A25001CBB5C /* photograph.png in Resources */,
-				AB4EDD6422E59A25001CBB5C /* bt_ic_visa@2x.png in Resources */,
-				AB4EDD4D22E59A25001CBB5C /* bt_ic_mastercard@3x.png in Resources */,
-				AB4EDD5C22E59A25001CBB5C /* bt_ic_visa.png in Resources */,
-				AB4EDDCA22E59C2C001CBB5C /* UQHostUIResource.bundle in Resources */,
-				AB4EDD6A22E59A25001CBB5C /* bt_ic_amex@3x.png in Resources */,
-				AB4EDD7722E59A25001CBB5C /* bt_ic_diners_club@2x.png in Resources */,
-				AB4EDD6822E59A25001CBB5C /* bt_ic_unionpay@2x.png in Resources */,
-				AB4EDD5E22E59A25001CBB5C /* back.png in Resources */,
-				AB4EDD5322E59A25001CBB5C /* bt_ic_maestro@3x.png in Resources */,
-				AB4EDD4B22E59A25001CBB5C /* xuanze@2x.png in Resources */,
-				AB4EDD7622E59A25001CBB5C /* bt_ic_visa@3x.png in Resources */,
-				AB4EDD5122E59A25001CBB5C /* bt_ic_hiper.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1444,7 +1295,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ABC4E11E22E6F9CA00C99D18 /* UQHostUIResource.bundle in Resources */,
 				ABC4E10022E6F9B500C99D18 /* bt_ic_amex.png in Resources */,
 				ABC4E10122E6F9B500C99D18 /* bt_ic_amex@2x.png in Resources */,
 				ABC4E10222E6F9B500C99D18 /* bt_ic_amex@3x.png in Resources */,
@@ -1497,62 +1347,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		ABEFA18622D8716900768AE1 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AB96ECB222E066A7009395AF /* BTUI.strings in Resources */,
-				AB4EDD7B22E59A4E001CBB5C /* add-rectangle@3x.png in Resources */,
-				AB4EDD7D22E59A51001CBB5C /* back@2x.png in Resources */,
-				AB4EDD7C22E59A4F001CBB5C /* back.png in Resources */,
-				AB4EDD7F22E59A55001CBB5C /* bt_ic_amex.png in Resources */,
-				AB4EDD8522E59A5D001CBB5C /* bt_ic_discover.png in Resources */,
-				AB4EDD8E22E59A6C001CBB5C /* bt_ic_jcb.png in Resources */,
-				AB4EDD8722E59A60001CBB5C /* bt_ic_discover@3x.png in Resources */,
-				AB4EDD9222E59A71001CBB5C /* bt_ic_maestro@2x.png in Resources */,
-				AB4EDD9322E59A73001CBB5C /* bt_ic_maestro@3x.png in Resources */,
-				AB4EDD9722E59A78001CBB5C /* bt_ic_unionpay.png in Resources */,
-				AB4EDDA122E59A86001CBB5C /* photograph@3x.png in Resources */,
-				AB4EDD9F22E59A83001CBB5C /* photograph.png in Resources */,
-				AB4EDDA022E59A84001CBB5C /* photograph@2x.png in Resources */,
-				AB4EDDA522E59A8B001CBB5C /* xuanze@2x.png in Resources */,
-				AB4EDDA622E59A8C001CBB5C /* xuanze@3x.png in Resources */,
-				AB4EDDA422E59A8A001CBB5C /* xuanze.png in Resources */,
-				AB4EDD9E22E59A82001CBB5C /* delete@3x.png in Resources */,
-				AB4EDD9022E59A6E001CBB5C /* bt_ic_jcb@3x.png in Resources */,
-				AB4EDDA722E59ADE001CBB5C /* delete@2x.png in Resources */,
-				AB4EDD9D22E59A81001CBB5C /* delete.png in Resources */,
-				AB4EDD9A22E59A7C001CBB5C /* bt_ic_visa.png in Resources */,
-				AB4EDD9C22E59A7F001CBB5C /* bt_ic_visa@3x.png in Resources */,
-				AB4EDD9B22E59A7E001CBB5C /* bt_ic_visa@2x.png in Resources */,
-				AB4EDD9422E59A75001CBB5C /* bt_ic_mastercard.png in Resources */,
-				AB4EDD9922E59A7B001CBB5C /* bt_ic_unionpay@3x.png in Resources */,
-				AB4EDD9822E59A7A001CBB5C /* bt_ic_unionpay@2x.png in Resources */,
-				AB4EDD9522E59A76001CBB5C /* bt_ic_mastercard@2x.png in Resources */,
-				AB4EDD9622E59A77001CBB5C /* bt_ic_mastercard@3x.png in Resources */,
-				AB4EDD9122E59A6F001CBB5C /* bt_ic_maestro.png in Resources */,
-				AB4EDD8B22E59A67001CBB5C /* bt_ic_hipercard.png in Resources */,
-				AB4EDD8F22E59A6D001CBB5C /* bt_ic_jcb@2x.png in Resources */,
-				AB4EDD8C22E59A69001CBB5C /* bt_ic_hipercard@2x.png in Resources */,
-				AB4EDD8D22E59A6A001CBB5C /* bt_ic_hipercard@3x.png in Resources */,
-				AB4EDD8922E59A64001CBB5C /* bt_ic_hiper@2x.png in Resources */,
-				AB4EDD8A22E59A65001CBB5C /* bt_ic_hiper@3x.png in Resources */,
-				AB4EDD8622E59A5F001CBB5C /* bt_ic_discover@2x.png in Resources */,
-				AB4EDD8822E59A63001CBB5C /* bt_ic_hiper.png in Resources */,
-				AB4EDDC622E59C08001CBB5C /* card.png in Resources */,
-				AB4EDD8122E59A58001CBB5C /* bt_ic_amex@3x.png in Resources */,
-				AB4EDDC822E59C0B001CBB5C /* card@3x.png in Resources */,
-				AB4EDDC722E59C0A001CBB5C /* card@2x.png in Resources */,
-				AB4EDD8422E59A5C001CBB5C /* bt_ic_diners_club@3x.png in Resources */,
-				AB4EDD7922E59A4C001CBB5C /* add-rectangle.png in Resources */,
-				AB4EDD8322E59A5B001CBB5C /* bt_ic_diners_club@2x.png in Resources */,
-				AB4EDD8222E59A59001CBB5C /* bt_ic_diners_club.png in Resources */,
-				AB4EDD8022E59A57001CBB5C /* bt_ic_amex@2x.png in Resources */,
-				AB4EDD7E22E59A52001CBB5C /* back@3x.png in Resources */,
-				AB4EDD7A22E59A4D001CBB5C /* add-rectangle@2x.png in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
@@ -1562,15 +1356,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-UQPayHostUIDemo/Pods-UQPayHostUIDemo-resources-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-abstract_pod-UQPayHostUIDemo/Pods-abstract_pod-UQPayHostUIDemo-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-UQPayHostUIDemo/Pods-UQPayHostUIDemo-resources-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-abstract_pod-UQPayHostUIDemo/Pods-abstract_pod-UQPayHostUIDemo-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-UQPayHostUIDemo/Pods-UQPayHostUIDemo-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-abstract_pod-UQPayHostUIDemo/Pods-abstract_pod-UQPayHostUIDemo-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		0616E71DCFBEE328701440F2 /* [CP] Check Pods Manifest.lock */ = {
@@ -1584,7 +1378,29 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-UQPayHostUIDemo-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-abstract_pod-UQPayHostUIDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F1FFAD20E8492745509D1138 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-abstract_pod-UQPayHostUI-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1692,13 +1508,6 @@
 				ABA91FEF22CF1ACB00CCB034 /* UQUIKInputAccessoryToolbar.m in Sources */,
 				ABA91FEA22CF1ACB00CCB034 /* UQUIKSecurityCodeFormField.m in Sources */,
 				ABA91FD122CF1ACB00CCB034 /* UQUIKVisaVectorArtView.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		ABEFA18422D8716900768AE1 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1855,7 +1664,7 @@
 		};
 		ABA91C2C22CDF46500CCB034 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E66BAE4AE6A65DD14E93CB7C /* Pods-UQPayHostUIDemo.debug.xcconfig */;
+			baseConfigurationReference = AE5CC7F8EBA540BD008F8136 /* Pods-abstract_pod-UQPayHostUIDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
@@ -1863,17 +1672,15 @@
 				DEVELOPMENT_TEAM = A49NAB2WWT;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/AFNetworking\"",
 					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/UQPayHostUIDemo",
-					"$(PROJECT_DIR)/Pods",
-					"$(PROJECT_DIR)/UQPayHostUI",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"${PODS_ROOT}/Headers/Public\"",
 					"\"${PODS_ROOT}/Headers/Public/AFNetworking\"",
 					"\"${PODS_ROOT}/Headers/Public/CardIO\"",
+					"\"${PODS_ROOT}/Headers/Public/JSONModel\"",
+					"\"${PODS_ROOT}/Headers/Public/WHToast\"",
 				);
 				INFOPLIST_FILE = UQPayHostUIDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -1887,9 +1694,6 @@
 					"-ObjC",
 					"-all_load",
 					"-l\"c++\"",
-					"-l\"CardIO\"",
-					"-l\"JSONModel\"",
-					"-l\"AFNetworking\"",
 					"-framework",
 					"\"UIKit\"",
 				);
@@ -1901,7 +1705,7 @@
 		};
 		ABA91C2D22CDF46500CCB034 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5F9166B12E73F15A224B796B /* Pods-UQPayHostUIDemo.release.xcconfig */;
+			baseConfigurationReference = 3F0320BA01C683C43023A310 /* Pods-abstract_pod-UQPayHostUIDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
@@ -1909,17 +1713,15 @@
 				DEVELOPMENT_TEAM = A49NAB2WWT;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/AFNetworking\"",
 					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/UQPayHostUIDemo",
-					"$(PROJECT_DIR)/Pods",
-					"$(PROJECT_DIR)/UQPayHostUI",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"${PODS_ROOT}/Headers/Public\"",
 					"\"${PODS_ROOT}/Headers/Public/AFNetworking\"",
 					"\"${PODS_ROOT}/Headers/Public/CardIO\"",
+					"\"${PODS_ROOT}/Headers/Public/JSONModel\"",
+					"\"${PODS_ROOT}/Headers/Public/WHToast\"",
 				);
 				INFOPLIST_FILE = UQPayHostUIDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -1933,9 +1735,6 @@
 					"-ObjC",
 					"-all_load",
 					"-l\"c++\"",
-					"-l\"CardIO\"",
-					"-l\"JSONModel\"",
-					"-l\"AFNetworking\"",
 					"-framework",
 					"\"UIKit\"",
 				);
@@ -1947,6 +1746,7 @@
 		};
 		ABA91DB822CF190C00CCB034 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC90ABB2173C702510C1DA5E /* Pods-abstract_pod-UQPayHostUI.debug.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
@@ -1964,9 +1764,11 @@
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/AFNetworking/AFNetworking.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/JSONModel/JSONModel.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/WHToast/WHToast.framework/Headers\"",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/AFNetworking\"",
+					"\"${PODS_ROOT}/Headers/Public/CardIO\"",
+					"\"${PODS_ROOT}/Headers/Public/JSONModel\"",
+					"\"${PODS_ROOT}/Headers/Public/WHToast\"",
 				);
 				INFOPLIST_FILE = UQPayHostUI/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -1982,11 +1784,7 @@
 					"-all_load",
 					"-Objc",
 					"-framework",
-					"\"AFNetworking\"",
-					"-framework",
 					"\"CoreGraphics\"",
-					"-framework",
-					"\"JSONModel\"",
 					"-framework",
 					"\"MobileCoreServices\"",
 					"-framework",
@@ -1995,8 +1793,6 @@
 					"\"SystemConfiguration\"",
 					"-framework",
 					"\"UIKit\"",
-					"-framework",
-					"\"WHToast\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.uqpay.UQPayHostUI;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -2009,6 +1805,7 @@
 		};
 		ABA91DB922CF190C00CCB034 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8DA0658AC5862C2F1B75785F /* Pods-abstract_pod-UQPayHostUI.release.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
@@ -2026,9 +1823,11 @@
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/AFNetworking/AFNetworking.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/JSONModel/JSONModel.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/WHToast/WHToast.framework/Headers\"",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/AFNetworking\"",
+					"\"${PODS_ROOT}/Headers/Public/CardIO\"",
+					"\"${PODS_ROOT}/Headers/Public/JSONModel\"",
+					"\"${PODS_ROOT}/Headers/Public/WHToast\"",
 				);
 				INFOPLIST_FILE = UQPayHostUI/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -2044,11 +1843,7 @@
 					"-all_load",
 					"-Objc",
 					"-framework",
-					"\"AFNetworking\"",
-					"-framework",
 					"\"CoreGraphics\"",
-					"-framework",
-					"\"JSONModel\"",
 					"-framework",
 					"\"MobileCoreServices\"",
 					"-framework",
@@ -2057,8 +1852,6 @@
 					"\"SystemConfiguration\"",
 					"-framework",
 					"\"UIKit\"",
-					"-framework",
-					"\"WHToast\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.uqpay.UQPayHostUI;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -2131,48 +1924,6 @@
 			};
 			name = Release;
 		};
-		ABEFA18B22D8716900768AE1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = NO;
-				DEVELOPMENT_TEAM = A49NAB2WWT;
-				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = UQHostUIResource/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
-				PRODUCT_BUNDLE_IDENTIFIER = com.uqpay.UQHostUIResource;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = 1;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
-		ABEFA18C22D8716900768AE1 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = NO;
-				DEVELOPMENT_TEAM = A49NAB2WWT;
-				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = UQHostUIResource/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
-				PRODUCT_BUNDLE_IDENTIFIER = com.uqpay.UQHostUIResource;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = 1;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -2208,15 +1959,6 @@
 			buildConfigurations = (
 				ABA91DCA22CF192200CCB034 /* Debug */,
 				ABA91DCB22CF192200CCB034 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		ABEFA18D22D8716900768AE1 /* Build configuration list for PBXNativeTarget "UQHostUIResource" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				ABEFA18B22D8716900768AE1 /* Debug */,
-				ABEFA18C22D8716900768AE1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

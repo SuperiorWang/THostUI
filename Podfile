@@ -7,12 +7,18 @@ inhibit_all_warnings!
 
 workspace 'UQPayHostUIDemo.xcworkspace'
 
-target 'UQPayHostUIDemo' do
-  project 'UQPayHostUIDemo'
-  pod 'JSONModel'
-  pod 'AFNetworking'
-  pod 'WHToast'
-  pod 'CardIO'
-  pod "UPHostUI", :path => "./"
-end
+abstract_target 'abstract_pod' do
+  target 'UQPayHostUIDemo' do
+    project 'UQPayHostUIDemo'
+    pod 'WHToast', '~>0.0.2'
+    pod "UPHostUI", :path => "./"
+  end
 
+  target 'UQPayHostUI' do
+    use_frameworks!
+    pod 'WHToast', '~>0.0.2'
+    pod 'JSONModel', '~>1.8'
+    pod 'AFNetworking', '~>3.2'
+    pod 'CardIO', '~>5.4'
+  end
+end
