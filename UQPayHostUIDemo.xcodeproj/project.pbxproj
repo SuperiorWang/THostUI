@@ -12,8 +12,6 @@
 		AB96EC9E22E064E4009395AF /* UQUIKLocalizedString.m in Sources */ = {isa = PBXBuildFile; fileRef = AB96EC9D22E064E4009395AF /* UQUIKLocalizedString.m */; };
 		AB96ECB722E16044009395AF /* UQUIKSMSFormField.h in Headers */ = {isa = PBXBuildFile; fileRef = AB96ECB522E16044009395AF /* UQUIKSMSFormField.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AB96ECB822E16044009395AF /* UQUIKSMSFormField.m in Sources */ = {isa = PBXBuildFile; fileRef = AB96ECB622E16044009395AF /* UQUIKSMSFormField.m */; };
-		AB9A668F22E8372F00A09A32 /* UQPayHostUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB9A668E22E8372E00A09A32 /* UQPayHostUIKit.framework */; };
-		AB9A669022E8373E00A09A32 /* UQPayHostUIKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = AB9A668E22E8372E00A09A32 /* UQPayHostUIKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		ABA91C1A22CDF46400CCB034 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ABA91C1922CDF46400CCB034 /* AppDelegate.m */; };
 		ABA91C1D22CDF46400CCB034 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABA91C1C22CDF46400CCB034 /* ViewController.m */; };
 		ABA91C2022CDF46400CCB034 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABA91C1E22CDF46400CCB034 /* Main.storyboard */; };
@@ -233,7 +231,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				AB9A669022E8373E00A09A32 /* UQPayHostUIKit.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,8 +312,6 @@
 		AB96ECB522E16044009395AF /* UQUIKSMSFormField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UQUIKSMSFormField.h; sourceTree = "<group>"; };
 		AB96ECB622E16044009395AF /* UQUIKSMSFormField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = UQUIKSMSFormField.m; path = ../Public/UQUIKSMSFormField.m; sourceTree = "<group>"; };
 		AB9A667422E82D2100A09A32 /* UQPayHostUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UQPayHostUI.framework; path = "../../../Library/Developer/Xcode/DerivedData/UQPayHostUIDemo-evgjusskfkfkyycatfmycnradhuz/Build/Products/Release-iphonesimulator/UQPayHostUI.framework"; sourceTree = "<group>"; };
-		AB9A668E22E8372E00A09A32 /* UQPayHostUIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UQPayHostUIKit.framework; sourceTree = "<group>"; };
-		AB9A669122E837E600A09A32 /* UQPayHostUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UQPayHostUI.framework; path = UQPayHostUIDemo/UQPayHostUI.framework; sourceTree = "<group>"; };
 		ABA91C1522CDF46400CCB034 /* UQPayHostUIDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UQPayHostUIDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABA91C1822CDF46400CCB034 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		ABA91C1922CDF46400CCB034 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -510,7 +505,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB9A668F22E8372F00A09A32 /* UQPayHostUIKit.framework in Frameworks */,
 				CF12B08BC3D4956C253FDB92 /* Pods_abstract_pod_UQPayHostUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -685,7 +679,6 @@
 		ABA91C0C22CDF46400CCB034 = {
 			isa = PBXGroup;
 			children = (
-				AB9A669122E837E600A09A32 /* UQPayHostUI.framework */,
 				ABA91C1722CDF46400CCB034 /* UQPayHostUIDemo */,
 				ABA91DAF22CF190C00CCB034 /* UQPayHostUI */,
 				ABA91DC122CF192200CCB034 /* UQPayHostUIKit */,
@@ -725,7 +718,6 @@
 		ABA91DAF22CF190C00CCB034 /* UQPayHostUI */ = {
 			isa = PBXGroup;
 			children = (
-				AB9A668E22E8372E00A09A32 /* UQPayHostUIKit.framework */,
 				ABA9203822CF352B00CCB034 /* Info.plist */,
 				ABA9202A22CF1D9700CCB034 /* Components */,
 				ABA9202422CF1D9700CCB034 /* Custom View */,
