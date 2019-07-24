@@ -7,8 +7,9 @@
 //
 
 #import "ViewController.h"
-#import <UQPayHostUI/UQPayHostUI.h>
 #import "WHToast.h"
+
+#import <UQPayHostUI/UQPayHostUI.h>
 
 @interface ViewController ()<UQHostUIViewControllerDelegate>
 

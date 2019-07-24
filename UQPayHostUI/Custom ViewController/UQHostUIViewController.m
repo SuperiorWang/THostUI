@@ -9,7 +9,6 @@
 #import "UQHostUIViewController.h"
 #import "../Custom View/UQCardItemView.h"
 #import "../Helpers/SystemUtils.h"
-#import "../Images/UQImageUtils.h"
 #import "../Models/ResultModel.h"
 #import "../Models/CardListModel.h"
 

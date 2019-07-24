@@ -7,11 +7,14 @@
 //
 
 #import "UQCardListTableView.h"
-#import "../Images/UQImageUtils.h"
 #import "../Public/UQHostResult.h"
 #import "../Custom View/UQCardItemViewCell.h"
 #import "../Public/UQCardListViewController.h"
+#if __has_include("UQPayHostUIKit.h")
+#import "UQPayHostUIKit.h"
+#else
 #import <UQPayHostUIKit/UQPayHostUIKit.h>
+#endif
 
 #define CELL_IDENTIFIER @"uq_card_item_id"
 

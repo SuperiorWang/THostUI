@@ -6,7 +6,11 @@
 //  Copyright © 2019 优钱付. All rights reserved.
 //
 
+#if __has_include("JSONModel.h")
+#import "JSONModel.h"
+#else
 #import <JSONModel/JSONModel.h>
+#endif
 
 NS_ASSUME_NONNULL_BEGIN
 

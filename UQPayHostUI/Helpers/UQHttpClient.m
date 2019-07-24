@@ -7,7 +7,11 @@
 //
 
 #import "UQHttpClient.h"
+#if __has_include("AFNetworking.h")
+#import "AFNetworking.h"
+#else
 #import <AFNetworking/AFNetworking.h>
+#endif
 #import "../Models/AddCardModel.h"
 #import <WHToast/WHToast.h>
 

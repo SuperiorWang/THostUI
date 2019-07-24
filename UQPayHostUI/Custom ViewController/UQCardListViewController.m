@@ -11,7 +11,6 @@
 #import "../Models/CardListModel.h"
 #import "../Public/UQHostResult.h"
 #import "../Custom View/UQCardListTableView.h"
-#import "../Images/UQImageUtils.h"
 
 #if __has_include("UQPayHostUIKit.h")
 #import "UQPayHostUIKit.h"
@@ -64,8 +63,8 @@
                 if (isSuccess && dict != nil) {
                     if ([[dict objectForKey:@"status"] intValue] == 200) {
                         [self.data removeObjectAtIndex:index];
-                        _tableView.data = self.data;
-                        [_tableView reloadData];
+                        self->_tableView.data = self.data;
+                        [self->_tableView reloadData];
                     }
                 }
             } fail:^(NSError * _Nonnull error) {

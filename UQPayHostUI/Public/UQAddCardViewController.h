@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "UQHostUIBaseViewController.h"]
+#import "UQHostUIBaseViewController.h"
 #import "UQHttpClient.h"
 #if __has_include ("UQPayHostUIKit.h")
 #import "UQPayHostUIKit.h"

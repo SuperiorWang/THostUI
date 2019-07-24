@@ -14,32 +14,33 @@ FOUNDATION_EXPORT double UQPayHostUIKitVersionNumber;
 //! Project version string for UQPayHostUIKit.
 FOUNDATION_EXPORT const unsigned char UQPayHostUIKitVersionString[];
 
-// In this header, you should import all the public headers of your framework using statements like #import <UQPayHostUIKit/PublicHeader.h>
+// In this header, you should import all the public headers of your framework using statements like #import "PublicHeader.h"
 
-#import <UQPayHostUIKit/UQUIKCardListLabel.h>
-#import <UQPayHostUIKit/UQUIKCardholderNameFormField.h>
-#import <UQPayHostUIKit/UQUIKCardNumberFormField.h>
-#import <UQPayHostUIKit/UIColor+UQUIK.h>
-#import <UQPayHostUIKit/UQUIKExpiryFormField.h>
-#import <UQPayHostUIKit/UQUIKExpiryInputView.h>
-#import <UQPayHostUIKit/UQUIKMobileCountryCodeFormField.h>
-#import <UQPayHostUIKit/UQUIKMobileNumberFormField.h>
-#import <UQPayHostUIKit/UQUIKInputAccessoryToolbar.h>
-#import <UQPayHostUIKit/UQUIKPaymentOptionCardView.h>
-#import <UQPayHostUIKit/UQUIKFormField.h>
-#import <UQPayHostUIKit/UQUIKSecurityCodeFormField.h>
-#import <UQPayHostUIKit/UQUIKPostalCodeFormField.h>
-#import <UQPayHostUIKit/UQUIKTextField.h>
-#import <UQPayHostUIKit/UQUIKLocalizedString.h>
-#import <UQPayHostUIKit/UQUIKAppearance.h>
-#import <UQPayHostUIKit/UQUIKUtil.h>
-#import <UQPayHostUIKit/UQUIKCardType.h>
-#import <UQPayHostUIKit/UQUIKCardExpiryFormat.h>
-#import <UQPayHostUIKit/UQUIKCardExpirationValidator.h>
-#import <UQPayHostUIKit/UQUIKViewUtil.h>
-#import <UQPayHostUIKit/UQUIKPaymentOptionType.h>
-#import <UQPayHostUIKit/UQUIKVisualAssetType.h>
-#import <UQPayHostUIKit/UQUIKVectorArtView.h>
-#import <UQPayHostUIKit/UQUIKSelectCardView.h>
-#import <UQPayHostUIKit/UQUIKBarButtonItem.h>
-#import <UQPayHostUIKit/UQUIKSMSFormField.h>
+#import "UQUIKCardListLabel.h"
+#import "UQUIKCardholderNameFormField.h"
+#import "UQUIKCardNumberFormField.h"
+#import "UIColor+UQUIK.h"
+#import "UQUIKExpiryFormField.h"
+#import "UQUIKExpiryInputView.h"
+#import "UQUIKMobileCountryCodeFormField.h"
+#import "UQUIKMobileNumberFormField.h"
+#import "UQUIKInputAccessoryToolbar.h"
+#import "UQUIKPaymentOptionCardView.h"
+#import "UQUIKFormField.h"
+#import "UQUIKSecurityCodeFormField.h"
+#import "UQUIKPostalCodeFormField.h"
+#import "UQUIKTextField.h"
+#import "UQUIKLocalizedString.h"
+#import "UQUIKAppearance.h"
+#import "UQUIKUtil.h"
+#import "UQUIKCardType.h"
+#import "UQUIKCardExpiryFormat.h"
+#import "UQUIKCardExpirationValidator.h"
+#import "UQUIKViewUtil.h"
+#import "UQUIKPaymentOptionType.h"
+#import "UQUIKVisualAssetType.h"
+#import "UQUIKVectorArtView.h"
+#import "UQUIKSelectCardView.h"
+#import "UQUIKBarButtonItem.h"
+#import "UQUIKSMSFormField.h"
+#import "UQImageUtils.h"

@@ -7,8 +7,11 @@
 //
 
 #import "UQCardItemView.h"
-#import "../Images/UQImageUtils.h"
+#if __has_include("UQPayHostUIKit.h")
+#import "UQPayHostUIKit.h"
+#else
 #import <UQPayHostUIKit/UQPayHostUIKit.h>
+#endif
 
 @interface UQCardItemView()
 
