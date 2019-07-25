@@ -1,10 +1,10 @@
 Pod::Spec.new do |s|
 
-  s.name         = "UPHostUI"
-  s.version      = "1.0.1"
-  s.summary      = "UPHostUI :A modern foundation for accepting payments."
+  s.name         = "THostUI"
+  s.version      = "1.0.0"
+  s.summary      = "THostUI :A modern foundation for accepting payments."
   s.description  = <<-DESC
-                      UPHostUI is a full-stack payments platform for developers
+                      THostUI is a full-stack payments platform for developers
                       This CocoaPod will help you accept payment in your iOS app.
                       DESC
 
@@ -16,8 +16,8 @@ Pod::Spec.new do |s|
 
   s.requires_arc   = true
 
-  s.homepage       = "https://github.com/SuperiorWang/UPHostUI"
-  s.source         = { :git => "https://github.com/SuperiorWang/UPHostUI.git", :tag => "v1.0.1" }
+  s.homepage       = "https://github.com/SuperiorWang/THostUI"
+  s.source         = { :git => "https://github.com/SuperiorWang/THostUI.git", :tag => "v1.0.0" }
 
 
   s.default_subspecs = %w[HostUI]
