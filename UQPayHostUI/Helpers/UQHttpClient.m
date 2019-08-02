@@ -64,19 +64,19 @@ static UQHttpClient *httpClient;
 }
 
 - (NSString *)getUnbindUri {
-    return [NSString stringWithFormat:@"%@/api/host/revoke",httpClient.uri];
+    return [NSString stringWithFormat:@"%@/api/hosted/revoke",httpClient.uri];
 }
 
 - (NSString *)getBindUri {
-    return [NSString stringWithFormat:@"%@/api/host/enroll",httpClient.uri];
+    return [NSString stringWithFormat:@"%@/api/hosted/enroll",httpClient.uri];
 }
 
 - (NSString *)getSmsUri {
-    return [NSString stringWithFormat:@"%@/api/host/otp",httpClient.uri];
+    return [NSString stringWithFormat:@"%@/api/hosted/otp",httpClient.uri];
 }
 
 - (NSString *)getCardListUri {
-    return [NSString stringWithFormat:@"%@/api/host/cardlist",httpClient.uri];
+    return [NSString stringWithFormat:@"%@/api/hosted/cardlist",httpClient.uri];
 }
 
 - (void)setModelType:(UQClientModelType)modelType {
